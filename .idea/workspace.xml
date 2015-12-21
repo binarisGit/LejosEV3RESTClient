@@ -1,10 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/karma.conf.js" line="19" mnemonic="7" />
+    <bookmark url="file://$PROJECT_DIR$/index.html" line="40" mnemonic="7" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f00eb5c5-39a4-40e7-a95d-9365e55d6932" name="Default" comment="" />
+    <list default="true" id="f00eb5c5-39a4-40e7-a95d-9365e55d6932" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ev3_robot.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ev3_robot.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-mocks/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-mocks/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-mocks/angular-mocks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-mocks/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-mocks/ngAnimateMock.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-mocks/ngMock.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-mocks/ngMockE2E.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-mocks/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/dist/css/bootstrap-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/dist/css/bootstrap-theme.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/dist/css/bootstrap-theme.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/dist/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/dist/css/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/dist/css/bootstrap.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/dist/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/dist/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/dist/js/npm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/grunt/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/grunt/bs-commonjs-generator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/grunt/bs-glyphicons-data-generator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/grunt/bs-lessdoc-parser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/grunt/bs-raw-files-generator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/grunt/configBridge.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/grunt/sauce_browsers.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/js/.jscsrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/js/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/js/affix.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/js/alert.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/js/button.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/js/carousel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/js/collapse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/js/dropdown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/js/modal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/js/popover.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/js/scrollspy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/js/tab.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/js/tooltip.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/js/transition.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/.csscomb.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/.csslintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/alerts.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/badges.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/bootstrap.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/breadcrumbs.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/button-groups.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/buttons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/carousel.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/close.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/code.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/component-animations.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/dropdowns.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/forms.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/glyphicons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/grid.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/input-groups.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/jumbotron.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/labels.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/list-group.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/media.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins/alerts.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins/background-variant.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins/border-radius.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins/buttons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins/center-block.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins/clearfix.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins/forms.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins/gradients.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins/grid-framework.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins/grid.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins/hide-text.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins/image.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins/labels.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins/list-group.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins/nav-divider.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins/nav-vertical-align.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins/opacity.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins/pagination.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins/panels.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins/progress-bar.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins/reset-filter.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins/reset-text.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins/resize.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins/responsive-visibility.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins/size.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins/tab-focus.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins/table-row.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins/text-emphasis.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins/text-overflow.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins/vendor-prefixes.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/modals.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/navbar.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/navs.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/normalize.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/pager.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/pagination.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/panels.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/popovers.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/print.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/progress-bars.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/responsive-embed.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/responsive-utilities.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/scaffolding.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/tables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/theme.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/thumbnails.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/tooltip.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/type.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/utilities.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/variables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/wells.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/nuget/MyGet.ps1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/nuget/bootstrap.less.nuspec" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/nuget/bootstrap.nuspec" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/package.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/bootstrap/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/integration/ev3RestServiceIntegrationTest.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/integration/ev3RestServiceIntegrationTest.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/integration/ev3RestServiceIntegrationTest.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/integration/typings/jasmine/jasmine.d.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ev3RestService.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tsconfig.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typings/angularjs/angular-mocks.d.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typings/angularjs/angular.d.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typings/jquery/jquery.d.ts" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/karma.conf.js" afterPath="$PROJECT_DIR$/karma.conf.js" />
+    </list>
     <ignored path="AngularProjekt.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,11 +176,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test.spec.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ev3RestServiceIntegrationTest.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/integration/ev3RestServiceIntegrationTest.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="62" column="39" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ev3RestService.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ev3RestService.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.45297804">
+              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="karma.conf.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/karma.conf.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.spec.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/test.spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40140846">
-              <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tsconfig.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tsconfig.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.230769">
+              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -43,6 +239,9 @@
         <option value="TypeScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -61,11 +260,18 @@
         <option value="$PROJECT_DIR$/src/anotherController.ts" />
         <option value="$PROJECT_DIR$/src/restClient.ts" />
         <option value="$PROJECT_DIR$/src/calculatorController.ts" />
-        <option value="$PROJECT_DIR$/tsconfig.json" />
         <option value="$PROJECT_DIR$/src/app.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/spec/test.spec.js" />
+        <option value="$PROJECT_DIR$/index2.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/spec/integration/ev3RestService" />
+        <option value="$PROJECT_DIR$/spec/integration/a.ts" />
+        <option value="$PROJECT_DIR$/tsconfig.json" />
+        <option value="$PROJECT_DIR$/spec/integration/ev3RestServiceIntegrationTest.js" />
+        <option value="$PROJECT_DIR$/src/ev3RestService" />
         <option value="$PROJECT_DIR$/karma.conf.js" />
+        <option value="$PROJECT_DIR$/src/ev3RestService.ts" />
+        <option value="$PROJECT_DIR$/spec/integration/ev3RestServiceIntegrationTest.ts" />
       </list>
     </option>
   </component>
@@ -106,7 +312,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -124,6 +330,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -152,36 +359,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AngularJsHttpIntegrationTests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AngularProjekt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value="terminal&#9;ACTION&#9;ActivateTerminalToolWindow&#10;termi&#9;ACTION&#9;ActivateTerminalToolWindow&#10;termina&#9;ACTION&#9;ActivateTerminalToolWindow&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;settings&#9;ACTION&#9;WelcomeScreen.Settings&#10;sett&#9;ACTION&#9;WelcomeScreen.Settings&#10;setting&#9;ACTION&#9;WelcomeScreen.Settings" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
+    <property name="SearchEverywhereHistoryKey" value="typesc&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;termi&#9;ACTION&#9;ActivateTerminalToolWindow&#10;settings&#9;ACTION&#9;WelcomeScreen.Settings&#10;setting&#9;ACTION&#9;WelcomeScreen.Settings&#10;typescri&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;termin&#9;ACTION&#9;ActivateTerminalToolWindow&#10;terminal&#9;ACTION&#9;ActivateTerminalToolWindow&#10;type&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;types&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;termina&#9;ACTION&#9;ActivateTerminalToolWindow&#10;sett&#9;ACTION&#9;WelcomeScreen.Settings" />
+    <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs5\node.exe" />
     <property name="js-tslint-nodeInterpreter" value="C:\Program Files\nodejs5\node.exe" />
@@ -190,9 +382,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\AngularProjekt" />
       <recent name="C:\Users\user\AngularProjekt\spec\controllers" />
       <recent name="C:\Users\user\AngularProjekt\spec" />
-      <recent name="C:\Users\user\AngularProjekt" />
     </key>
   </component>
   <component name="RunManager" selected="Karma.karma.conf.js">
@@ -276,9 +468,23 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="karma_conf_js - 2015.12.21 at 15h 31m 06s.xml">
+      <configuration name="karma.conf.js" configurationId="JavaScriptTestRunnerKarma" />
+    </history-entry>
+    <history-entry file="karma_conf_js - 2015.12.21 at 15h 55m 40s.xml">
+      <configuration name="karma.conf.js" configurationId="JavaScriptTestRunnerKarma" />
+    </history-entry>
+    <history-entry file="karma_conf_js - 2015.12.21 at 15h 56m 04s.xml">
+      <configuration name="karma.conf.js" configurationId="JavaScriptTestRunnerKarma" />
+    </history-entry>
+    <history-entry file="karma_conf_js - 2015.12.21 at 15h 57m 23s.xml">
+      <configuration name="karma.conf.js" configurationId="JavaScriptTestRunnerKarma" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.274375" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -286,9 +492,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985657" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4719687" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13168187" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22294654" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21382008" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1773142" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -298,6 +504,25 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32985657" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4719687" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5345502" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.274375" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985657" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1773142" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -320,6 +545,34 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/spec/integration/ev3RestServiceIntegrationTest.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/integration/ev3RestServiceIntegrationTest.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/karma.conf.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -334,7 +587,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -347,16 +599,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bower.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31365314">
+        <state vertical-scroll-proportion="0.36956522">
           <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ev3_robot.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/integration/ev3RestServiceIntegrationTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.230769">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/karma.conf.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50880283">
-          <caret line="17" column="75" selection-start-line="17" selection-start-column="75" selection-end-line="17" selection-end-column="75" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -365,8 +647,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/test.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40140846">
-          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/integration/ev3RestServiceIntegrationTest.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="39" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ev3RestService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45297804">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
           <folding />
         </state>
       </provider>
