@@ -17,8 +17,8 @@ module.exports = function (config) {
         files: [
             // since we are performing INTEGRATIONS tests angular-mocks.js is not needed!
             "bower_components/angular/angular.js",
-            "src/ev3RestService.js",
-            "spec/integration/ev3RestServiceIntegrationTest.js"
+            "src/EV3DifferentialPilotRestClient.js",
+            "spec/integration/EV3DifferentialPilotRestClientIntegrationTest.js"
         ],
 
 
