@@ -11,7 +11,6 @@
 
  */
 
-import EV3DifferentialPilotRestClient = BinarisEV3.EV3DifferentialPilotRestClient;
 describe("Integration test suite with asynchronous HTTP Requests: ", function () {
 
     // SUT
@@ -22,7 +21,7 @@ describe("Integration test suite with asynchronous HTTP Requests: ", function ()
         // get the REAL $http-Service, not the fake one from angular-mocks.js
         var $injector = angular.injector(['ng']);
         $http = $injector.get('$http');
-        ev3DifferentialPilotRestClient = new EV3DifferentialPilotRestClient($http);
+        ev3DifferentialPilotRestClient = new BinarisEV3.EV3DifferentialPilotRestClient($http);
     });
 
     it("should perform a REAL http-Request to the 'run'-endpoint", function (done) {
