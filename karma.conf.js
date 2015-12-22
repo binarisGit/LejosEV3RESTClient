@@ -19,8 +19,9 @@ module.exports = function (config) {
             "bower_components/angular/angular.js",
             "bower_components/angular-mocks/angular-mocks.js",
             "src/services/EV3DifferentialPilotRestClient.js",
+            "src/controller/EV3DifferentialPilotRestClientController.js",
             "src/App.js",
-            "spec/unit/EV3DifferentialPilotRestClientUnitTest.js"
+            "spec/unit/EV3DifferentialPilotRestClientControllerUnitTest.js"
         ],
 
 

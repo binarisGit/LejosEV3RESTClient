@@ -22,3 +22,4 @@ var BinarisEV3;
     })();
     BinarisEV3.EV3DifferentialPilotRestClient = EV3DifferentialPilotRestClient;
 })(BinarisEV3 || (BinarisEV3 = {}));
+//# sourceMappingURL=EV3DifferentialPilotRestClient.js.map
