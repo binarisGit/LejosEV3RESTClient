@@ -1,8 +1,7 @@
 namespace BinarisEV3 {
-    export class EV3DifferentialPilotRestClient  implements IDifferentialPilotRestClient {
+    export class EV3DifferentialPilotRestClient implements IDifferentialPilotRestClient {
         private http: ng.IHttpService;
         private BASE_URL: string = "10.0.0.44:8080";
-
 
         constructor($http: ng.IHttpService) {
             this.http = $http;
@@ -18,11 +17,11 @@ namespace BinarisEV3 {
         }
 
         public buzz() {
-            return this.http.get(this.BASE_URL + '/rotate');
+            return this.http.get(this.BASE_URL + '/buzz');
         }
 
         public beep() {
-            return this.http.get(this.BASE_URL + '/rotate');
+            return this.http.get(this.BASE_URL + '/beep');
         }
     }
 }
