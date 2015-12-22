@@ -1,20 +1,17 @@
-import IDeferred = angular.IDeferred;
+import EV3DifferentialPilotRestClient = BinarisEV3.EV3DifferentialPilotRestClient;
+import IDifferentialPilotRestClient = BinarisEV3.IDifferentialPilotRestClient;
 describe("Unit test suite with asynchronous HTTP Requests: ", function () {
 
     // SUT
-    var ev3DifferentialPilotRestClient: BinarisEV3.IDifferentialPilotRestClient;
+    var ev3DifferentialPilotRestClient: any;
 
-    var $http: any;
     var $httpBackend: any;
 
     beforeEach(function () {
+        var $injector = angular.injector(['ng', 'ngMockE2E', 'binarisEV3DifferentialPilot']);
         // get the $httpBackend-Service MOCK from Angular Module 'ngMockE2E'
-        // get the REAL $http-Service from Angular Module 'ng'
-        var $injector = angular.injector(['ng', 'ngMockE2E']);
         $httpBackend = $injector.get('$httpBackend');
-        $http = $injector.get('$http');
-
-        ev3DifferentialPilotRestClient = new BinarisEV3.EV3DifferentialPilotRestClient($http);
+        ev3DifferentialPilotRestClient = $injector.get('EV3DifferentialPilotRestClient');
 
         // define mock rest endpoints so that no http-request gets sent over the network
         $httpBackend.when('GET', '10.0.0.44:8080/run/10').respond(200, '');

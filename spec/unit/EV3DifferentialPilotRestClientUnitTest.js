@@ -1,12 +1,11 @@
+var EV3DifferentialPilotRestClient = BinarisEV3.EV3DifferentialPilotRestClient;
 describe("Unit test suite with asynchronous HTTP Requests: ", function () {
     var ev3DifferentialPilotRestClient;
-    var $http;
     var $httpBackend;
     beforeEach(function () {
-        var $injector = angular.injector(['ng', 'ngMockE2E']);
+        var $injector = angular.injector(['ng', 'ngMockE2E', 'binarisEV3DifferentialPilot']);
         $httpBackend = $injector.get('$httpBackend');
-        $http = $injector.get('$http');
-        ev3DifferentialPilotRestClient = new BinarisEV3.EV3DifferentialPilotRestClient($http);
+        ev3DifferentialPilotRestClient = $injector.get('EV3DifferentialPilotRestClient');
         $httpBackend.when('GET', '10.0.0.44:8080/run/10').respond(200, '');
         $httpBackend.when('GET', '10.0.0.44:8080/rotate/45').respond(200, '');
         $httpBackend.when('GET', '10.0.0.44:8080/beep').respond(200, '');
