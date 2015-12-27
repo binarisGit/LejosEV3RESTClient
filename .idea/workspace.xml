@@ -6,18 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f00eb5c5-39a4-40e7-a95d-9365e55d6932" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/integration/controller/EV3DifferentialPilotRestClientControllerIntegrationTest.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/integration/service/EV3DifferentialPilotRestClientIntegrationTest.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/integration/service/EV3DifferentialPilotRestClientIntegrationTest.js.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/spec/integration/EV3DifferentialPilotRestClientIntegrationTest.ts" afterPath="$PROJECT_DIR$/spec/integration/service/EV3DifferentialPilotRestClientIntegrationTest.ts" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/spec/unit/EV3DifferentialPilotRestClientControllerUnitTest.js" afterPath="$PROJECT_DIR$/spec/unit/controller/EV3DifferentialPilotRestClientControllerUnitTest.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/spec/unit/EV3DifferentialPilotRestClientControllerUnitTest.js.map" afterPath="$PROJECT_DIR$/spec/unit/controller/EV3DifferentialPilotRestClientControllerUnitTest.js.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/spec/unit/EV3DifferentialPilotRestClientControllerUnitTest.ts" afterPath="$PROJECT_DIR$/spec/unit/controller/EV3DifferentialPilotRestClientControllerUnitTest.ts" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/spec/unit/EV3DifferentialPilotRestClientUnitTest.js" afterPath="$PROJECT_DIR$/spec/unit/service/EV3DifferentialPilotRestClientUnitTest.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/spec/unit/EV3DifferentialPilotRestClientUnitTest.js.map" afterPath="$PROJECT_DIR$/spec/unit/service/EV3DifferentialPilotRestClientUnitTest.js.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/spec/unit/EV3DifferentialPilotRestClientUnitTest.ts" afterPath="$PROJECT_DIR$/spec/unit/service/EV3DifferentialPilotRestClientUnitTest.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/karma.conf.js" afterPath="$PROJECT_DIR$/karma.conf.js" />
     </list>
     <ignored path="AngularProjekt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -120,11 +110,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="karma.conf.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="karma.conf.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/karma.conf.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5143443">
-              <caret line="23" column="100" selection-start-line="23" selection-start-column="100" selection-end-line="23" selection-end-column="100" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.1053719">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -169,7 +169,6 @@
         <option value="$PROJECT_DIR$/spec/integration/ev3RestServiceIntegrationTest.js" />
         <option value="$PROJECT_DIR$/src/ev3RestService" />
         <option value="$PROJECT_DIR$/README" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/interfaces/IEV3RestClient" />
         <option value="$PROJECT_DIR$/src/ev3RestService.ts" />
         <option value="$PROJECT_DIR$/spec/integration/ev3RestServiceIntegrationTest.ts" />
@@ -189,6 +188,7 @@
         <option value="$PROJECT_DIR$/karma.conf.js" />
         <option value="$PROJECT_DIR$/spec/integration/controller/EV3DifferentialPilotRestClientControllerIntegrationTest.js" />
         <option value="$PROJECT_DIR$/spec/integration/controller/EV3DifferentialPilotRestClientControllerIntegrationTest.ts" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -350,102 +350,6 @@
               <option name="myItemId" value="spec" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="unit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EV3DifferentialPilotRestClientUnitTest.ts" />
-              <option name="myItemType" value="com.intellij.lang.typescript.compiler.ui.projectView.TypeScriptNestingTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AngularJsHttpIntegrationTests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AngularProjekt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="unit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EV3DifferentialPilotRestClientControllerUnitTest.ts" />
-              <option name="myItemType" value="com.intellij.lang.typescript.compiler.ui.projectView.TypeScriptNestingTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AngularJsHttpIntegrationTests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AngularProjekt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AngularJsHttpIntegrationTests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AngularProjekt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="integration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AngularJsHttpIntegrationTests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AngularProjekt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="integration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -457,7 +361,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value="typesc&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;terminal&#9;ACTION&#9;ActivateTerminalToolWindow&#10;EV3Differ&#9;FILE&#9;file://C:/Users/user/AngularProjekt/src/controller/EV3DifferentialPilotRestClientController.ts&#10;proje&#9;ACTION&#9;ActivateProjectToolWindow&#10;project&#9;ACTION&#9;ActivateProjectToolWindow&#10;navi&#9;ACTION&#9;ShowNavBar&#10;ter&#9;ACTION&#9;ActivateTerminalToolWindow&#10;toggle fullsc&#9;ACTION&#9;ToggleFullScreen&#10;toggle full&#9;ACTION&#9;ToggleFullScreen&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;termi&#9;ACTION&#9;ActivateTerminalToolWindow&#10;settings&#9;ACTION&#9;WelcomeScreen.Settings&#10;setting&#9;ACTION&#9;WelcomeScreen.Settings&#10;typescri&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;termin&#9;ACTION&#9;ActivateTerminalToolWindow&#10;type&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;types&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;termina&#9;ACTION&#9;ActivateTerminalToolWindow&#10;sett&#9;ACTION&#9;WelcomeScreen.Settings" />
+    <property name="SearchEverywhereHistoryKey" value="terminal&#9;ACTION&#9;ActivateTerminalToolWindow&#10;typesc&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;EV3Differ&#9;FILE&#9;file://C:/Users/user/AngularProjekt/src/controller/EV3DifferentialPilotRestClientController.ts&#10;proje&#9;ACTION&#9;ActivateProjectToolWindow&#10;project&#9;ACTION&#9;ActivateProjectToolWindow&#10;navi&#9;ACTION&#9;ShowNavBar&#10;ter&#9;ACTION&#9;ActivateTerminalToolWindow&#10;toggle fullsc&#9;ACTION&#9;ToggleFullScreen&#10;toggle full&#9;ACTION&#9;ToggleFullScreen&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;termi&#9;ACTION&#9;ActivateTerminalToolWindow&#10;settings&#9;ACTION&#9;WelcomeScreen.Settings&#10;setting&#9;ACTION&#9;WelcomeScreen.Settings&#10;typescri&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;termin&#9;ACTION&#9;ActivateTerminalToolWindow&#10;type&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;types&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;termina&#9;ACTION&#9;ActivateTerminalToolWindow&#10;sett&#9;ACTION&#9;WelcomeScreen.Settings" />
     <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs5\node.exe" />
@@ -605,9 +509,9 @@
       <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20107962" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30364373" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30364373" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4197031" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30904183" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17678812" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -618,6 +522,9 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985657" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.gitignore" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -866,13 +773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14886165">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/typings/jasmine/jasmine.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1024,8 +924,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/karma.conf.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5143443">
-          <caret line="23" column="100" selection-start-line="23" selection-start-column="100" selection-end-line="23" selection-end-column="100" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1053719">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>

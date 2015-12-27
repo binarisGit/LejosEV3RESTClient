@@ -1,7 +1,5 @@
 bower_components/
 node_modules/
-src/*.js
-src/*.js.map
-spec/integration/*.js
-spec/integration/*.js.map
+**/*.js
+**/*.js.map
 typings/
