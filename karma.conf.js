@@ -21,7 +21,7 @@ module.exports = function (config) {
             "src/services/EV3DifferentialPilotRestClient.js",
             "src/controller/EV3DifferentialPilotRestClientController.js",
             "src/App.js",
-            "spec/unit/EV3DifferentialPilotRestClientControllerUnitTest.js"
+            "spec/integration/controller/EV3DifferentialPilotRestClientControllerIntegrationTest.js"
         ],
 
 
