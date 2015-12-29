@@ -8,20 +8,21 @@ namespace BinarisEV3 {
             this.ev3DifferentialPilotRestClient = EV3DifferentialPilotRestClient;
         }
 
+        // TODO: evaluate returned promises and write according tests!
         public run(distance: number) {
-            this.ev3DifferentialPilotRestClient.run(10);
+            return this.ev3DifferentialPilotRestClient.run(10);
         }
 
         public rotate(degrees: number) {
-            this.ev3DifferentialPilotRestClient.rotate(45);
+            return this.ev3DifferentialPilotRestClient.rotate(45);
         }
 
         public buzz() {
-            this.ev3DifferentialPilotRestClient.buzz();
+            return this.ev3DifferentialPilotRestClient.buzz();
         }
 
         public beep() {
-            this.ev3DifferentialPilotRestClient.beep();
+            return this.ev3DifferentialPilotRestClient.beep();
         }
 
     }

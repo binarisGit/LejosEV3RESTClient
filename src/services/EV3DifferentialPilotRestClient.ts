@@ -8,7 +8,6 @@ namespace BinarisEV3 {
         }
 
         public run(distance: number) {
-            console.log(this.BASE_URL + '/run/' + distance);
             return this.http.get(this.BASE_URL + '/run/' + distance);
         }
 
