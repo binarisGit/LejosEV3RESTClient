@@ -19,16 +19,19 @@ describe("EV3DifferentialPilotRestClientController Integration test suite: ", fu
     // DOC
     var ev3DifferentialPilotRestClient: BinarisEV3.IDifferentialPilotRestClient;
 
+
+
     beforeEach(angular.mock.module('binarisEV3DifferentialPilot'));
 
     beforeEach(function () {
-        angular.mock.inject(function ($controller: ng.IControllerService, EV3DifferentialPilotRestClient: IDifferentialPilotRestClient) {
+        angular.mock.inject(function ($controller: ng.IControllerService, $q: any, EV3DifferentialPilotRestClient: IDifferentialPilotRestClient) {
             ev3DifferentialPilotRestClient = EV3DifferentialPilotRestClient;
 
             ev3DifferentialPilotRestClientController = $controller('EV3DifferentialPilotRestClientController', {
                 $scope: {},
                 EV3DifferentialPilotRestClient: EV3DifferentialPilotRestClient
             });
+
         });
     });
 
@@ -36,7 +39,7 @@ describe("EV3DifferentialPilotRestClientController Integration test suite: ", fu
         spyOn(ev3DifferentialPilotRestClientController, 'run').and.callThrough();
         var promise = ev3DifferentialPilotRestClientController.run(10);
 
-        expect(promise).toBeDefined(true);
+        expect(promise.then).toBeDefined();
         expect(ev3DifferentialPilotRestClientController.run).toHaveBeenCalledWith(10);
 
     });
@@ -44,21 +47,21 @@ describe("EV3DifferentialPilotRestClientController Integration test suite: ", fu
         spyOn(ev3DifferentialPilotRestClientController, 'rotate').and.callThrough();
         var promise = ev3DifferentialPilotRestClientController.rotate(45);
 
-        expect(promise).toBeDefined(true);
+        expect(promise.then).toBeDefined();
         expect(ev3DifferentialPilotRestClientController.rotate).toHaveBeenCalledWith(45);
     });
     it("should get a promise from buzz", function () {
         spyOn(ev3DifferentialPilotRestClient, 'buzz').and.callThrough();
         var promise = ev3DifferentialPilotRestClientController.buzz();
 
-        expect(promise).toBeDefined(true);
+        expect(promise.then).toBeDefined();
         expect(ev3DifferentialPilotRestClient.buzz).toHaveBeenCalled();
     });
     it("should get a promise from beep", function () {
         spyOn(ev3DifferentialPilotRestClient, 'beep').and.callThrough();
         var promise = ev3DifferentialPilotRestClientController.beep();
 
-        expect(promise).toBeDefined(true);
+        expect(promise.then).toBeDefined();
         expect(ev3DifferentialPilotRestClient.beep).toHaveBeenCalled();
     });
 
