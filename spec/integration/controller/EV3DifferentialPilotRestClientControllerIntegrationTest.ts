@@ -1,16 +1,3 @@
-/*
- WICHTIG:
- Aufgrund der "Same Origin Policy" sind HTTP-Requests auf fremde URLs nur dann erfolgreich,
- wenn im verwendeten Test-Browser ein "Cross-Origin Resource Sharing"-Plugin installiert ist.
-
- Chrome Plugin: "Allow-Control-Allow-Origin" (im Chrome Web Store)
-
- Links:
- https://de.wikipedia.org/wiki/Same-Origin-Policy
- https://de.wikipedia.org/wiki/Cross-Origin_Resource_Sharing
-
- */
-
 describe("EV3DifferentialPilotRestClientController Integration test suite: ", function () {
 
     // SUT
@@ -18,8 +5,6 @@ describe("EV3DifferentialPilotRestClientController Integration test suite: ", fu
 
     // DOC
     var ev3DifferentialPilotRestClient: BinarisEV3.IDifferentialPilotRestClient;
-
-
 
     beforeEach(angular.mock.module('binarisEV3DifferentialPilot'));
 
@@ -36,22 +21,25 @@ describe("EV3DifferentialPilotRestClientController Integration test suite: ", fu
     });
 
     it("should get a promise from run", function () {
-        spyOn(ev3DifferentialPilotRestClientController, 'run').and.callThrough();
+        spyOn(ev3DifferentialPilotRestClient, 'run').and.callThrough();
+
         var promise = ev3DifferentialPilotRestClientController.run(10);
 
         expect(promise.then).toBeDefined();
-        expect(ev3DifferentialPilotRestClientController.run).toHaveBeenCalledWith(10);
+        expect(ev3DifferentialPilotRestClient.run).toHaveBeenCalledWith(10);
 
     });
     it("should get a promise from rotate", function () {
-        spyOn(ev3DifferentialPilotRestClientController, 'rotate').and.callThrough();
+        spyOn(ev3DifferentialPilotRestClient, 'rotate').and.callThrough();
+
         var promise = ev3DifferentialPilotRestClientController.rotate(45);
 
         expect(promise.then).toBeDefined();
-        expect(ev3DifferentialPilotRestClientController.rotate).toHaveBeenCalledWith(45);
+        expect(ev3DifferentialPilotRestClient.rotate).toHaveBeenCalledWith(45);
     });
     it("should get a promise from buzz", function () {
         spyOn(ev3DifferentialPilotRestClient, 'buzz').and.callThrough();
+
         var promise = ev3DifferentialPilotRestClientController.buzz();
 
         expect(promise.then).toBeDefined();
@@ -59,6 +47,7 @@ describe("EV3DifferentialPilotRestClientController Integration test suite: ", fu
     });
     it("should get a promise from beep", function () {
         spyOn(ev3DifferentialPilotRestClient, 'beep').and.callThrough();
+
         var promise = ev3DifferentialPilotRestClientController.beep();
 
         expect(promise.then).toBeDefined();
