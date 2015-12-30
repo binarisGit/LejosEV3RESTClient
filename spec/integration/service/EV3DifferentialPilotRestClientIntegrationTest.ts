@@ -24,10 +24,8 @@ describe("Integration test suite with asynchronous HTTP Requests: ", function ()
         ev3DifferentialPilotRestClient = new BinarisEV3.EV3DifferentialPilotRestClient($http);
     });
 
-    it("should perform a REAL http-Request to the 'run'-endpoint", function () {
-        var promise = ev3DifferentialPilotRestClient.run(10);
-        console.log(promise);
-        promise.then(function successCallback(response: any) {
+    it("should perform a REAL http-Request to the 'run'-endpoint", function (done) {
+        ev3DifferentialPilotRestClient.run(10).then(function successCallback(response: any) {
             console.log('success! Robot runs!');
             expect(response.status).toBe(200);
             done();
@@ -70,3 +68,4 @@ describe("Integration test suite with asynchronous HTTP Requests: ", function ()
         });
     });
 });
+
