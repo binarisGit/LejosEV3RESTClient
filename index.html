@@ -7,37 +7,82 @@
 </head>
 
 <body>
+
 <div class="container">
-    <h1>EV3 REST-Remote</h1>
 
-    <p>
-        Benutzeroberfläche zum Steuern des EV3 LEGO Mindstorms Roboters.<br/>
-    </p>
 
-    <div class="text-center">
-        <div>
-            <img src="ev3_robot.png">
-        </div>
+    <div>
+        <h1>EV3 Remote</h1>
 
-        <button type="button" class="btn btn-default" aria-label="Left Align">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        </button>
-        <button type="button" class="btn btn-default" aria-label="Left Align">
-            laufen
-        </button>
-        <button type="button" class="btn btn-default" aria-label="Left Align">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        </button>
-        <div style="padding-top: 5px">
-            <button type="button" class="btn btn-default" aria-label="Left Align">
-                buzz
-            </button>
-            <button type="button" class="btn btn-default" aria-label="Left Align">
-                beep
-            </button>
-        </div>
-
+        <p>
+            Benutzeroberfläche zum Steuern des EV3 LEGO Mindstorms Roboters.<br/>
+        </p>
     </div>
+
+
+    <div>
+        <p>
+            <button style="width:100%;" type="button" class="btn btn-success btn-lg" aria-label="Left Align">start
+            </button>
+        </p>
+
+        <div class="panel panel-default">
+
+            <div class="panel-body text-center">
+                <p>Gebe beliebig viele Aktionen ein, die der Roboter sequenziell ausführen soll: </p>
+
+                <div>
+                    <img src="ev3_robot.png" width="150px;" height="auto">
+                </div>
+
+                <div class="text-center">
+                    <button type="button" class="btn btn-default" id="rotateLeftButton" aria-label="Left Align">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    </button>
+                    <button type="button" class="btn btn-default" aria-label="Left Align">
+                        laufen
+                    </button>
+                    <button type="button" class="btn btn-default" aria-label="Left Align">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    </button>
+                    <div style="padding-top: 5px">
+                        <button type="button" class="btn btn-default" aria-label="Left Align">
+                            buzz
+                        </button>
+                        <button type="button" class="btn btn-default" aria-label="Left Align">
+                            beep
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Table -->
+            <table class="table">
+                <tr>
+                    <th>#</th>
+                    <th>Aktion</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>laufen</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>links drehen</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>rechts drehen</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>beep</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
 </div>
 
 </body>
