@@ -4,7 +4,7 @@ describe("EV3RemoteController Integration test suite: ", function () {
     var ev3RemoteController: any;
 
     // DOC
-    var ev3DifferentialPilotRestClient: BinarisEV3.IDifferentialPilotRestClient;
+    var ev3DifferentialPilotRestClient: BinarisEV3.IDifferentialPilotAdapterService;
 
     beforeEach(angular.mock.module('binarisEV3DifferentialPilot'));
 

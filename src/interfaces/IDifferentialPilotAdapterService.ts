@@ -1,6 +1,6 @@
 namespace BinarisEV3 {
 
-    export interface IDifferentialPilotRestClient {
+    export interface IDifferentialPilotAdapterService {
         run(distance: number): any;
         rotate(degrees: number): any;
         beep(): any;

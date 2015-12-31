@@ -14,18 +14,18 @@
 describe("Integration test suite with asynchronous HTTP Requests: ", function () {
 
     // SUT
-    var ev3DifferentialPilotRestClient: BinarisEV3.IDifferentialPilotRestClient;
+    var ev3DifferentialPilotAdapterService: BinarisEV3.IDifferentialPilotAdapterService;
     var $http: any;
 
     beforeEach(function () {
         // get the REAL $http-Service, not the fake one from angular-mocks.js
         var $injector = angular.injector(['ng']);
         $http = $injector.get('$http');
-        ev3DifferentialPilotRestClient = new BinarisEV3.EV3DifferentialPilotRestClient($http);
+        ev3DifferentialPilotAdapterService = new BinarisEV3.EV3DifferentialPilotRestClient($http);
     });
 
     it("should perform a REAL http-Request to the 'run'-endpoint", function (done) {
-        ev3DifferentialPilotRestClient.run(10).then(function successCallback(response: any) {
+        ev3DifferentialPilotAdapterService.run(10).then(function successCallback(response: any) {
             console.log('success! Robot runs!');
             expect(response.status).toBe(200);
             done();
@@ -36,7 +36,7 @@ describe("Integration test suite with asynchronous HTTP Requests: ", function ()
     });
 
     it("should perform a REAL http-Request to the 'rotation'-endpoint", function (done) {
-        ev3DifferentialPilotRestClient.rotate(45).then(function successCallback(response: any) {
+        ev3DifferentialPilotAdapterService.rotate(45).then(function successCallback(response: any) {
             console.log('success! Robot rotates!');
             expect(response.status).toBe(200);
             done();
@@ -47,7 +47,7 @@ describe("Integration test suite with asynchronous HTTP Requests: ", function ()
     });
 
     it("should perform a REAL http-Request to the 'rotation'-endpoint", function (done) {
-        ev3DifferentialPilotRestClient.buzz().then(function successCallback(response: any) {
+        ev3DifferentialPilotAdapterService.buzz().then(function successCallback(response: any) {
             console.log('success! Robot buzzes!');
             expect(response.status).toBe(200);
             done();
@@ -58,7 +58,7 @@ describe("Integration test suite with asynchronous HTTP Requests: ", function ()
     });
 
     it("should perform a REAL http-Request to the 'rotation'-endpoint", function (done) {
-        ev3DifferentialPilotRestClient.beep().then(function successCallback(response: any) {
+        ev3DifferentialPilotAdapterService.beep().then(function successCallback(response: any) {
             console.log('success! Robot beeps!');
             expect(response.status).toBe(200);
             done();

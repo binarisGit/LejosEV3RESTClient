@@ -1,10 +1,10 @@
 namespace BinarisEV3 {
     export class EV3RemoteController implements IEV3RemoteController {
         private $scope: ng.IScope;
-        private ev3DifferentialPilotRestClient: IDifferentialPilotRestClient;
+        private ev3DifferentialPilotRestClient: IDifferentialPilotAdapterService;
         private actionList: Array<string> = [];
 
-        constructor($scope: ng.IScope, EV3DifferentialPilotRestClient: IDifferentialPilotRestClient) {
+        constructor($scope: ng.IScope, EV3DifferentialPilotRestClient: IDifferentialPilotAdapterService) {
             this.$scope = $scope;
             this.ev3DifferentialPilotRestClient = EV3DifferentialPilotRestClient;
         }
