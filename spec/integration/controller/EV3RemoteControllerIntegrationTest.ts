@@ -1,7 +1,7 @@
-describe("EV3DifferentialPilotRestClientController Integration test suite: ", function () {
+describe("EV3RemoteController Integration test suite: ", function () {
 
     // SUT
-    var ev3DifferentialPilotRestClientController: any;
+    var ev3RemoteController: any;
 
     // DOC
     var ev3DifferentialPilotRestClient: BinarisEV3.IDifferentialPilotRestClient;
@@ -12,7 +12,7 @@ describe("EV3DifferentialPilotRestClientController Integration test suite: ", fu
         angular.mock.inject(function ($controller: ng.IControllerService, $q: any, EV3DifferentialPilotRestClient: IDifferentialPilotRestClient) {
             ev3DifferentialPilotRestClient = EV3DifferentialPilotRestClient;
 
-            ev3DifferentialPilotRestClientController = $controller('EV3DifferentialPilotRestClientController', {
+            ev3RemoteController = $controller('EV3RemoteController', {
                 $scope: {},
                 EV3DifferentialPilotRestClient: EV3DifferentialPilotRestClient
             });
@@ -23,7 +23,7 @@ describe("EV3DifferentialPilotRestClientController Integration test suite: ", fu
     it("should get a promise from run", function () {
         spyOn(ev3DifferentialPilotRestClient, 'run').and.callThrough();
 
-        var promise = ev3DifferentialPilotRestClientController.run(10);
+        var promise = ev3RemoteController.run(10);
 
         expect(promise.then).toBeDefined();
         expect(ev3DifferentialPilotRestClient.run).toHaveBeenCalledWith(10);
@@ -32,7 +32,7 @@ describe("EV3DifferentialPilotRestClientController Integration test suite: ", fu
     it("should get a promise from rotate", function () {
         spyOn(ev3DifferentialPilotRestClient, 'rotate').and.callThrough();
 
-        var promise = ev3DifferentialPilotRestClientController.rotate(45);
+        var promise = ev3RemoteController.rotate(45);
 
         expect(promise.then).toBeDefined();
         expect(ev3DifferentialPilotRestClient.rotate).toHaveBeenCalledWith(45);
@@ -40,7 +40,7 @@ describe("EV3DifferentialPilotRestClientController Integration test suite: ", fu
     it("should get a promise from buzz", function () {
         spyOn(ev3DifferentialPilotRestClient, 'buzz').and.callThrough();
 
-        var promise = ev3DifferentialPilotRestClientController.buzz();
+        var promise = ev3RemoteController.buzz();
 
         expect(promise.then).toBeDefined();
         expect(ev3DifferentialPilotRestClient.buzz).toHaveBeenCalled();
@@ -48,7 +48,7 @@ describe("EV3DifferentialPilotRestClientController Integration test suite: ", fu
     it("should get a promise from beep", function () {
         spyOn(ev3DifferentialPilotRestClient, 'beep').and.callThrough();
 
-        var promise = ev3DifferentialPilotRestClientController.beep();
+        var promise = ev3RemoteController.beep();
 
         expect(promise.then).toBeDefined();
         expect(ev3DifferentialPilotRestClient.beep).toHaveBeenCalled();
