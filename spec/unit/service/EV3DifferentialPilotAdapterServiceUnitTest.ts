@@ -9,7 +9,7 @@ describe("Unit test suite with asynchronous HTTP Requests: ", function () {
         var $injector = angular.injector(['ng', 'ngMockE2E', 'binarisEV3DifferentialPilot']);
         // get the $httpBackend-Service MOCK from Angular Module 'ngMockE2E'
         $httpBackend = $injector.get('$httpBackend');
-        ev3DifferentialPilotAdapterService = $injector.get('EV3DifferentialPilotRestClient');
+        ev3DifferentialPilotAdapterService = $injector.get('EV3DifferentialPilotAdapterService');
 
         // define mock rest endpoints so that no http-request gets sent over the network
         $httpBackend.when('GET', '10.0.0.44:8080/run/10').respond(200, '');

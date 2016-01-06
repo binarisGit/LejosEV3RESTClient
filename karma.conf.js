@@ -51,10 +51,10 @@ module.exports = function (config) {
             "src/services/EV3DifferentialPilotAdapterService.js",
             "src/controller/EV3RemoteController.js",
             "src/App.js",
-            "spec/integration/controller/EV3RemoteControllerIntegrationTest.js",
-            "spec/integration/service/EV3AdapterServiceIntegrationTest.js",
-            "spec/unit/controller/EV3RemoteControllerUnitTest.js",
-            "spec/unit/service/EV3DifferentialPilotAdapterServiceUnitTest.js"
+            //"spec/integration/controller/EV3RemoteControllerIntegrationTest.js",
+            "spec/integration/service/EV3AdapterServiceIntegrationTest.js"
+            //"spec/unit/controller/EV3RemoteControllerUnitTest.js",
+            //"spec/unit/service/EV3DifferentialPilotAdapterServiceUnitTest.js"
         ],
 
 

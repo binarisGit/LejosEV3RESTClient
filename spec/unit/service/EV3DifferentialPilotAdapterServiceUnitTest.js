@@ -4,7 +4,7 @@ describe("Unit test suite with asynchronous HTTP Requests: ", function () {
     beforeEach(function () {
         var $injector = angular.injector(['ng', 'ngMockE2E', 'binarisEV3DifferentialPilot']);
         $httpBackend = $injector.get('$httpBackend');
-        ev3DifferentialPilotAdapterService = $injector.get('EV3DifferentialPilotRestClient');
+        ev3DifferentialPilotAdapterService = $injector.get('EV3DifferentialPilotAdapterService');
         $httpBackend.when('GET', '10.0.0.44:8080/run/10').respond(200, '');
         $httpBackend.when('GET', '10.0.0.44:8080/rotate/45').respond(200, '');
         $httpBackend.when('GET', '10.0.0.44:8080/beep').respond(200, '');
