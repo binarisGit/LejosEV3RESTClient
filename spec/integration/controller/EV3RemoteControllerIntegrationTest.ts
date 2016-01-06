@@ -4,13 +4,13 @@ describe("EV3RemoteController Integration test suite: ", function () {
     var ev3RemoteController: any;
 
     // DOC
-    var ev3DifferentialPilotRestClient: BinarisEV3.IDifferentialPilotAdapterService;
+    var ev3DifferentialPilotAdapterService: BinarisEV3.IDifferentialPilotAdapterService;
 
     beforeEach(angular.mock.module('binarisEV3DifferentialPilot'));
 
     beforeEach(function () {
-        angular.mock.inject(function ($controller: ng.IControllerService, $q: any, EV3DifferentialPilotRestClient: IDifferentialPilotRestClient) {
-            ev3DifferentialPilotRestClient = EV3DifferentialPilotRestClient;
+        angular.mock.inject(function ($controller: ng.IControllerService, $q: any, EV3DifferentialPilotRestClient: IDifferentialPilotAdapterService) {
+            ev3DifferentialPilotAdapterService = EV3DifferentialPilotRestClient;
 
             ev3RemoteController = $controller('EV3RemoteController', {
                 $scope: {},
@@ -21,37 +21,37 @@ describe("EV3RemoteController Integration test suite: ", function () {
     });
 
     it("should get a promise from run", function () {
-        spyOn(ev3DifferentialPilotRestClient, 'run').and.callThrough();
+        spyOn(ev3DifferentialPilotAdapterService, 'run').and.callThrough();
 
         var promise = ev3RemoteController.run(10);
 
         expect(promise.then).toBeDefined();
-        expect(ev3DifferentialPilotRestClient.run).toHaveBeenCalledWith(10);
+        expect(ev3DifferentialPilotAdapterService.run).toHaveBeenCalledWith(10);
 
     });
     it("should get a promise from rotate", function () {
-        spyOn(ev3DifferentialPilotRestClient, 'rotate').and.callThrough();
+        spyOn(ev3DifferentialPilotAdapterService, 'rotate').and.callThrough();
 
         var promise = ev3RemoteController.rotate(45);
 
         expect(promise.then).toBeDefined();
-        expect(ev3DifferentialPilotRestClient.rotate).toHaveBeenCalledWith(45);
+        expect(ev3DifferentialPilotAdapterService.rotate).toHaveBeenCalledWith(45);
     });
     it("should get a promise from buzz", function () {
-        spyOn(ev3DifferentialPilotRestClient, 'buzz').and.callThrough();
+        spyOn(ev3DifferentialPilotAdapterService, 'buzz').and.callThrough();
 
         var promise = ev3RemoteController.buzz();
 
         expect(promise.then).toBeDefined();
-        expect(ev3DifferentialPilotRestClient.buzz).toHaveBeenCalled();
+        expect(ev3DifferentialPilotAdapterService.buzz).toHaveBeenCalled();
     });
     it("should get a promise from beep", function () {
-        spyOn(ev3DifferentialPilotRestClient, 'beep').and.callThrough();
+        spyOn(ev3DifferentialPilotAdapterService, 'beep').and.callThrough();
 
         var promise = ev3RemoteController.beep();
 
         expect(promise.then).toBeDefined();
-        expect(ev3DifferentialPilotRestClient.beep).toHaveBeenCalled();
+        expect(ev3DifferentialPilotAdapterService.beep).toHaveBeenCalled();
     });
 
 });
