@@ -52,7 +52,7 @@ module.exports = function (config) {
             "src/controller/EV3RemoteController.js",
             "src/App.js",
             //"spec/integration/controller/EV3RemoteControllerIntegrationTest.js",
-            "spec/integration/service/EV3AdapterServiceIntegrationTest.js"
+            "spec/integration/service/EV3DifferentialPilotAdapterServiceIntegrationTest.js"
             //"spec/unit/controller/EV3RemoteControllerUnitTest.js",
             //"spec/unit/service/EV3DifferentialPilotAdapterServiceUnitTest.js"
         ],

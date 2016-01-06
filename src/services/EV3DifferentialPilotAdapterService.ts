@@ -1,7 +1,7 @@
 namespace BinarisEV3 {
     export class EV3DifferentialPilotAdapterService implements IDifferentialPilotAdapterService {
         private http: ng.IHttpService;
-        private BASE_URL: string = "http://localhost:63342/AngularJsHttpIntegrationTests/index.html";
+        private BASE_URL: string = "10.0.0";
 
         constructor($http: ng.IHttpService) {
             this.http = $http;

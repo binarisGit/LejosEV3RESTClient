@@ -2,7 +2,7 @@ var BinarisEV3;
 (function (BinarisEV3) {
     var EV3DifferentialPilotAdapterService = (function () {
         function EV3DifferentialPilotAdapterService($http) {
-            this.BASE_URL = "http://localhost:63342/AngularJsHttpIntegrationTests/index.html";
+            this.BASE_URL = "10.0.0";
             this.http = $http;
         }
         EV3DifferentialPilotAdapterService.prototype.run = function (distance) {
