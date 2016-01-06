@@ -7,7 +7,7 @@ Der Name des Repositories wird später noch umbenannt
 
 npm install -g karma jasmine
 
-bower install angular angular-mocks
+bower install angular angular-mocks bootstrap
 
 tsd install jasmine angular_mocks
 
