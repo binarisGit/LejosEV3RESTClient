@@ -39,21 +39,26 @@
                     <img src="ev3_robot.png" width="150px;" height="auto">
                 </div>
 
-                <div class="text-center">
-                    <button type="button" class="btn btn-default" id="rotateLeftButton" aria-label="Left Align">
+                <div class="text-center" ng-controller="EV3RemoteController as ev3RemoteController">
+                    <button ng-click="ev3RemoteController.rotate(-45)" type="button" class="btn btn-default"
+                            id="rotateLeftButton" aria-label="Left Align">
                         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                     </button>
-                    <button type="button" class="btn btn-default" aria-label="Left Align">
+                    <button ng-click="ev3RemoteController.run(10)" type="button" class="btn btn-default"
+                            aria-label="Left Align">
                         laufen
                     </button>
-                    <button type="button" class="btn btn-default" aria-label="Left Align">
+                    <button ng-click="ev3RemoteController.rotate(45)" type="button" class="btn btn-default"
+                            aria-label="Left Align">
                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                     </button>
                     <div style="padding-top: 5px">
-                        <button type="button" class="btn btn-default" aria-label="Left Align">
+                        <button ng-click="ev3RemoteController.buzz()" type="button" class="btn btn-default"
+                                aria-label="Left Align">
                             buzz
                         </button>
-                        <button type="button" class="btn btn-default" aria-label="Left Align">
+                        <button ng-click="ev3RemoteController.beep()" type="button" class="btn btn-default"
+                                aria-label="Left Align">
                             beep
                         </button>
                     </div>
