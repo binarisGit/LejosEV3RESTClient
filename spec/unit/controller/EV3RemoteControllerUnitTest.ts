@@ -10,12 +10,12 @@ describe("EV3RemoteController Unit Test suite: ", function () {
     beforeEach(angular.mock.module('binarisEV3DifferentialPilot'));
 
     beforeEach(function () {
-        angular.mock.inject(function ($controller: ng.IControllerService, EV3DifferentialPilotRestClient: IDifferentialPilotAdapterService) {
-            ev3DifferentialPilotAdapterService = EV3DifferentialPilotRestClient;
+        angular.mock.inject(function ($controller: ng.IControllerService, EV3DifferentialPilotAdapterService: IDifferentialPilotAdapterService) {
+            ev3DifferentialPilotAdapterService = EV3DifferentialPilotAdapterService;
 
             ev3RemoteController = $controller('EV3RemoteController', {
                 $scope: {},
-                EV3DifferentialPilotRestClient: EV3DifferentialPilotRestClient
+                EV3DifferentialPilotAdapterService: EV3DifferentialPilotAdapterService
             });
         });
     });

@@ -51,10 +51,11 @@ module.exports = function (config) {
             "src/services/EV3DifferentialPilotAdapterService.js",
             "src/controller/EV3RemoteController.js",
             "src/App.js",
-            //"spec/integration/controller/EV3RemoteControllerIntegrationTest.js",
+            "spec/unit/controller/EV3RemoteControllerUnitTest.js",
+            "spec/unit/service/EV3DifferentialPilotAdapterServiceUnitTest.js",
+            "spec/integration/controller/EV3RemoteControllerIntegrationTest.js",
+            /* will only succeed if EV3 REST-Service allows CORS */
             "spec/integration/service/EV3DifferentialPilotAdapterServiceIntegrationTest.js"
-            //"spec/unit/controller/EV3RemoteControllerUnitTest.js",
-            //"spec/unit/service/EV3DifferentialPilotAdapterServiceUnitTest.js"
         ],
 
 
