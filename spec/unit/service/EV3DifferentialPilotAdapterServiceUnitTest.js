@@ -9,6 +9,7 @@ describe("Unit test suite with asynchronous HTTP Requests: ", function () {
         $httpBackend.when('GET', '10.0.0.44:8080/rotate/45').respond(200, '');
         $httpBackend.when('GET', '10.0.0.44:8080/beep').respond(200, '');
         $httpBackend.when('GET', '10.0.0.44:8080/buzz').respond(200, '');
+        $httpBackend.when('GET', '10.0.0.44:8080/stop').respond(200, '');
     });
     it("should perform a REAL http-Request to the 'run'-endpoint and get a FAKE RESPONSE from $httpBackend mock", function (done) {
         ev3DifferentialPilotAdapterService.run(10).then(function successCallback(response) {
@@ -47,6 +48,16 @@ describe("Unit test suite with asynchronous HTTP Requests: ", function () {
             done();
         }, function errorCallback(response) {
             console.log('error... buzzing failed.');
+            done();
+        });
+    });
+    it("should perform a REAL http-Request to the 'beep'-endpoint and get a FAKE RESPONSE from $httpBackend mock", function (done) {
+        ev3DifferentialPilotAdapterService.stop().then(function successCallback(response) {
+            console.log('success! Robot stops!');
+            expect(response.status).toBe(200);
+            done();
+        }, function errorCallback(response) {
+            console.log('error... stopping failed.');
             done();
         });
     });

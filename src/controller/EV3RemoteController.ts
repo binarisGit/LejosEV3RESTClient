@@ -1,3 +1,4 @@
+
 namespace BinarisEV3 {
     export class EV3RemoteController implements IEV3RemoteController {
         private $scope: ng.IScope;

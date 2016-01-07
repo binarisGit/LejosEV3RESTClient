@@ -11,18 +11,19 @@ describe("EV3RemoteController Unit Test suite: ", function () {
             });
         });
     });
+    0, 3;
     it("should have all the properties that constitute a controller", function () {
         expect(ev3RemoteController.run).toBeDefined();
         expect(ev3RemoteController.rotate).toBeDefined();
         expect(ev3RemoteController.beep).toBeDefined();
         expect(ev3RemoteController.buzz).toBeDefined();
     });
-    it("robot should run", function () {
+    it("robot should run 10", function () {
         spyOn(ev3DifferentialPilotAdapterService, 'run');
         ev3RemoteController.run(10);
         expect(ev3DifferentialPilotAdapterService.run).toHaveBeenCalledWith(10);
     });
-    it("robot should rotate", function () {
+    it("robot should rotate right 45 degrees", function () {
         spyOn(ev3DifferentialPilotAdapterService, 'rotate');
         ev3RemoteController.rotate(45);
         expect(ev3DifferentialPilotAdapterService.rotate).toHaveBeenCalledWith(45);
