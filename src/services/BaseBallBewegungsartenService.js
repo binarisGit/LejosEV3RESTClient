@@ -3,25 +3,25 @@
  */
 var BinarisEV3;
 (function (BinarisEV3) {
-    var BaseBallBewegungsartenService = (function () {
-        function BaseBallBewegungsartenService(EV3DifferentialPilotAdapterService) {
+    var BaseBallBewegungsArtenService = (function () {
+        function BaseBallBewegungsArtenService(EV3DifferentialPilotAdapterService) {
             this.ev3DifferentialPilotAdapterService = EV3DifferentialPilotAdapterService;
         }
-        BaseBallBewegungsartenService.prototype.laufen = function (laufstrecke) {
+        BaseBallBewegungsArtenService.prototype.laufen = function (laufstrecke) {
             this.ev3DifferentialPilotAdapterService.run(laufstrecke);
         };
-        BaseBallBewegungsartenService.prototype.anhalten = function () {
+        BaseBallBewegungsArtenService.prototype.anhalten = function () {
             this.ev3DifferentialPilotAdapterService.stop();
         };
-        BaseBallBewegungsartenService.prototype.linksWenden = function () {
+        BaseBallBewegungsArtenService.prototype.linksWenden = function () {
             this.ev3DifferentialPilotAdapterService.rotate(-45);
         };
-        BaseBallBewegungsartenService.prototype.rechtsWenden = function () {
+        BaseBallBewegungsArtenService.prototype.rechtsWenden = function () {
             this.ev3DifferentialPilotAdapterService.rotate(45);
         };
-        BaseBallBewegungsartenService.IID = "BaseBallBewegungsartenService";
-        BaseBallBewegungsartenService.$inject = [BinarisEV3.EV3DifferentialPilotAdapterService.IID];
-        return BaseBallBewegungsartenService;
+        BaseBallBewegungsArtenService.IID = "BaseBallBewegungsArtenService";
+        BaseBallBewegungsArtenService.$inject = [BinarisEV3.EV3DifferentialPilotAdapterService.IID];
+        return BaseBallBewegungsArtenService;
     })();
-    BinarisEV3.BaseBallBewegungsartenService = BaseBallBewegungsartenService;
+    BinarisEV3.BaseBallBewegungsArtenService = BaseBallBewegungsArtenService;
 })(BinarisEV3 || (BinarisEV3 = {}));

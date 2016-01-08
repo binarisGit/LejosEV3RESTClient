@@ -6,18 +6,18 @@ namespace BinarisEV3 {
     export class BaseBallTrainingsUebungService implements ITrainingsUebungService {
         public TIPPEL_SCHRITT_DISTANZ: number = 1;
         public LAUF_DISTANZ_STOP_AND_GO_SEQUENZ = 10;
-        private baseBallBewegungsartenService: ISportBewegungsArtenService;
+        private baseBallBewegungsArtenService: ISportBewegungsArtenService;
 
-        static $inject = [BaseBallBewegungsartenService.IID];
+        static $inject = [BaseBallBewegungsArtenService.IID];
 
-        constructor(BaseBallBewegungsartenService: ISportBewegungsArtenService) {
-            this.baseBallBewegungsartenService = BaseBallBewegungsartenService;
+        constructor(BaseBallBewegungsArtenService: ISportBewegungsArtenService) {
+            this.baseBallBewegungsArtenService = BaseBallBewegungsArtenService;
         }
 
         public tippeln(): void {
-            this.baseBallBewegungsartenService.laufen(this.TIPPEL_SCHRITT_DISTANZ);
-            this.baseBallBewegungsartenService.laufen(-this.TIPPEL_SCHRITT_DISTANZ);
-            this.baseBallBewegungsartenService.laufen(this.TIPPEL_SCHRITT_DISTANZ);
+            this.baseBallBewegungsArtenService.laufen(this.TIPPEL_SCHRITT_DISTANZ);
+            this.baseBallBewegungsArtenService.laufen(-this.TIPPEL_SCHRITT_DISTANZ);
+            this.baseBallBewegungsArtenService.laufen(this.TIPPEL_SCHRITT_DISTANZ);
         }
 
         public stopAndGo(anzahlSequenzen: number): void {
@@ -31,16 +31,16 @@ namespace BinarisEV3 {
                 if (index++ >= anzahlSequenzen) return;
                 setTimeout(function () {
                     this.tippeln();
-                    this.baseBallBewegungsartenService.laufen(this.LAUF_DISTANZ_STOP_AND_GO_SEQUENZ);
-                    this.baseBallBewegungsartenService.anhalten();
+                    this.baseBallBewegungsArtenService.laufen(this.LAUF_DISTANZ_STOP_AND_GO_SEQUENZ);
+                    this.baseBallBewegungsArtenService.anhalten();
                     next();
                 }, 100);
             })();
         }
 
         public schlaegerSchwingen(): void {
-            this.baseBallBewegungsartenService.linksWenden();
-            this.baseBallBewegungsartenService.rechtsWenden();
+            this.baseBallBewegungsArtenService.linksWenden();
+            this.baseBallBewegungsArtenService.rechtsWenden();
         }
     }
 }

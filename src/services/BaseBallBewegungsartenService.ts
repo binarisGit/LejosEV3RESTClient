@@ -3,8 +3,8 @@
  */
 
 namespace BinarisEV3 {
-    export class BaseBallBewegungsartenService implements ISportBewegungsArtenService {
-        public static IID: string = "BaseBallBewegungsartenService";
+    export class BaseBallBewegungsArtenService implements ISportBewegungsArtenService {
+        public static IID: string = "BaseBallBewegungsArtenService";
         private ev3DifferentialPilotAdapterService: IDifferentialPilotAdapterService;
 
         static $inject = [EV3DifferentialPilotAdapterService.IID];
