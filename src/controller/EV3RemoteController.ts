@@ -5,6 +5,8 @@ namespace BinarisEV3 {
         private ev3SoundAdapterService: ISoundAdapterService;
         private actionList: Array<string> = [];
 
+        static $inject = ["$scope", "EV3DifferentialPilotAdapterService", "EV3SoundAdapterService"];
+
         constructor($scope: ng.IScope, EV3DifferentialPilotAdapterService: IDifferentialPilotAdapterService, EV3SoundAdapterService: ISoundAdapterService) {
             this.$scope = $scope;
             this.ev3DifferentialPilotAdapterService = EV3DifferentialPilotAdapterService;

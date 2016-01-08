@@ -1,0 +1,21 @@
+{
+  "name": "angularjshttpintegrationtests",
+  "version": "1.0.0",
+  "description": "Der Name des Repositories wird später noch umbenannt",
+  "main": "Gruntfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-uglify": "^0.11.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Cappin79@bitbucket.org/Cappin79/angularjshttpintegrationtests.git"
+  },
+  "author": "binaris informatik",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/Cappin79/angularjshttpintegrationtests#readme"
+}

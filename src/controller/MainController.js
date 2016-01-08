@@ -28,6 +28,7 @@ var BinarisEV3;
         MainController.prototype.e = function () {
             alert("Dieser Button ist mit keiner Implementierung belegt!");
         };
+        MainController.$inject = ["$scope", "EV3DifferentialPilotAdapterService", "EV3SoundAdapterService", "BaseBallBewegungsArtenService", "BaseBallTrainingsUebungService"];
         return MainController;
     })();
     BinarisEV3.MainController = MainController;

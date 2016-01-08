@@ -6,6 +6,8 @@ namespace BinarisEV3 {
         private baseBallBewegungsArten: ISportBewegungsArtenService;
         private baseBallTrainingsUebungService: ITrainingsUebungService;
 
+        static $inject = ["$scope", "EV3DifferentialPilotAdapterService", "EV3SoundAdapterService", "BaseBallBewegungsArtenService", "BaseBallTrainingsUebungService"];
+
         constructor($scope: ng.IScope, EV3DifferentialPilotAdapterService: IDifferentialPilotAdapterService,
                     EV3SoundAdapterService: ISoundAdapterService, BaseBallBewegungsArtenService: ISportBewegungsArtenService, BaseBallTrainingsUebungService: ITrainingsUebungService) {
             this.$scope = $scope;
