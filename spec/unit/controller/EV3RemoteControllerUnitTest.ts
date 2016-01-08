@@ -47,6 +47,7 @@ describe("EV3RemoteController Unit Test suite: ", function () {
         ev3RemoteController.addAction('laufen');
         expect(ev3RemoteController.getNumberOfActions()).toBe(1);
     });
+
     it('action list should contain two elements after adding two actions', function () {
         ev3RemoteController.addAction('laufen');
         ev3RemoteController.addAction('linksDrehen');

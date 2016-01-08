@@ -14,6 +14,8 @@ var BinarisEV3;
         EV3DifferentialPilotAdapterService.prototype.stop = function () {
             return this.http.get(this.BASE_URL + '/stop');
         };
+        EV3DifferentialPilotAdapterService.IID = "EV3DifferentialPilotAdapterService";
+        EV3DifferentialPilotAdapterService.$inject = ["$http"];
         return EV3DifferentialPilotAdapterService;
     })();
     BinarisEV3.EV3DifferentialPilotAdapterService = EV3DifferentialPilotAdapterService;

@@ -11,6 +11,8 @@ var BinarisEV3;
         EV3SoundAdapterService.prototype.beep = function () {
             return this.http.get(this.BASE_URL + '/beep');
         };
+        EV3SoundAdapterService.IID = "EV3SoundAdapterService";
+        EV3SoundAdapterService.$inject = ["$http"];
         return EV3SoundAdapterService;
     })();
     BinarisEV3.EV3SoundAdapterService = EV3SoundAdapterService;
