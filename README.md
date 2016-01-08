@@ -9,5 +9,9 @@ npm install -g karma jasmine
 
 bower install angular angular-mocks bootstrap
 
-tsd install jasmine angular_mocks
+(falls tsd noch nicht global installiert, vorher "npm install -g tsd" eingeben)
+
+tsd install jasmine
+
+tsd install angular_mocks
 
