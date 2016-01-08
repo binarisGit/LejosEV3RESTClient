@@ -11,12 +11,6 @@ var BinarisEV3;
         EV3DifferentialPilotAdapterService.prototype.rotate = function (degrees) {
             return this.http.get(this.BASE_URL + '/rotate/' + degrees);
         };
-        EV3DifferentialPilotAdapterService.prototype.buzz = function () {
-            return this.http.get(this.BASE_URL + '/buzz');
-        };
-        EV3DifferentialPilotAdapterService.prototype.beep = function () {
-            return this.http.get(this.BASE_URL + '/beep');
-        };
         EV3DifferentialPilotAdapterService.prototype.stop = function () {
             return this.http.get(this.BASE_URL + '/stop');
         };

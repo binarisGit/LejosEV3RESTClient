@@ -1,6 +1,3 @@
-
-
-
 describe("EV3RemoteController Integration test suite: ", function () {
 
     // SUT
@@ -39,22 +36,6 @@ describe("EV3RemoteController Integration test suite: ", function () {
 
         expect(promise.then).toBeDefined();
         expect(ev3DifferentialPilotAdapterService.rotate).toHaveBeenCalledWith(45);
-    });
-    it("should get a promise from buzz", function () {
-        spyOn(ev3DifferentialPilotAdapterService, 'buzz').and.callThrough();
-
-        var promise = ev3RemoteController.buzz();
-
-        expect(promise.then).toBeDefined();
-        expect(ev3DifferentialPilotAdapterService.buzz).toHaveBeenCalled();
-    });
-    it("should get a promise from beep", function () {
-        spyOn(ev3DifferentialPilotAdapterService, 'beep').and.callThrough();
-
-        var promise = ev3RemoteController.beep();
-
-        expect(promise.then).toBeDefined();
-        expect(ev3DifferentialPilotAdapterService.beep).toHaveBeenCalled();
     });
 
 });

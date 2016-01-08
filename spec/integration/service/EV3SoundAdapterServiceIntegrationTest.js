@@ -14,34 +14,24 @@
  https://de.wikipedia.org/wiki/Cross-Origin_Resource_Sharing
 
  */
-
-describe("Integration test suite with asynchronous HTTP Requests: ", function () {
-
-    // SUT
-    var ev3DifferentialPilotAdapterService: BinarisEV3.IDifferentialPilotAdapterService;
-    var $http: any;
-
+describe("EV3SoundAdapterService Integration test suite with asynchronous HTTP Requests: ", function () {
+    var ev3SoundAdapterService;
+    var $http;
     beforeEach(function () {
-        // get the REAL $http-Service, not the fake one from angular-mocks.js
         var $injector = angular.injector(['ng']);
         $http = $injector.get('$http');
-        ev3DifferentialPilotAdapterService = new BinarisEV3.EV3DifferentialPilotAdapterService($http);
+        ev3SoundAdapterService = new BinarisEV3.EV3SoundAdapterService($http);
     });
-
-    it("should perform a REAL http-Request to the 'run'-endpoint", function (done) {
-        var promise = ev3DifferentialPilotAdapterService.run(10);
-        promise.then(function successCallback(response: any) {
+    it("should perform a REAL http-Request to the 'buzz'-endpoint", function (done) {
+        ev3SoundAdapterService.buzz().then(function successCallback(response) {
             expect(response.status).toBe(200);
             done();
         });
     });
-
-    it("should perform a REAL http-Request to the 'rotation'-endpoint", function (done) {
-        ev3DifferentialPilotAdapterService.rotate(45).then(function successCallback(response: any) {
+    it("should perform a REAL http-Request to the 'beep'-endpoint", function (done) {
+        ev3SoundAdapterService.beep().then(function successCallback(response) {
             expect(response.status).toBe(200);
             done();
         });
     });
-
 });
-

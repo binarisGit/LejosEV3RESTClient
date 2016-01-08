@@ -35,16 +35,4 @@ describe("Integration test suite with asynchronous HTTP Requests: ", function ()
             done();
         });
     });
-    it("should perform a REAL http-Request to the 'buzz'-endpoint", function (done) {
-        ev3DifferentialPilotAdapterService.buzz().then(function successCallback(response) {
-            expect(response.status).toBe(200);
-            done();
-        });
-    });
-    it("should perform a REAL http-Request to the 'beep'-endpoint", function (done) {
-        ev3DifferentialPilotAdapterService.beep().then(function successCallback(response) {
-            expect(response.status).toBe(200);
-            done();
-        });
-    });
 });

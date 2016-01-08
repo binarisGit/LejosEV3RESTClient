@@ -1,10 +1,11 @@
 var BinarisEV3;
 (function (BinarisEV3) {
     var EV3RemoteController = (function () {
-        function EV3RemoteController($scope, EV3DifferentialPilotAdapterService) {
+        function EV3RemoteController($scope, EV3DifferentialPilotAdapterService, EV3SoundAdapterService) {
             this.actionList = [];
             this.$scope = $scope;
             this.ev3DifferentialPilotAdapterService = EV3DifferentialPilotAdapterService;
+            this.ev3SoundAdapterService = EV3SoundAdapterService;
         }
         EV3RemoteController.prototype.run = function (distance) {
             console.log("controller: run");
@@ -16,11 +17,11 @@ var BinarisEV3;
         };
         EV3RemoteController.prototype.buzz = function () {
             console.log("controller: buzz");
-            return this.ev3DifferentialPilotAdapterService.buzz();
+            return this.ev3SoundAdapterService.buzz();
         };
         EV3RemoteController.prototype.beep = function () {
             console.log("controller: beep");
-            return this.ev3DifferentialPilotAdapterService.beep();
+            return this.ev3SoundAdapterService.beep();
         };
         EV3RemoteController.prototype.getNumberOfActions = function () {
             return this.actionList.length;

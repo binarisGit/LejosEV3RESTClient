@@ -16,14 +16,6 @@ namespace BinarisEV3 {
             return this.http.get(this.BASE_URL + '/rotate/' + degrees);
         }
 
-        public buzz() {
-            return this.http.get(this.BASE_URL + '/buzz');
-        }
-
-        public beep() {
-            return this.http.get(this.BASE_URL + '/beep');
-        }
-
         public stop() {
             return this.http.get(this.BASE_URL + '/stop');
         }

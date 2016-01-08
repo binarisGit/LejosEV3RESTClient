@@ -1,4 +1,5 @@
 import IDifferentialPilotAdapterService = BinarisEV3.IDifferentialPilotAdapterService;
+import ISoundAdapterService = BinarisEV3.ISoundAdapterService;
 describe("EV3RemoteController Unit Test suite: ", function () {
 
     // SUT
@@ -6,20 +7,23 @@ describe("EV3RemoteController Unit Test suite: ", function () {
 
     // DOC
     var ev3DifferentialPilotAdapterService: BinarisEV3.IDifferentialPilotAdapterService;
+    var ev3SoundAdapterService: BinarisEV3.ISoundAdapterService;
 
     beforeEach(angular.mock.module('binarisEV3DifferentialPilot'));
 
     beforeEach(function () {
-        angular.mock.inject(function ($controller: ng.IControllerService, EV3DifferentialPilotAdapterService: IDifferentialPilotAdapterService) {
+        angular.mock.inject(function ($controller: ng.IControllerService, EV3DifferentialPilotAdapterService: IDifferentialPilotAdapterService, EV3SoundAdapterService: ISoundAdapterService) {
             ev3DifferentialPilotAdapterService = EV3DifferentialPilotAdapterService;
+            ev3SoundAdapterService = EV3SoundAdapterService;
 
             ev3RemoteController = $controller('EV3RemoteController', {
                 $scope: {},
-                EV3DifferentialPilotAdapterService: EV3DifferentialPilotAdapterService
+                EV3DifferentialPilotAdapterService: EV3DifferentialPilotAdapterService,
+                EV3SoundAdapterService: EV3SoundAdapterService
             });
         });
     });
-0,3
+
     it("should have all the properties that constitute a controller", function () {
         expect(ev3RemoteController.run).toBeDefined();
         expect(ev3RemoteController.rotate).toBeDefined();
@@ -37,18 +41,6 @@ describe("EV3RemoteController Unit Test suite: ", function () {
         spyOn(ev3DifferentialPilotAdapterService, 'rotate');
         ev3RemoteController.rotate(45);
         expect(ev3DifferentialPilotAdapterService.rotate).toHaveBeenCalledWith(45);
-    });
-
-    it("robot should beep", function () {
-        spyOn(ev3DifferentialPilotAdapterService, 'beep');
-        ev3RemoteController.beep();
-        expect(ev3DifferentialPilotAdapterService.beep).toHaveBeenCalled();
-    });
-
-    it("robot should buzz", function () {
-        spyOn(ev3DifferentialPilotAdapterService, 'buzz');
-        ev3RemoteController.buzz();
-        expect(ev3DifferentialPilotAdapterService.buzz).toHaveBeenCalled();
     });
 
     it('action list should contain a single element after adding an action', function () {
