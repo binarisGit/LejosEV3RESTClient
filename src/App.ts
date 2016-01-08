@@ -3,5 +3,6 @@ namespace BinarisEV3 {
     ev3DifferentialPilotModule.service('EV3DifferentialPilotAdapterService', EV3DifferentialPilotAdapterService);
     ev3DifferentialPilotModule.service('EV3SoundAdapterService', EV3SoundAdapterService);
     ev3DifferentialPilotModule.service('BaseBallBewegungsartenService', BaseBallBewegungsartenService);
+    ev3DifferentialPilotModule.service('BaseBallAktionenService', BaseBallAktionenService);
     ev3DifferentialPilotModule.controller('EV3RemoteController', EV3RemoteController);
 }
