@@ -1,32 +1,24 @@
 /**
  * Created by Christian on 08.01.2016.
  */
-
-namespace BinarisEV3 {
-    export class BaseBallTrainingsUebung implements ITrainingsUebung {
-        public TIPPEL_SCHRITT_DISTANZ: number = 1;
-        public LAUF_DISTANZ_STOP_AND_GO_SEQUENZ = 10;
-        private baseBallBewegungsartenService: ISportBewegungsArtenService;
-
-        constructor(BaseBallBewegungsartenService: ISportBewegungsArtenService) {
+var BinarisEV3;
+(function (BinarisEV3) {
+    var BaseBallTrainingsUebungService = (function () {
+        function BaseBallTrainingsUebungService(BaseBallBewegungsartenService) {
+            this.TIPPEL_SCHRITT_DISTANZ = 1;
+            this.LAUF_DISTANZ_STOP_AND_GO_SEQUENZ = 10;
             this.baseBallBewegungsartenService = BaseBallBewegungsartenService;
         }
-
-        public tippeln(): void {
+        BaseBallTrainingsUebungService.prototype.tippeln = function () {
             this.baseBallBewegungsartenService.laufen(this.TIPPEL_SCHRITT_DISTANZ);
             this.baseBallBewegungsartenService.laufen(-this.TIPPEL_SCHRITT_DISTANZ);
             this.baseBallBewegungsartenService.laufen(this.TIPPEL_SCHRITT_DISTANZ);
-        }
-
-        public stopAndGo(anzahlSequenzen: number): void {
-            /*
-             Since there is no easy way to delay execution in JavaScript, we need a
-             self-invoking, recursive function:
-             http://patrickmuff.ch/blog/2014/03/12/for-loop-with-delay-in-javascript/
-             */
+        };
+        BaseBallTrainingsUebungService.prototype.stopAndGo = function (anzahlSequenzen) {
             var index = 0;
             (function next() {
-                if (index++ >= anzahlSequenzen) return;
+                if (index++ >= anzahlSequenzen)
+                    return;
                 setTimeout(function () {
                     this.tippeln();
                     this.baseBallBewegungsartenService.laufen(this.LAUF_DISTANZ_STOP_AND_GO_SEQUENZ);
@@ -34,11 +26,12 @@ namespace BinarisEV3 {
                     next();
                 }, 100);
             })();
-        }
-
-        public schlaegerSchwingen(): void {
+        };
+        BaseBallTrainingsUebungService.prototype.schlaegerSchwingen = function () {
             this.baseBallBewegungsartenService.linksWenden();
             this.baseBallBewegungsartenService.rechtsWenden();
-        }
-    }
-}
+        };
+        return BaseBallTrainingsUebungService;
+    })();
+    BinarisEV3.BaseBallTrainingsUebungService = BaseBallTrainingsUebungService;
+})(BinarisEV3 || (BinarisEV3 = {}));

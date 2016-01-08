@@ -5,5 +5,6 @@ var BinarisEV3;
     ev3DifferentialPilotModule.service('EV3SoundAdapterService', BinarisEV3.EV3SoundAdapterService);
     ev3DifferentialPilotModule.service('BaseBallBewegungsartenService', BinarisEV3.BaseBallBewegungsartenService);
     ev3DifferentialPilotModule.service('BaseBallAktionenService', BinarisEV3.BaseBallAktionenService);
+    ev3DifferentialPilotModule.service('BaseBallTrainingsUebungService', BinarisEV3.BaseBallTrainingsUebungService);
     ev3DifferentialPilotModule.controller('EV3RemoteController', BinarisEV3.EV3RemoteController);
 })(BinarisEV3 || (BinarisEV3 = {}));
