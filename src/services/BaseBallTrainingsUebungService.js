@@ -5,8 +5,8 @@ var BinarisEV3;
 (function (BinarisEV3) {
     var BaseBallTrainingsUebungService = (function () {
         function BaseBallTrainingsUebungService(BaseBallBewegungsArtenService) {
-            this.TIPPEL_SCHRITT_DISTANZ = 1;
-            this.LAUF_DISTANZ_STOP_AND_GO_SEQUENZ = 10;
+            this.TIPPEL_SCHRITT_DISTANZ = 4;
+            this.LAUF_DISTANZ_STOP_AND_GO_SEQUENZ = 20;
             this.baseBallBewegungsArtenService = BaseBallBewegungsArtenService;
         }
         BaseBallTrainingsUebungService.prototype.tippeln = function () {
@@ -15,17 +15,9 @@ var BinarisEV3;
             this.baseBallBewegungsArtenService.laufen(this.TIPPEL_SCHRITT_DISTANZ);
         };
         BaseBallTrainingsUebungService.prototype.stopAndGo = function (anzahlSequenzen) {
-            var index = 0;
-            (function next() {
-                if (index++ >= anzahlSequenzen)
-                    return;
-                setTimeout(function () {
-                    this.tippeln();
-                    this.baseBallBewegungsArtenService.laufen(this.LAUF_DISTANZ_STOP_AND_GO_SEQUENZ);
-                    this.baseBallBewegungsArtenService.anhalten();
-                    next();
-                }, 100);
-            })();
+            this.tippeln();
+            this.baseBallBewegungsArtenService.laufen(this.LAUF_DISTANZ_STOP_AND_GO_SEQUENZ);
+            this.tippeln();
         };
         BaseBallTrainingsUebungService.prototype.schlaegerSchwingen = function () {
             this.baseBallBewegungsArtenService.linksWenden();

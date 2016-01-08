@@ -9,6 +9,7 @@ var BinarisEV3;
             return this.http.get(this.BASE_URL + '/run/' + distance);
         };
         EV3DifferentialPilotAdapterService.prototype.rotate = function (degrees) {
+            console.log("rotate");
             return this.http.get(this.BASE_URL + '/rotate/' + degrees);
         };
         EV3DifferentialPilotAdapterService.prototype.stop = function () {

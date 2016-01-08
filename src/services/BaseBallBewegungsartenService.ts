@@ -22,10 +22,13 @@ namespace BinarisEV3 {
         }
 
         public linksWenden(): void {
-            this.ev3DifferentialPilotAdapterService.rotate(-45);
+            console.log("links wenden");
+            var promise = this.ev3DifferentialPilotAdapterService.rotate(-45);
+
         }
 
         public rechtsWenden(): void {
+            console.log("rechts wenden");
             this.ev3DifferentialPilotAdapterService.rotate(45);
         }
     }

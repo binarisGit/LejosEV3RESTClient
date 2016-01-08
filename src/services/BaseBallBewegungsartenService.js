@@ -14,9 +14,11 @@ var BinarisEV3;
             this.ev3DifferentialPilotAdapterService.stop();
         };
         BaseBallBewegungsArtenService.prototype.linksWenden = function () {
-            this.ev3DifferentialPilotAdapterService.rotate(-45);
+            console.log("links wenden");
+            var promise = this.ev3DifferentialPilotAdapterService.rotate(-45);
         };
         BaseBallBewegungsArtenService.prototype.rechtsWenden = function () {
+            console.log("rechts wenden");
             this.ev3DifferentialPilotAdapterService.rotate(45);
         };
         BaseBallBewegungsArtenService.IID = "BaseBallBewegungsArtenService";

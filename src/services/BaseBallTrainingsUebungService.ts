@@ -4,8 +4,8 @@
 
 namespace BinarisEV3 {
     export class BaseBallTrainingsUebungService implements ITrainingsUebungService {
-        public TIPPEL_SCHRITT_DISTANZ: number = 1;
-        public LAUF_DISTANZ_STOP_AND_GO_SEQUENZ = 10;
+        public TIPPEL_SCHRITT_DISTANZ: number = 4;
+        public LAUF_DISTANZ_STOP_AND_GO_SEQUENZ = 20;
         private baseBallBewegungsArtenService: ISportBewegungsArtenService;
 
         static $inject = [BaseBallBewegungsArtenService.IID];
@@ -26,16 +26,22 @@ namespace BinarisEV3 {
              self-invoking, recursive function:
              http://patrickmuff.ch/blog/2014/03/12/for-loop-with-delay-in-javascript/
              */
-            var index = 0;
-            (function next() {
-                if (index++ >= anzahlSequenzen) return;
-                setTimeout(function () {
-                    this.tippeln();
-                    this.baseBallBewegungsArtenService.laufen(this.LAUF_DISTANZ_STOP_AND_GO_SEQUENZ);
-                    this.baseBallBewegungsArtenService.anhalten();
-                    next();
-                }, 100);
-            })();
+            this.tippeln();
+            //this.baseBallBewegungsArtenService.anhalten();
+            this.baseBallBewegungsArtenService.laufen(this.LAUF_DISTANZ_STOP_AND_GO_SEQUENZ);
+            this.tippeln();
+            //this.baseBallBewegungsArtenService.laufen(this.LAUF_DISTANZ_STOP_AND_GO_SEQUENZ);
+            /*
+             var index = 0;
+             (function next() {
+             if (index++ >= anzahlSequenzen) return;
+             setTimeout(function () {
+             //this.tippeln();
+             this.baseBallBewegungsArtenService.laufen(this.LAUF_DISTANZ_STOP_AND_GO_SEQUENZ);
+             this.baseBallBewegungsArtenService.anhalten();
+             next();
+             }, 100);
+             })()*/
         }
 
         public schlaegerSchwingen(): void {

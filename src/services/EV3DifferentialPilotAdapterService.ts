@@ -16,6 +16,7 @@ namespace BinarisEV3 {
         }
 
         public rotate(degrees: number) {
+            console.log("rotate");
             return this.http.get(this.BASE_URL + '/rotate/' + degrees);
         }
 

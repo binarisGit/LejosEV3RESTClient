@@ -8,13 +8,15 @@
     <script src="src/services/EV3DifferentialPilotAdapterService.js"></script>
     <script src="src/services/EV3SoundAdapterService.js"></script>
     <script src="src/controller/EV3RemoteController.js"></script>
+    <script src="src/services/BaseBallBewegungsArtenService.js"></script>
+    <script src="src/services/BaseBallTrainingsUebungService.js"></script>
+    <script src="src/controller/MainController.js"></script>
     <script src="src/App.js"></script>
 </head>
 
 <body>
 
 <div class="container" style="max-width: 500px;">
-
 
     <div>
         <h1>EV3 Remote</h1>
@@ -26,6 +28,10 @@
 
 
     <div>
+        <p>
+            <button style="width:100%;" type="button" class="btn btn-default btn-lg" aria-label="Left Align">tippeln
+            </button>
+        </p>
         <p>
             <button style="width:100%;" type="button" class="btn btn-success btn-lg" aria-label="Left Align">start
             </button>
@@ -63,6 +69,33 @@
                             beep
                         </button>
                     </div>
+
+                    <!-- eigene Methoden -->
+                    <div ng-controller="MainController as mainController">
+                        <p>
+                            <button ng-click="mainController.a()" type="button" class="btn btn-danger"
+                                    aria-label="Left Align">
+                                A
+                            </button>
+                            <button ng-click="mainController.b()" type="button" class="btn btn-danger"
+                                    aria-label="Left Align">
+                                B
+                            </button>
+                            <button ng-click="mainController.c()" type="button" class="btn btn-danger"
+                                    aria-label="Left Align">
+                                C
+                            </button>
+                            <button ng-click="mainController.d()" type="button" class="btn btn-danger"
+                                    aria-label="Left Align">
+                                D
+                            </button>
+                            <button ng-click="mainController.e()" type="button" class="btn btn-danger"
+                                    aria-label="Left Align">
+                                E
+                            </button>
+                        </p>
+                    </div>
+
                 </div>
             </div>
 

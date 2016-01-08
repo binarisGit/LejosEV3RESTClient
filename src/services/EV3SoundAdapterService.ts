@@ -12,11 +12,11 @@ namespace BinarisEV3 {
         }
 
         public buzz() {
-            return this.http.get(this.BASE_URL + '/buzz');
+            return this.http.get(this.BASE_URL + '/buzz',{ timeout: 500 });
         }
 
         public beep() {
-            return this.http.get(this.BASE_URL + '/beep');
+            return this.http.get(this.BASE_URL + '/beep',{ timeout: 500 });
         }
     }
 }

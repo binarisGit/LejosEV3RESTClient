@@ -29,7 +29,7 @@ describe("Unit test suite with asynchronous HTTP Requests: ", function () {
             done();
         });
     });
-    it("should perform a REAL http-Request to the 'beep'-endpoint and get a FAKE RESPONSE from $httpBackend mock", function (done) {
+    it("should perform a REAL http-Request to the 'stop'-endpoint and get a FAKE RESPONSE from $httpBackend mock", function (done) {
         ev3DifferentialPilotAdapterService.stop().then(function successCallback(response) {
             console.log('success! Robot stops!');
             expect(response.status).toBe(200);

@@ -6,10 +6,10 @@ var BinarisEV3;
             this.http = $http;
         }
         EV3SoundAdapterService.prototype.buzz = function () {
-            return this.http.get(this.BASE_URL + '/buzz');
+            return this.http.get(this.BASE_URL + '/buzz', { timeout: 500 });
         };
         EV3SoundAdapterService.prototype.beep = function () {
-            return this.http.get(this.BASE_URL + '/beep');
+            return this.http.get(this.BASE_URL + '/beep', { timeout: 500 });
         };
         EV3SoundAdapterService.IID = "EV3SoundAdapterService";
         EV3SoundAdapterService.$inject = ["$http"];
