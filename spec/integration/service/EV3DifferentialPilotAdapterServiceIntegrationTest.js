@@ -17,10 +17,12 @@
 describe("Integration test suite with asynchronous HTTP Requests: ", function () {
     var ev3DifferentialPilotAdapterService;
     var $http;
+    var $timeout;
     beforeEach(function () {
         var $injector = angular.injector(['ng']);
         $http = $injector.get('$http');
-        ev3DifferentialPilotAdapterService = new BinarisEV3.EV3DifferentialPilotAdapterService($http);
+        $timeout = $injector.get('$timeout');
+        ev3DifferentialPilotAdapterService = new BinarisEV3.EV3DifferentialPilotAdapterService($http, $timeout);
     });
     it("should perform a REAL http-Request to the 'run'-endpoint", function (done) {
         var promise = ev3DifferentialPilotAdapterService.run(10);

@@ -25,15 +25,18 @@ namespace BinarisEV3 {
          */
 
         public a() {
-            // es treten probleme auf, wenn der roboter erst vorwärs, dann rückwärts fährt!
+            this.ev3DifferentialPilotAdapterService.resetHttpSendDelay();
+
             this.ev3DifferentialPilotAdapterService.run(5);
             this.ev3DifferentialPilotAdapterService.run(-5);
+            this.ev3DifferentialPilotAdapterService.run(5);
         }
 
         public b() {
             // es treten probleme auf, wenn der roboter erst vorwärts fährt und sich dann dreht!
             this.baseBallBewegungsArten.laufen(5);
             this.baseBallBewegungsArten.linksWenden();
+            this.baseBallBewegungsArten.laufen(5);
         }
 
         public c() {

@@ -20,12 +20,14 @@ describe("Integration test suite with asynchronous HTTP Requests: ", function ()
     // SUT
     var ev3DifferentialPilotAdapterService: BinarisEV3.IDifferentialPilotAdapterService;
     var $http: any;
+    var $timeout: any;
 
     beforeEach(function () {
         // get the REAL $http-Service, not the fake one from angular-mocks.js
         var $injector = angular.injector(['ng']);
         $http = $injector.get('$http');
-        ev3DifferentialPilotAdapterService = new BinarisEV3.EV3DifferentialPilotAdapterService($http);
+        $timeout = $injector.get('$timeout');
+        ev3DifferentialPilotAdapterService = new BinarisEV3.EV3DifferentialPilotAdapterService($http, $timeout);
     });
 
     it("should perform a REAL http-Request to the 'run'-endpoint", function (done) {

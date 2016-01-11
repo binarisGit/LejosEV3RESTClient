@@ -9,12 +9,15 @@ var BinarisEV3;
             this.baseBallTrainingsUebungService = BaseBallTrainingsUebungService;
         }
         MainController.prototype.a = function () {
+            this.ev3DifferentialPilotAdapterService.resetHttpSendDelay();
             this.ev3DifferentialPilotAdapterService.run(5);
             this.ev3DifferentialPilotAdapterService.run(-5);
+            this.ev3DifferentialPilotAdapterService.run(5);
         };
         MainController.prototype.b = function () {
             this.baseBallBewegungsArten.laufen(5);
             this.baseBallBewegungsArten.linksWenden();
+            this.baseBallBewegungsArten.laufen(5);
         };
         MainController.prototype.c = function () {
             this.baseBallBewegungsArten.linksWenden();

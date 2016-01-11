@@ -1,6 +1,7 @@
 var BinarisEV3;
 (function (BinarisEV3) {
     var ev3DifferentialPilotModule = angular.module('binarisEV3DifferentialPilot', []);
+    ev3DifferentialPilotModule.service('DelayedHttpService', BinarisEV3.DelayedHttpService);
     ev3DifferentialPilotModule.service('EV3DifferentialPilotAdapterService', BinarisEV3.EV3DifferentialPilotAdapterService);
     ev3DifferentialPilotModule.service('EV3SoundAdapterService', BinarisEV3.EV3SoundAdapterService);
     ev3DifferentialPilotModule.service('BaseBallBewegungsArtenService', BinarisEV3.BaseBallBewegungsArtenService);
