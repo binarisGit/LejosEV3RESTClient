@@ -29,6 +29,7 @@ var BinarisEV3;
         EV3RemoteController.prototype.addAction = function (action) {
             this.actionList.push(action);
         };
+        EV3RemoteController.$inject = ["$scope", "EV3DifferentialPilotAdapterService", "EV3SoundAdapterService"];
         return EV3RemoteController;
     })();
     BinarisEV3.EV3RemoteController = EV3RemoteController;
