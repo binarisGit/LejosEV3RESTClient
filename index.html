@@ -5,13 +5,13 @@
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
     <script src="bower_components/angular/angular.js"></script>
-    <script src="src/services/DelayedHttpService.js"></script>
-    <script src="src/services/EV3DifferentialPilotAdapterService.js"></script>
-    <script src="src/services/EV3SoundAdapterService.js"></script>
-    <script src="src/services/BaseBallBewegungsartenService.js"></script>
-    <script src="src/services/BaseBallTrainingsUebungService.js"></script>
-    <script src="src/controller/EV3RemoteController.js"></script>
-    <script src="src/controller/MainController.js"></script>
+    <script src="src/angular_services/DelayedHttpService.js"></script>
+    <script src="src/angular_services/EV3DifferentialPilotAdapterService.js"></script>
+    <script src="src/angular_services/EV3SoundAdapterService.js"></script>
+    <script src="src/angular_services/BaseBallBewegungsartenService.js"></script>
+    <script src="src/angular_services/BaseBallTrainingsUebungService.js"></script>
+    <script src="src/angular_controllers/EV3RemoteController.js"></script>
+    <script src="src/angular_controllers/MainController.js"></script>
     <script src="src/App.js"></script>
 </head>
 
@@ -74,11 +74,13 @@
                     <!-- eigene Methoden -->
                     <div ng-controller="MainController as mainController">
                         <p>
-                            <button ng-click="mainController.executeCustomActionMethod(1)" type="button" class="btn btn-danger"
+                            <button ng-click="mainController.executeCustomActionMethod(1)" type="button"
+                                    class="btn btn-danger"
                                     aria-label="Left Align">
                                 A
                             </button>
-                            <button ng-click="mainController.executeCustomActionMethod(2)" type="button" class="btn btn-danger"
+                            <button ng-click="mainController.executeCustomActionMethod(2)" type="button"
+                                    class="btn btn-danger"
                                     aria-label="Left Align">
                                 B
                             </button>

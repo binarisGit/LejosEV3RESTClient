@@ -48,17 +48,17 @@ module.exports = function (config) {
             // since we are performing INTEGRATIONS tests angular-mocks.js is not needed!
             "bower_components/angular/angular.js",
             "bower_components/angular-mocks/angular-mocks.js",
-            "src/services/EV3DifferentialPilotAdapterService.js",
-            "src/services/EV3SoundAdapterService.js",
+            "src/angular_services/DelayedHttpService.js",
+            "src/angular_services/EV3DifferentialPilotAdapterService.js",
+            "src/angular_services/EV3SoundAdapterService.js",
+            "src/angular_controllers/EV3RemoteController.js",
             "src/App.js",
-            //"spec/unit/controller/EV3RemoteControllerUnitTest.js",
-            //"spec/unit/service/EV3DifferentialPilotAdapterServiceUnitTest.js",
-            //"spec/unit/service/EV3SoundAdapterServiceUnitTest.js",
-            //"spec/integration/controller/EV3RemoteControllerIntegrationTest.js",
-            //"spec/unit/service/BaseBallTrainingsUebungServiceUnitTest.js"
+            "spec/unit/controller/EV3RemoteControllerUnitTest.js",
+            "spec/unit/service/DelayedHttpServiceUnitTest.js",
             /* will only succeed if EV3 REST-Service allows CORS */
-            //"spec/integration/service/EV3DifferentialPilotAdapterServiceIntegrationTest.js",
-            //"spec/integration/service/EV3SoundAdapterServiceIntegrationTest.js",
+            "spec/integration/controller/EV3RemoteControllerIntegrationTest.js",
+            "spec/integration/service/EV3DifferentialPilotAdapterServiceIntegrationTest.js",
+            "spec/integration/service/EV3SoundAdapterServiceIntegrationTest.js",
         ],
 
 

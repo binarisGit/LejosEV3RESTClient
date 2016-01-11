@@ -20,7 +20,7 @@ namespace BinarisEV3 {
             this.delay = this.delay + 1000;
 
             var http = this.http;
-            this.timeout(function () {
+            return this.timeout(function () {
                 return http.get(url);
             }, this.delay);
         }

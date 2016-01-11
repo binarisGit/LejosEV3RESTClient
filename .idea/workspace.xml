@@ -20,114 +20,7 @@
     <favorites_list name="AngularProjekt" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainController.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/controller/MainController.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.54269004">
-              <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ISoundAdapterService.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/interfaces/ISoundAdapterService.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseBallBewegungsartenService.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/services/BaseBallBewegungsartenService.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="75" selection-start-line="24" selection-start-column="75" selection-end-line="24" selection-end-column="75" />
-              <folding>
-                <element signature="n#!!doc;n#BinarisEV3#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.7272725">
-              <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseBallTrainingsUebungService.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/services/BaseBallTrainingsUebungService.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="57" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
-              <folding>
-                <element signature="n#!!doc;n#BinarisEV3#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EV3DifferentialPilotAdapterService.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/services/EV3DifferentialPilotAdapterService.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.655172">
-              <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EV3SoundAdapterService.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/services/EV3SoundAdapterService.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DelayedHttpService.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/services/DelayedHttpService.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-              <folding>
-                <element signature="n#!!doc;n#BinarisEV3#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IDifferentialPilotAdapterService.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/interfaces/IDifferentialPilotAdapterService.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -144,9 +37,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spec/unit/controller/EV3RemoteControllerUnitTest.js" />
-        <option value="$PROJECT_DIR$/src/interfaces/IEV3RemoteController.ts" />
-        <option value="$PROJECT_DIR$/spec/integration/controller/EV3DifferentialPilotRestClientControllerIntegrationTest.ts" />
         <option value="$PROJECT_DIR$/spec/integration/service/EV3DifferentialPilotRestClientIntegrationTest.ts" />
         <option value="$PROJECT_DIR$/spec/unit/service/EV3DifferentialPilotRestClientUnitTest.ts" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -160,7 +50,6 @@
         <option value="$PROJECT_DIR$/spec/unit/service/BaseBallBewegungsartenUnitTest.ts" />
         <option value="$PROJECT_DIR$/src/interfaces/IEV3SoundAdapterService.ts" />
         <option value="$PROJECT_DIR$/spec/integration/controller/EV3RemoteControllerIntegrationTest.ts" />
-        <option value="$PROJECT_DIR$/spec/integration/service/EV3SoundAdapterServiceIntegrationTest.ts" />
         <option value="$PROJECT_DIR$/src/interfaces/ISoundAdapterService.ts" />
         <option value="$PROJECT_DIR$/src/controller/EV3RemoteController.ts" />
         <option value="$PROJECT_DIR$/spec/unit/service/EV3DifferentialPilotAdapterServiceUnitTest.js" />
@@ -179,12 +68,9 @@
         <option value="$PROJECT_DIR$/spec/unit/service/EV3DifferentialPilotAdapterServiceUnitTest.ts" />
         <option value="$PROJECT_DIR$/spec/unit/service/BaseBallTrainingsUebungServiceUnitTest.ts" />
         <option value="$PROJECT_DIR$/spec/integration/service/BaseBallTrainingsUebungServiceIntegrationTest.ts" />
-        <option value="$PROJECT_DIR$/karma.conf.js" />
         <option value="$PROJECT_DIR$/src/main.js" />
-        <option value="$PROJECT_DIR$/src/main/main.js" />
         <option value="$PROJECT_DIR$/src/main/main.ts" />
         <option value="$PROJECT_DIR$/src/services/BaseBallTrainingsUebungService.ts" />
-        <option value="$PROJECT_DIR$/spec/integration/service/EV3DifferentialPilotAdapterServiceIntegrationTest.ts" />
         <option value="$PROJECT_DIR$/src/services/EV3DifferentialPilotAdapterService.js" />
         <option value="$PROJECT_DIR$/src/App.ts" />
         <option value="$PROJECT_DIR$/src/interfaces/IDelayedHttpService.ts" />
@@ -193,8 +79,15 @@
         <option value="$PROJECT_DIR$/src/services/DelayedHttpService.ts" />
         <option value="$PROJECT_DIR$/src/services/EV3DifferentialPilotAdapterService.ts" />
         <option value="$PROJECT_DIR$/src/services/EV3SoundAdapterService.ts" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/controller/MainController.ts" />
+        <option value="$PROJECT_DIR$/src/main/main.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/spec/unit/service/DelayedHttpServiceUnitTest.ts" />
+        <option value="$PROJECT_DIR$/src/angular_services/DelayedHttpService.ts" />
+        <option value="$PROJECT_DIR$/spec/integration/service/EV3DifferentialPilotAdapterServiceIntegrationTest.ts" />
+        <option value="$PROJECT_DIR$/spec/integration/service/EV3SoundAdapterServiceIntegrationTest.ts" />
+        <option value="$PROJECT_DIR$/spec/integration/service/EV3SoundAdapterServiceIntegrationTest.js" />
+        <option value="$PROJECT_DIR$/karma.conf.js" />
       </list>
     </option>
   </component>
@@ -286,88 +179,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AngularJsHttpIntegrationTests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AngularJsHttpIntegrationTests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AngularJsHttpIntegrationTests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AngularJsHttpIntegrationTests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AngularJsHttpIntegrationTests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AngularJsHttpIntegrationTests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interfaces" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AngularJsHttpIntegrationTests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AngularJsHttpIntegrationTests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AngularJsHttpIntegrationTests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AngularJsHttpIntegrationTests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -377,7 +188,7 @@
     <property name="last_opened_file_path" value="C:/Program Files/nodejs/node.exe" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value="terminal&#9;ACTION&#9;ActivateTerminalToolWindow&#10;typesc&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;termina&#9;ACTION&#9;ActivateTerminalToolWindow&#10;sett&#9;ACTION&#9;WelcomeScreen.Settings&#10;type&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;termi&#9;ACTION&#9;ActivateTerminalToolWindow&#10;typescr&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;termianl&#9;null&#9;null&#10;proje&#9;ACTION&#9;ActivateProjectToolWindow&#10;settings&#9;ACTION&#9;WelcomeScreen.Settings&#10;typescript&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;pro&#9;ACTION&#9;ActivateProjectToolWindow&#10;ter&#9;ACTION&#9;ActivateTerminalToolWindow&#10;settings#&#9;ACTION&#9;WelcomeScreen.Settings&#10;project&#9;ACTION&#9;ActivateProjectToolWindow&#10;EV3Differ&#9;FILE&#9;file://C:/Users/user/AngularProjekt/src/controller/EV3DifferentialPilotRestClientController.ts&#10;navi&#9;ACTION&#9;ShowNavBar&#10;toggle fullsc&#9;ACTION&#9;ToggleFullScreen&#10;toggle full&#9;ACTION&#9;ToggleFullScreen&#10;setting&#9;ACTION&#9;WelcomeScreen.Settings&#10;typescri&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;termin&#9;ACTION&#9;ActivateTerminalToolWindow&#10;types&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow" />
+    <property name="SearchEverywhereHistoryKey" value="typescri&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;terminal&#9;ACTION&#9;ActivateTerminalToolWindow&#10;typesc&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;termina&#9;ACTION&#9;ActivateTerminalToolWindow&#10;sett&#9;ACTION&#9;WelcomeScreen.Settings&#10;type&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;termi&#9;ACTION&#9;ActivateTerminalToolWindow&#10;typescr&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;termianl&#9;null&#9;null&#10;proje&#9;ACTION&#9;ActivateProjectToolWindow&#10;settings&#9;ACTION&#9;WelcomeScreen.Settings&#10;typescript&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;pro&#9;ACTION&#9;ActivateProjectToolWindow&#10;ter&#9;ACTION&#9;ActivateTerminalToolWindow&#10;settings#&#9;ACTION&#9;WelcomeScreen.Settings&#10;project&#9;ACTION&#9;ActivateProjectToolWindow&#10;EV3Differ&#9;FILE&#9;file://C:/Users/user/AngularProjekt/src/controller/EV3DifferentialPilotRestClientController.ts&#10;navi&#9;ACTION&#9;ShowNavBar&#10;toggle fullsc&#9;ACTION&#9;ToggleFullScreen&#10;toggle full&#9;ACTION&#9;ToggleFullScreen&#10;setting&#9;ACTION&#9;WelcomeScreen.Settings&#10;termin&#9;ACTION&#9;ActivateTerminalToolWindow&#10;types&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs5\node.exe" />
@@ -388,11 +199,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Christian.Asus-F550LC\WebstormProjects\AngularJsHttpIntegrationTests\src\third_apis" />
+      <recent name="C:\Users\Christian.Asus-F550LC\WebstormProjects\AngularJsHttpIntegrationTests\src\api" />
+      <recent name="C:\Users\Christian.Asus-F550LC\WebstormProjects\AngularJsHttpIntegrationTests\src\angular_services" />
+      <recent name="C:\Users\Christian.Asus-F550LC\WebstormProjects\AngularJsHttpIntegrationTests\src\angular_controllers" />
       <recent name="C:\Users\Christian.Asus-F550LC\WebstormProjects\AngularJsHttpIntegrationTests\src\main" />
-      <recent name="C:\Users\user\AngularProjekt\spec\integration\service" />
-      <recent name="C:\Users\user\AngularProjekt\spec\unit\service" />
-      <recent name="C:\Users\user\AngularProjekt\spec\unit\controller" />
-      <recent name="C:\Users\user\AngularProjekt\src\services" />
     </key>
   </component>
   <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
@@ -597,34 +408,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="karma_conf_js - 2016.01.08 at 14h 18m 35s.xml">
+    <history-entry file="karma_conf_js - 2016.01.11 at 13h 17m 44s.xml">
       <configuration name="karma.conf.js" configurationId="JavaScriptTestRunnerKarma" />
     </history-entry>
-    <history-entry file="karma_conf_js - 2016.01.08 at 14h 19m 22s.xml">
+    <history-entry file="karma_conf_js - 2016.01.11 at 13h 19m 41s.xml">
       <configuration name="karma.conf.js" configurationId="JavaScriptTestRunnerKarma" />
     </history-entry>
-    <history-entry file="karma_conf_js - 2016.01.08 at 14h 19m 29s.xml">
+    <history-entry file="karma_conf_js - 2016.01.11 at 13h 23m 25s.xml">
       <configuration name="karma.conf.js" configurationId="JavaScriptTestRunnerKarma" />
     </history-entry>
-    <history-entry file="karma_conf_js - 2016.01.08 at 14h 20m 32s.xml">
+    <history-entry file="karma_conf_js - 2016.01.11 at 13h 23m 59s.xml">
       <configuration name="karma.conf.js" configurationId="JavaScriptTestRunnerKarma" />
     </history-entry>
-    <history-entry file="karma_conf_js - 2016.01.08 at 14h 20m 35s.xml">
+    <history-entry file="karma_conf_js - 2016.01.11 at 13h 24m 43s.xml">
       <configuration name="karma.conf.js" configurationId="JavaScriptTestRunnerKarma" />
     </history-entry>
-    <history-entry file="karma_conf_js - 2016.01.08 at 14h 24m 08s.xml">
+    <history-entry file="karma_conf_js - 2016.01.11 at 13h 25m 20s.xml">
       <configuration name="karma.conf.js" configurationId="JavaScriptTestRunnerKarma" />
     </history-entry>
-    <history-entry file="karma_conf_js - 2016.01.08 at 14h 24m 14s.xml">
+    <history-entry file="karma_conf_js - 2016.01.11 at 13h 26m 07s.xml">
       <configuration name="karma.conf.js" configurationId="JavaScriptTestRunnerKarma" />
     </history-entry>
-    <history-entry file="karma_conf_js - 2016.01.08 at 14h 24m 20s.xml">
+    <history-entry file="karma_conf_js - 2016.01.11 at 13h 26m 38s.xml">
       <configuration name="karma.conf.js" configurationId="JavaScriptTestRunnerKarma" />
     </history-entry>
-    <history-entry file="karma_conf_js - 2016.01.08 at 14h 42m 29s.xml">
+    <history-entry file="karma_conf_js - 2016.01.11 at 13h 26m 55s.xml">
       <configuration name="karma.conf.js" configurationId="JavaScriptTestRunnerKarma" />
     </history-entry>
-    <history-entry file="karma_conf_js - 2016.01.08 at 16h 23m 46s.xml">
+    <history-entry file="karma_conf_js - 2016.01.11 at 13h 27m 43s.xml">
       <configuration name="karma.conf.js" configurationId="JavaScriptTestRunnerKarma" />
     </history-entry>
   </component>
@@ -639,17 +450,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.104166664" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928476" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22570194" sideWeight="0.493125" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50877196" sideWeight="0.2475" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928476" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32829374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20518358" sideWeight="0.7525" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41468683" sideWeight="0.7525" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.046436284" sideWeight="0.49625" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.048596114" sideWeight="0.49625" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35492578" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -686,13 +497,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/karma.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/support/jasmine.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.6153846">
@@ -758,13 +562,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/unit/service/EV3DifferentialPilotAdapterServiceUnitTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="73" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.703704">
@@ -773,17 +570,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/EV3ColorAdapterService.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bower.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.153846">
           <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -795,7 +586,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/BaseBallAktionenService.js">
+    <entry file="file://$PROJECT_DIR$/src/angular_services/BaseBallAktionenService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
@@ -803,7 +594,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/interfaces/IDifferentialPilotAdapterService.js">
+    <entry file="file://$PROJECT_DIR$/src/api/IDifferentialPilotAdapterService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -820,48 +611,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/interfaces/IEV3RemoteController.js">
+    <entry file="file://$PROJECT_DIR$/src/api/IEV3RemoteController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/unit/controller/EV3RemoteControllerUnitTest.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23776224">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/interfaces/ISportBewegungsArtenService.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19020979">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/interfaces/ITrainingsUebungService.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14265734">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/interfaces/IBallSportAktionenService.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19020979">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/interfaces/IEV3RemoteController.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26153848">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -872,43 +625,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/unit/service/EV3SoundAdapterServiceUnitTest.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/integration/controller/EV3RemoteControllerIntegrationTest.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14261745">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/unit/service/EV3DifferentialPilotAdapterServiceUnitTest.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.942953">
-          <caret line="38" column="11" selection-start-line="31" selection-start-column="53" selection-end-line="38" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/integration/service/EV3SoundAdapterServiceIntegrationTest.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/unit/service/BaseBallTrainingsUebungServiceUnitTest.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28691274">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/EV3RemoteController.js">
+    <entry file="file://$PROJECT_DIR$/src/angular_controllers/EV3RemoteController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09418283">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
@@ -924,67 +641,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23545706">
-          <caret line="10" column="91" selection-start-line="10" selection-start-column="91" selection-end-line="10" selection-end-column="91" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/EV3RemoteController.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4238227">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/karma.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/integration/service/EV3DifferentialPilotAdapterServiceIntegrationTest.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="77" selection-start-line="25" selection-start-column="77" selection-end-line="25" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/EV3DifferentialPilotAdapterService.js">
+    <entry file="file://$PROJECT_DIR$/src/angular_services/EV3DifferentialPilotAdapterService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
           <folding>
-            <marker date="1452512754879" expanded="true" signature="99:1183" placeholder="{...}" />
+            <marker date="1452515108873" expanded="true" signature="99:1183" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/interfaces/IColorAdapterService.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/DelayedHttpService.js">
+    <entry file="file://$PROJECT_DIR$/src/angular_services/DelayedHttpService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1452512754868" expanded="true" signature="130:168" placeholder="{...}" />
+            <marker date="1452515108870" expanded="true" signature="130:168" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/BaseBallAktionenService.ts">
+    <entry file="file://$PROJECT_DIR$/src/angular_controllers/MainController.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/angular_services/BaseBallAktionenService.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
@@ -994,41 +679,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/interfaces/IDelayedHttpService.ts">
+    <entry file="file://$PROJECT_DIR$/src/angular_services/BaseBallBewegungsartenService.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/DelayedHttpService.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+          <caret line="24" column="75" selection-start-line="24" selection-start-column="75" selection-end-line="24" selection-end-column="75" />
           <folding>
             <element signature="n#!!doc;n#BinarisEV3#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/interfaces/IDifferentialPilotAdapterService.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/EV3SoundAdapterService.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/BaseBallTrainingsUebungService.ts">
+    <entry file="file://$PROJECT_DIR$/src/angular_services/BaseBallTrainingsUebungService.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="40" column="57" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
@@ -1038,10 +699,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/EV3DifferentialPilotAdapterService.ts">
+    <entry file="file://$PROJECT_DIR$/src/angular_services/EV3ColorAdapterService.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.655172">
-          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/IBallSportAktionenService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/IDifferentialPilotAdapterService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/IEV3RemoteController.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/ISportBewegungsArtenService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/ITrainingsUebungService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/third_apis/IColorAdapterService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/third_apis/IDelayedHttpService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/third_apis/ISoundAdapterService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1056,34 +781,114 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.7272725">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        <state vertical-scroll-proportion="-10.461538">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/BaseBallBewegungsartenService.ts">
+    <entry file="file://$PROJECT_DIR$/src/angular_services/EV3DifferentialPilotAdapterService.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="75" selection-start-line="24" selection-start-column="75" selection-end-line="24" selection-end-column="75" />
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/angular_controllers/EV3RemoteController.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/unit/controller/EV3RemoteControllerUnitTest.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/unit/service/DelayedHttpServiceUnitTest.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39688715">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/unit/service/DelayedHttpServiceUnitTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3307393">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/angular_services/DelayedHttpService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26459143">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc;n#BinarisEV3#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/interfaces/ISoundAdapterService.ts">
+    <entry file="file://$PROJECT_DIR$/spec/unit/service/BaseBallTrainingsUebungServiceUnitTest.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.5622568">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/MainController.ts">
+    <entry file="file://$PROJECT_DIR$/spec/integration/controller/EV3RemoteControllerIntegrationTest.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54269004">
-          <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.16536964">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/integration/service/EV3DifferentialPilotAdapterServiceIntegrationTest.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26459143">
+          <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="28" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/integration/service/EV3SoundAdapterServiceIntegrationTest.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23151751">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/angular_services/EV3SoundAdapterService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4299611">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/integration/service/EV3SoundAdapterServiceIntegrationTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36381322">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/karma.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.885214">
+          <caret line="58" column="12" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
           <folding />
         </state>
       </provider>

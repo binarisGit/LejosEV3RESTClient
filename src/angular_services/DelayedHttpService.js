@@ -12,7 +12,7 @@ var BinarisEV3;
         DelayedHttpService.prototype.sendDelayedHttpRequest = function (url) {
             this.delay = this.delay + 1000;
             var http = this.http;
-            this.timeout(function () {
+            return this.timeout(function () {
                 return http.get(url);
             }, this.delay);
         };
