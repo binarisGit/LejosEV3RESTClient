@@ -21,7 +21,7 @@ namespace BinarisEV3 {
 
             var http = this.http;
             this.timeout(function () {
-                http.get(url);
+                return http.get(url);
             }, this.delay);
         }
 

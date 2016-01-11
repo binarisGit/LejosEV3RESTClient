@@ -1,6 +1,7 @@
 namespace BinarisEV3 {
     export class MainController {
         private $scope: ng.IScope;
+        private delayedHttpService: IDelayedHttpService;
         private ev3DifferentialPilotAdapterService: IDifferentialPilotAdapterService;
         private ev3SoundAdapterService: ISoundAdapterService;
         private baseBallBewegungsArten: ISportBewegungsArtenService;
@@ -9,51 +10,57 @@ namespace BinarisEV3 {
         static $inject = ["$scope", "EV3DifferentialPilotAdapterService", "EV3SoundAdapterService", "BaseBallBewegungsArtenService", "BaseBallTrainingsUebungService"];
 
         constructor($scope: ng.IScope, EV3DifferentialPilotAdapterService: IDifferentialPilotAdapterService,
-                    EV3SoundAdapterService: ISoundAdapterService, BaseBallBewegungsArtenService: ISportBewegungsArtenService, BaseBallTrainingsUebungService: ITrainingsUebungService) {
+                    EV3SoundAdapterService: ISoundAdapterService, BaseBallBewegungsArtenService: ISportBewegungsArtenService, BaseBallTrainingsUebungService: ITrainingsUebungService, DelayedHttpService: IDelayedHttpService) {
             this.$scope = $scope;
+            this.delayedHttpService = DelayedHttpService;
             this.ev3DifferentialPilotAdapterService = EV3DifferentialPilotAdapterService;
             this.ev3SoundAdapterService = EV3SoundAdapterService;
             this.baseBallBewegungsArten = BaseBallBewegungsArtenService;
             this.baseBallTrainingsUebungService = BaseBallTrainingsUebungService;
         }
 
-        /*
-         ACHTUNG:
-         Der Roboter führt alle Bewegungen korrekt nacheinanander aus, solange es sich um die gleiche Bewegung handelt.
-         Falls er sich in die entgegengesetzte Richtung bewegen soll, werden diese nicht mehr sequenziell ausgefhrt.
-         Liegt evtl. am REST-Service?
-
-
-         */
-
         public a() {
-            this.ev3DifferentialPilotAdapterService.resetHttpSendDelay();
+            this.delayedHttpService.resetHttpSendDelay();
 
-            this.ev3DifferentialPilotAdapterService.run(5);
-            this.ev3DifferentialPilotAdapterService.run(-5);
-            this.ev3DifferentialPilotAdapterService.run(5);
+            this.baseBallTrainingsUebungService.tippeln();
         }
 
         public b() {
-            // es treten probleme auf, wenn der roboter erst vorwärts fährt und sich dann dreht!
+            this.delayedHttpService.resetHttpSendDelay();
+
             this.baseBallBewegungsArten.laufen(5);
             this.baseBallBewegungsArten.linksWenden();
             this.baseBallBewegungsArten.laufen(5);
         }
 
         public c() {
-            // OK!
+            this.delayedHttpService.resetHttpSendDelay();
+
             this.baseBallBewegungsArten.linksWenden();
             this.baseBallBewegungsArten.linksWenden();
             this.baseBallBewegungsArten.linksWenden();
             this.baseBallBewegungsArten.rechtsWenden();
         }
 
+        // homerun
         public d() {
-            alert("Dieser Button ist mit keiner Implementierung belegt!");
+            this.delayedHttpService.resetHttpSendDelay();
+
+            this.baseBallBewegungsArten.laufen(15);
+            this.baseBallBewegungsArten.rechtsWenden();
+            this.baseBallBewegungsArten.laufen(15);
+            this.baseBallBewegungsArten.rechtsWenden();
+            this.baseBallBewegungsArten.laufen(15);
+            this.baseBallBewegungsArten.rechtsWenden();
+            this.baseBallBewegungsArten.laufen(15);
+            this.baseBallBewegungsArten.rechtsWenden();
+            this.baseBallBewegungsArten.laufen(15);
+            this.ev3SoundAdapterService.beep();
         }
 
         public e() {
+            this.delayedHttpService.resetHttpSendDelay();
+
             alert("Dieser Button ist mit keiner Implementierung belegt!");
         }
 
