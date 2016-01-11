@@ -9,25 +9,29 @@ var BinarisEV3;
             this.baseBallBewegungsArten = BaseBallBewegungsArtenService;
             this.baseBallTrainingsUebungService = BaseBallTrainingsUebungService;
         }
-        MainController.prototype.a = function () {
+        MainController.prototype.executeCustomActionMethod = function (id) {
             this.delayedHttpService.resetHttpSendDelay();
+            switch (id) {
+                case 1:
+                    this.a();
+                    break;
+                case 2:
+                    this.b();
+                    break;
+                case 3:
+                    this.c();
+                    break;
+                case 4:
+                    this.d();
+                    break;
+                case 5:
+                    this.e();
+            }
+        };
+        MainController.prototype.a = function () {
             this.baseBallTrainingsUebungService.tippeln();
         };
         MainController.prototype.b = function () {
-            this.delayedHttpService.resetHttpSendDelay();
-            this.baseBallBewegungsArten.laufen(5);
-            this.baseBallBewegungsArten.linksWenden();
-            this.baseBallBewegungsArten.laufen(5);
-        };
-        MainController.prototype.c = function () {
-            this.delayedHttpService.resetHttpSendDelay();
-            this.baseBallBewegungsArten.linksWenden();
-            this.baseBallBewegungsArten.linksWenden();
-            this.baseBallBewegungsArten.linksWenden();
-            this.baseBallBewegungsArten.rechtsWenden();
-        };
-        MainController.prototype.d = function () {
-            this.delayedHttpService.resetHttpSendDelay();
             this.baseBallBewegungsArten.laufen(15);
             this.baseBallBewegungsArten.rechtsWenden();
             this.baseBallBewegungsArten.laufen(15);
@@ -39,11 +43,16 @@ var BinarisEV3;
             this.baseBallBewegungsArten.laufen(15);
             this.ev3SoundAdapterService.beep();
         };
-        MainController.prototype.e = function () {
-            this.delayedHttpService.resetHttpSendDelay();
+        MainController.prototype.c = function () {
             alert("Dieser Button ist mit keiner Implementierung belegt!");
         };
-        MainController.$inject = ["$scope", "EV3DifferentialPilotAdapterService", "EV3SoundAdapterService", "BaseBallBewegungsArtenService", "BaseBallTrainingsUebungService"];
+        MainController.prototype.d = function () {
+            alert("Dieser Button ist mit keiner Implementierung belegt!");
+        };
+        MainController.prototype.e = function () {
+            alert("Dieser Button ist mit keiner Implementierung belegt!");
+        };
+        MainController.$inject = ["$scope", "EV3DifferentialPilotAdapterService", "EV3SoundAdapterService", "BaseBallBewegungsArtenService", "BaseBallTrainingsUebungService", "DelayedHttpService"];
         return MainController;
     })();
     BinarisEV3.MainController = MainController;

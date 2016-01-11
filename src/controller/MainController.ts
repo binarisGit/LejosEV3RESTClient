@@ -7,7 +7,7 @@ namespace BinarisEV3 {
         private baseBallBewegungsArten: ISportBewegungsArtenService;
         private baseBallTrainingsUebungService: ITrainingsUebungService;
 
-        static $inject = ["$scope", "EV3DifferentialPilotAdapterService", "EV3SoundAdapterService", "BaseBallBewegungsArtenService", "BaseBallTrainingsUebungService"];
+        static $inject = ["$scope", "EV3DifferentialPilotAdapterService", "EV3SoundAdapterService", "BaseBallBewegungsArtenService", "BaseBallTrainingsUebungService", "DelayedHttpService"];
 
         constructor($scope: ng.IScope, EV3DifferentialPilotAdapterService: IDifferentialPilotAdapterService,
                     EV3SoundAdapterService: ISoundAdapterService, BaseBallBewegungsArtenService: ISportBewegungsArtenService, BaseBallTrainingsUebungService: ITrainingsUebungService, DelayedHttpService: IDelayedHttpService) {
@@ -19,33 +19,39 @@ namespace BinarisEV3 {
             this.baseBallTrainingsUebungService = BaseBallTrainingsUebungService;
         }
 
-        public a() {
+        public executeCustomActionMethod(id: number) {
             this.delayedHttpService.resetHttpSendDelay();
 
+            switch (id) {
+                case 1:
+                    this.a();
+                    break;
+                case 2:
+                    this.b();
+                    break;
+                case 3:
+                    this.c();
+                    break;
+                case 4:
+                    this.d();
+                    break;
+                case 5:
+                    this.e();
+            }
+        }
+
+        /*
+         ===================================
+         Add your Code in following methods:
+         ===================================
+         */
+
+        public a() {
             this.baseBallTrainingsUebungService.tippeln();
         }
 
-        public b() {
-            this.delayedHttpService.resetHttpSendDelay();
-
-            this.baseBallBewegungsArten.laufen(5);
-            this.baseBallBewegungsArten.linksWenden();
-            this.baseBallBewegungsArten.laufen(5);
-        }
-
-        public c() {
-            this.delayedHttpService.resetHttpSendDelay();
-
-            this.baseBallBewegungsArten.linksWenden();
-            this.baseBallBewegungsArten.linksWenden();
-            this.baseBallBewegungsArten.linksWenden();
-            this.baseBallBewegungsArten.rechtsWenden();
-        }
-
         // homerun
-        public d() {
-            this.delayedHttpService.resetHttpSendDelay();
-
+        public b() {
             this.baseBallBewegungsArten.laufen(15);
             this.baseBallBewegungsArten.rechtsWenden();
             this.baseBallBewegungsArten.laufen(15);
@@ -58,9 +64,18 @@ namespace BinarisEV3 {
             this.ev3SoundAdapterService.beep();
         }
 
-        public e() {
-            this.delayedHttpService.resetHttpSendDelay();
+        public c() {
+            alert("Dieser Button ist mit keiner Implementierung belegt!");
 
+        }
+
+        // homerun
+        public d() {
+            alert("Dieser Button ist mit keiner Implementierung belegt!");
+
+        }
+
+        public e() {
             alert("Dieser Button ist mit keiner Implementierung belegt!");
         }
 
