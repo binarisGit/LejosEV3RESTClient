@@ -52,16 +52,16 @@ namespace BinarisEV3 {
 
         // homerun
         public b() {
-            this.baseBallBewegungsArten.laufen(15);
+            this.baseBallBewegungsArten.laufen(40);
             this.baseBallBewegungsArten.rechtsWenden();
-            this.baseBallBewegungsArten.laufen(15);
+            this.baseBallBewegungsArten.laufen(40);
             this.baseBallBewegungsArten.rechtsWenden();
-            this.baseBallBewegungsArten.laufen(15);
+            this.baseBallBewegungsArten.laufen(40);
             this.baseBallBewegungsArten.rechtsWenden();
-            this.baseBallBewegungsArten.laufen(15);
-            this.baseBallBewegungsArten.rechtsWenden();
-            this.baseBallBewegungsArten.laufen(15);
-            this.ev3SoundAdapterService.beep();
+            this.baseBallBewegungsArten.laufen(40);
+
+            //this.ev3SoundAdapterService.beep();
+
         }
 
         public c() {

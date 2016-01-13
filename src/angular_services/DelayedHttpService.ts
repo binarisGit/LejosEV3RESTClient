@@ -5,8 +5,9 @@
 namespace BinarisEV3 {
 
     export class DelayedHttpService implements IDelayedHttpService {
+        public DELAY_TIME: number = 100;
         private http: ng.IHttpService;
-        private delay: number = 1000;
+        private delay: number = this.DELAY_TIME;
         private timeout: ng.ITimeoutService;
 
         static $inject = ["$http", "$timeout"];
@@ -17,16 +18,18 @@ namespace BinarisEV3 {
         }
 
         public sendDelayedHttpRequest(url: string) {
-            this.delay = this.delay + 1000;
+            this.delay = this.delay + this.DELAY_TIME;
 
             var http = this.http;
             return this.timeout(function () {
                 return http.get(url);
             }, this.delay);
+
+
         }
 
         public resetHttpSendDelay() {
-            this.delay = 1000;
+            this.delay = this.DELAY_TIME;
         }
 
     }

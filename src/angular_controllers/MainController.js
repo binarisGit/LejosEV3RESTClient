@@ -32,16 +32,13 @@ var BinarisEV3;
             this.baseBallTrainingsUebungService.tippeln();
         };
         MainController.prototype.b = function () {
-            this.baseBallBewegungsArten.laufen(15);
+            this.baseBallBewegungsArten.laufen(40);
             this.baseBallBewegungsArten.rechtsWenden();
-            this.baseBallBewegungsArten.laufen(15);
+            this.baseBallBewegungsArten.laufen(40);
             this.baseBallBewegungsArten.rechtsWenden();
-            this.baseBallBewegungsArten.laufen(15);
+            this.baseBallBewegungsArten.laufen(40);
             this.baseBallBewegungsArten.rechtsWenden();
-            this.baseBallBewegungsArten.laufen(15);
-            this.baseBallBewegungsArten.rechtsWenden();
-            this.baseBallBewegungsArten.laufen(15);
-            this.ev3SoundAdapterService.beep();
+            this.baseBallBewegungsArten.laufen(40);
         };
         MainController.prototype.c = function () {
             alert("Dieser Button ist mit keiner Implementierung belegt!");

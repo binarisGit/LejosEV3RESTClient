@@ -3,7 +3,7 @@ namespace BinarisEV3 {
     export class EV3DifferentialPilotAdapterService implements IDifferentialPilotAdapterService {
         public static IID: string = "EV3DifferentialPilotAdapterService";
         private delayedHttpService: IDelayedHttpService;
-        private BASE_URL: string = "http://10.0.0.44:8080/differentpilot";
+        private BASE_URL: string = "http://10.0.0.44:8080/differentialpilot";
 
         static $inject = ["DelayedHttpService"];
 

@@ -2,7 +2,7 @@ var BinarisEV3;
 (function (BinarisEV3) {
     var EV3SoundAdapterService = (function () {
         function EV3SoundAdapterService(DelayedHttpService) {
-            this.BASE_URL = "http://10.0.0.44:8080/differentpilot";
+            this.BASE_URL = "http://10.0.0.44:8080/sound";
             this.delayedHttpService = DelayedHttpService;
         }
         EV3SoundAdapterService.prototype.buzz = function () {
