@@ -54,4 +54,10 @@ describe("EV3RemoteController Unit Test suite: ", function () {
         expect(ev3RemoteController.getNumberOfActions()).toBe(2);
     });
 
+    it('action list with one element should contain no elements after clearing the list', function() {
+        ev3RemoteController.addAction('rotate');
+        ev3RemoteController.clearActionList();
+        expect(ev3RemoteController.getNumberOfActions()).toBe(0);
+    });
+
 });

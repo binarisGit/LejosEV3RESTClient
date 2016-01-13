@@ -7,6 +7,7 @@ namespace BinarisEV3 {
         buzz(): any;
         getNumberOfActions(): number;
         addAction(action: string): void;
+        clearActionList(): void;
     }
 
 }

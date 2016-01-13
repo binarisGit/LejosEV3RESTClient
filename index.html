@@ -29,10 +29,7 @@
 
 
     <div>
-        <p>
-            <button style="width:100%;" type="button" class="btn btn-default btn-lg" aria-label="Left Align">tippeln
-            </button>
-        </p>
+
         <p>
             <button style="width:100%;" type="button" class="btn btn-success btn-lg" aria-label="Left Align">start
             </button>
@@ -71,6 +68,7 @@
                         </button>
                     </div>
 
+
                     <!-- eigene Methoden -->
                     <div ng-controller="MainController as mainController">
                         <p>
@@ -100,6 +98,13 @@
                     </div>
 
                 </div>
+            </div>
+
+            <div>
+                <button ng-click="ev3RemoteController.run(10)" type="button" class="btn btn-info"
+                        aria-label="Left Align">
+                    Liste leeren
+                </button>
             </div>
 
             <!-- Table -->
