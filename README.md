@@ -39,3 +39,7 @@ tsd install jasmine
 
 tsd install angular_mocks
 ```
+
+
+
+![baseball_tdd_schulung_paketstruktur.png](https://bitbucket.org/repo/4686Ep/images/2731117870-baseball_tdd_schulung_paketstruktur.png)
