@@ -40,11 +40,14 @@ tsd install jasmine
 tsd install angular_mocks
 ```
 
-Im folgenden ist die Verzeichnisstruktur gezeigt:
+
+
+# Verzeichnisstruktur #
 
 ![baseball_tdd_schulung_paketstruktur.png](https://bitbucket.org/repo/4686Ep/images/2731117870-baseball_tdd_schulung_paketstruktur.png)
 
 
-UML-Klassendiagramm:
+
+# UML-Klassendiagramm #
 
 ![baseball_tdd_schulung_konzeptr.png](https://bitbucket.org/repo/4686Ep/images/4105179146-baseball_tdd_schulung_konzeptr.png)
