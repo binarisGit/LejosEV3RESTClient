@@ -1,11 +1,12 @@
 var BinarisEV3;
 (function (BinarisEV3) {
     var MainController = (function () {
-        function MainController($scope, EV3DifferentialPilotAdapterService, EV3SoundAdapterService, BaseBallBewegungsArtenService, BaseBallTrainingsUebungService, DelayedHttpService) {
+        function MainController($scope, EV3DifferentialPilotAdapterService, EV3SoundAdapterService, EV3ColorAdapterService, BaseBallBewegungsArtenService, BaseBallTrainingsUebungService, DelayedHttpService) {
             this.$scope = $scope;
             this.delayedHttpService = DelayedHttpService;
             this.ev3DifferentialPilotAdapterService = EV3DifferentialPilotAdapterService;
             this.ev3SoundAdapterService = EV3SoundAdapterService;
+            this.ev3ColorAdapterService = EV3ColorAdapterService;
             this.baseBallBewegungsArten = BaseBallBewegungsArtenService;
             this.baseBallTrainingsUebungService = BaseBallTrainingsUebungService;
         }
@@ -30,6 +31,7 @@ var BinarisEV3;
         };
         MainController.prototype.a = function () {
             this.baseBallTrainingsUebungService.tippeln();
+            this.ev3SoundAdapterService.beep();
         };
         MainController.prototype.b = function () {
             this.baseBallBewegungsArten.laufen(40);
@@ -39,17 +41,35 @@ var BinarisEV3;
             this.baseBallBewegungsArten.laufen(40);
             this.baseBallBewegungsArten.rechtsWenden();
             this.baseBallBewegungsArten.laufen(40);
+            this.ev3SoundAdapterService.beep();
         };
         MainController.prototype.c = function () {
-            alert("Dieser Button ist mit keiner Implementierung belegt!");
+            this.ev3SoundAdapterService.buzz();
+            this.ev3SoundAdapterService.beep();
+            this.ev3SoundAdapterService.buzz();
+            this.ev3SoundAdapterService.beep();
+            this.ev3SoundAdapterService.buzz();
+            this.ev3SoundAdapterService.beep();
+            this.ev3SoundAdapterService.buzz();
+            this.ev3SoundAdapterService.beep();
         };
         MainController.prototype.d = function () {
-            alert("Dieser Button ist mit keiner Implementierung belegt!");
+            this.baseBallBewegungsArten.laufen(40);
+            this.baseBallBewegungsArten.rechtsWenden();
+            this.ev3SoundAdapterService.buzz();
+            this.ev3SoundAdapterService.beep();
         };
         MainController.prototype.e = function () {
-            alert("Dieser Button ist mit keiner Implementierung belegt!");
+            console.log(this.ev3ColorAdapterService);
+            this.ev3ColorAdapterService.getColor().then(function successCallback(response) {
+                console.log("Farbe: ");
+                console.log(response.data.color);
+            }, function errorCallback(response) {
+                console.log("Farbe konnte nicht ermittelt werden. Status:");
+                console.log(response.status);
+            });
         };
-        MainController.$inject = ["$scope", "EV3DifferentialPilotAdapterService", "EV3SoundAdapterService", "BaseBallBewegungsArtenService", "BaseBallTrainingsUebungService", "DelayedHttpService"];
+        MainController.$inject = ["$scope", "EV3DifferentialPilotAdapterService", "EV3SoundAdapterService", "EV3ColorAdapterService", "BaseBallBewegungsArtenService", "BaseBallTrainingsUebungService", "DelayedHttpService"];
         return MainController;
     })();
     BinarisEV3.MainController = MainController;

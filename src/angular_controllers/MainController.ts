@@ -4,17 +4,20 @@ namespace BinarisEV3 {
         private delayedHttpService: IDelayedHttpService;
         private ev3DifferentialPilotAdapterService: IDifferentialPilotAdapterService;
         private ev3SoundAdapterService: ISoundAdapterService;
+        private ev3ColorAdapterService: IColorAdapterService;
         private baseBallBewegungsArten: ISportBewegungsArtenService;
         private baseBallTrainingsUebungService: ITrainingsUebungService;
 
-        static $inject = ["$scope", "EV3DifferentialPilotAdapterService", "EV3SoundAdapterService", "BaseBallBewegungsArtenService", "BaseBallTrainingsUebungService", "DelayedHttpService"];
+        static $inject = ["$scope", "EV3DifferentialPilotAdapterService", "EV3SoundAdapterService", "EV3ColorAdapterService", "BaseBallBewegungsArtenService", "BaseBallTrainingsUebungService", "DelayedHttpService"];
 
         constructor($scope: ng.IScope, EV3DifferentialPilotAdapterService: IDifferentialPilotAdapterService,
-                    EV3SoundAdapterService: ISoundAdapterService, BaseBallBewegungsArtenService: ISportBewegungsArtenService, BaseBallTrainingsUebungService: ITrainingsUebungService, DelayedHttpService: IDelayedHttpService) {
+                    EV3SoundAdapterService: ISoundAdapterService, EV3ColorAdapterService: IColorAdapterService,
+                    BaseBallBewegungsArtenService: ISportBewegungsArtenService, BaseBallTrainingsUebungService: ITrainingsUebungService, DelayedHttpService: IDelayedHttpService) {
             this.$scope = $scope;
             this.delayedHttpService = DelayedHttpService;
             this.ev3DifferentialPilotAdapterService = EV3DifferentialPilotAdapterService;
             this.ev3SoundAdapterService = EV3SoundAdapterService;
+            this.ev3ColorAdapterService = EV3ColorAdapterService;
             this.baseBallBewegungsArten = BaseBallBewegungsArtenService;
             this.baseBallTrainingsUebungService = BaseBallTrainingsUebungService;
         }
@@ -48,6 +51,8 @@ namespace BinarisEV3 {
 
         public a() {
             this.baseBallTrainingsUebungService.tippeln();
+
+            this.ev3SoundAdapterService.beep();
         }
 
         // homerun
@@ -60,23 +65,40 @@ namespace BinarisEV3 {
             this.baseBallBewegungsArten.rechtsWenden();
             this.baseBallBewegungsArten.laufen(40);
 
-            //this.ev3SoundAdapterService.beep();
+            this.ev3SoundAdapterService.beep();
 
         }
 
         public c() {
-            alert("Dieser Button ist mit keiner Implementierung belegt!");
+            this.ev3SoundAdapterService.buzz();
+            this.ev3SoundAdapterService.beep();
+            this.ev3SoundAdapterService.buzz();
+            this.ev3SoundAdapterService.beep();
+            this.ev3SoundAdapterService.buzz();
+            this.ev3SoundAdapterService.beep();
+            this.ev3SoundAdapterService.buzz();
+            this.ev3SoundAdapterService.beep();
 
         }
 
         // homerun
         public d() {
-            alert("Dieser Button ist mit keiner Implementierung belegt!");
+            this.baseBallBewegungsArten.laufen(40);
+            this.baseBallBewegungsArten.rechtsWenden();
+            this.ev3SoundAdapterService.buzz();
+            this.ev3SoundAdapterService.beep();
 
         }
 
         public e() {
-            alert("Dieser Button ist mit keiner Implementierung belegt!");
+            console.log(this.ev3ColorAdapterService);
+            this.ev3ColorAdapterService.getColor().then(function successCallback(response: any) {
+                console.log("Farbe: ");
+                console.log(response.data.color);
+            }, function errorCallback(response: any) {
+                console.log("Farbe konnte nicht ermittelt werden. Status:");
+                console.log(response.status);
+            });
         }
 
     }

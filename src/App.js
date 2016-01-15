@@ -4,6 +4,7 @@ var BinarisEV3;
     ev3DifferentialPilotModule.service('DelayedHttpService', BinarisEV3.DelayedHttpService);
     ev3DifferentialPilotModule.service('EV3DifferentialPilotAdapterService', BinarisEV3.EV3DifferentialPilotAdapterService);
     ev3DifferentialPilotModule.service('EV3SoundAdapterService', BinarisEV3.EV3SoundAdapterService);
+    ev3DifferentialPilotModule.service('EV3ColorAdapterService', BinarisEV3.EV3ColorAdapterService);
     ev3DifferentialPilotModule.service('BaseBallBewegungsArtenService', BinarisEV3.BaseBallBewegungsArtenService);
     ev3DifferentialPilotModule.service('BaseBallAktionenService', BinarisEV3.BaseBallAktionenService);
     ev3DifferentialPilotModule.service('BaseBallTrainingsUebungService', BinarisEV3.BaseBallTrainingsUebungService);

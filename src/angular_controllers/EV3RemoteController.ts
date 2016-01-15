@@ -3,16 +3,18 @@ namespace BinarisEV3 {
         private $scope: ng.IScope;
         private ev3DifferentialPilotAdapterService: IDifferentialPilotAdapterService;
         private ev3SoundAdapterService: ISoundAdapterService;
+        private ev3ColorAdapterService: IColorAdapterService;
         private actionList: Array<string> = [];
         private delayedHttpService: IDelayedHttpService;
 
-        static $inject = ["$scope", "DelayedHttpService", "EV3DifferentialPilotAdapterService", "EV3SoundAdapterService"];
+        static $inject = ["$scope", "DelayedHttpService", "EV3DifferentialPilotAdapterService", "EV3SoundAdapterService", "EV3ColorAdapterService"];
 
-        constructor($scope: ng.IScope, DelayedHttpService: IDelayedHttpService, EV3DifferentialPilotAdapterService: IDifferentialPilotAdapterService, EV3SoundAdapterService: ISoundAdapterService) {
+        constructor($scope: ng.IScope, DelayedHttpService: IDelayedHttpService, EV3DifferentialPilotAdapterService: IDifferentialPilotAdapterService, EV3SoundAdapterService: ISoundAdapterService, EV3ColorAdapterService: IColorAdapterService) {
             this.$scope = $scope;
             this.delayedHttpService = DelayedHttpService;
             this.ev3DifferentialPilotAdapterService = EV3DifferentialPilotAdapterService;
             this.ev3SoundAdapterService = EV3SoundAdapterService;
+            this.ev3ColorAdapterService = EV3ColorAdapterService;
         }
 
         public run(distance: number) {
@@ -31,6 +33,19 @@ namespace BinarisEV3 {
             this.delayedHttpService.resetHttpSendDelay();
             console.log("controller: buzz");
             return this.ev3SoundAdapterService.buzz();
+        }
+
+        getColor(): any {
+            this.delayedHttpService.resetHttpSendDelay();
+            console.log("controller: getColor");
+
+            var promise = this.ev3ColorAdapterService.getColor().then(function successCallback(response: any) {
+                console.log("Farbcode: " + response.data.color);
+            }, function errorCallback(response: any) {
+                console.log("Farbe konnte nicht ermittelt werden. Status:");
+                console.log(response.status);
+            });
+            return promise;
         }
 
         public beep() {

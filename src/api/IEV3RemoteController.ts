@@ -5,6 +5,7 @@ namespace BinarisEV3 {
         rotate(degrees: number): any;
         beep(): any;
         buzz(): any;
+        getColor(): any;
         getNumberOfActions(): number;
         addAction(action: string): void;
         clearActionList(): void;

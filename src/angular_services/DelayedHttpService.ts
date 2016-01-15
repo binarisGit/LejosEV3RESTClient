@@ -20,8 +20,11 @@ namespace BinarisEV3 {
         public sendDelayedHttpRequest(url: string) {
             this.delay = this.delay + this.DELAY_TIME;
 
+            console.log(url + " " + this.delay);
+
             var http = this.http;
             return this.timeout(function () {
+                console.log("sending request....");
                 return http.get(url);
             }, this.delay);
 

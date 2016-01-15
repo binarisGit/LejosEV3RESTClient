@@ -8,6 +8,7 @@
     <script src="src/angular_services/DelayedHttpService.js"></script>
     <script src="src/angular_services/EV3DifferentialPilotAdapterService.js"></script>
     <script src="src/angular_services/EV3SoundAdapterService.js"></script>
+    <script src="src/angular_services/EV3ColorAdapterService.js"></script>
     <script src="src/angular_services/BaseBallBewegungsartenService.js"></script>
     <script src="src/angular_services/BaseBallTrainingsUebungService.js"></script>
     <script src="src/angular_controllers/EV3RemoteController.js"></script>
@@ -45,18 +46,24 @@
                 </div>
 
                 <div class="text-center" ng-controller="EV3RemoteController as ev3RemoteController">
-                    <button ng-click="ev3RemoteController.rotate(-45)" type="button" class="btn btn-default"
-                            id="rotateLeftButton" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <button ng-click="ev3RemoteController.getColor()" type="button" class="btn btn-default"
+                            id="getColorButton" aria-label="Left Align">
+                        <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
                     </button>
-                    <button ng-click="ev3RemoteController.run(10)" type="button" class="btn btn-default"
-                            aria-label="Left Align">
-                        laufen
-                    </button>
-                    <button ng-click="ev3RemoteController.rotate(45)" type="button" class="btn btn-default"
-                            aria-label="Left Align">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    </button>
+                    <div style="padding-top: 5px">
+                        <button ng-click="ev3RemoteController.rotate(-45)" type="button" class="btn btn-default"
+                                id="rotateLeftButton" aria-label="Left Align">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        </button>
+                        <button ng-click="ev3RemoteController.run(10)" type="button" class="btn btn-default"
+                                aria-label="Left Align">
+                            laufen
+                        </button>
+                        <button ng-click="ev3RemoteController.rotate(45)" type="button" class="btn btn-default"
+                                aria-label="Left Align">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        </button>
+                    </div>
                     <div style="padding-top: 5px">
                         <button ng-click="ev3RemoteController.buzz()" type="button" class="btn btn-default"
                                 aria-label="Left Align">
@@ -71,7 +78,7 @@
 
                     <!-- eigene Methoden -->
                     <div ng-controller="MainController as mainController">
-                        <p>
+                        <p style="padding-top: 5px">
                             <button ng-click="mainController.executeCustomActionMethod(1)" type="button"
                                     class="btn btn-danger"
                                     aria-label="Left Align">
@@ -82,15 +89,18 @@
                                     aria-label="Left Align">
                                 B
                             </button>
-                            <button ng-click="mainController.c()" type="button" class="btn btn-danger"
+                            <button ng-click="mainController.executeCustomActionMethod(3)" type="button"
+                                    class="btn btn-danger"
                                     aria-label="Left Align">
                                 C
                             </button>
-                            <button ng-click="mainController.d()" type="button" class="btn btn-danger"
+                            <button ng-click="mainController.executeCustomActionMethod(4)" type="button"
+                                    class="btn btn-danger"
                                     aria-label="Left Align">
                                 D
                             </button>
-                            <button ng-click="mainController.e()" type="button" class="btn btn-danger"
+                            <button ng-click="mainController.executeCustomActionMethod(5)" type="button"
+                                    class="btn btn-danger"
                                     aria-label="Left Align">
                                 E
                             </button>
