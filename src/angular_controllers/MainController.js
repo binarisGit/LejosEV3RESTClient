@@ -30,8 +30,7 @@ var BinarisEV3;
             }
         };
         MainController.prototype.a = function () {
-            this.baseBallTrainingsUebungService.tippeln();
-            this.ev3SoundAdapterService.beep();
+            this.ev3ColorAdapterService.getSpecificColor();
         };
         MainController.prototype.b = function () {
             this.baseBallBewegungsArten.laufen(40);
@@ -61,6 +60,7 @@ var BinarisEV3;
         };
         MainController.prototype.e = function () {
             console.log(this.ev3ColorAdapterService);
+            this.ev3DifferentialPilotAdapterService.run(40);
             this.ev3ColorAdapterService.getColor().then(function successCallback(response) {
                 console.log("Farbe: ");
                 console.log(response.data.color);

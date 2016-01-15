@@ -50,9 +50,18 @@ namespace BinarisEV3 {
          */
 
         public a() {
-            this.baseBallTrainingsUebungService.tippeln();
-
-            this.ev3SoundAdapterService.beep();
+            /*
+            console.log(this.ev3ColorAdapterService);
+            this.ev3DifferentialPilotAdapterService.run(40);
+            this.ev3ColorAdapterService.getColor().then(function successCallback(response: any) {
+                console.log("Farbe: ");
+                console.log(response.data.color);
+            }, function errorCallback(response: any) {
+                console.log("Farbe konnte nicht ermittelt werden. Status:");
+                console.log(response.status);
+            });
+            */
+            this.ev3ColorAdapterService.getSpecificColor();
         }
 
         // homerun
@@ -92,6 +101,7 @@ namespace BinarisEV3 {
 
         public e() {
             console.log(this.ev3ColorAdapterService);
+            this.ev3DifferentialPilotAdapterService.run(40);
             this.ev3ColorAdapterService.getColor().then(function successCallback(response: any) {
                 console.log("Farbe: ");
                 console.log(response.data.color);

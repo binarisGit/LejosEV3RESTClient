@@ -31,15 +31,11 @@
 
     <div>
 
-        <p>
-            <button style="width:100%;" type="button" class="btn btn-success btn-lg" aria-label="Left Align">start
-            </button>
-        </p>
-
         <div class="panel panel-default">
 
             <div class="panel-body text-center">
-                <p>Gebe beliebig viele Aktionen ein, die der Roboter sequenziell ausführen soll: </p>
+                <p>Steuere den Roboter direkt oder führe eigene Aktionen aus. Eigene Aktionen müssen im <strong>MainController</strong>
+                    implementiert werden. </p>
 
                 <div>
                     <img src="ev3_robot.png" width="150px;" height="auto">
@@ -76,59 +72,56 @@
                     </div>
 
 
-                    <!-- eigene Methoden -->
-                    <div ng-controller="MainController as mainController">
-                        <p style="padding-top: 5px">
-                            <button ng-click="mainController.executeCustomActionMethod(1)" type="button"
-                                    class="btn btn-danger"
-                                    aria-label="Left Align">
-                                A
-                            </button>
-                            <button ng-click="mainController.executeCustomActionMethod(2)" type="button"
-                                    class="btn btn-danger"
-                                    aria-label="Left Align">
-                                B
-                            </button>
-                            <button ng-click="mainController.executeCustomActionMethod(3)" type="button"
-                                    class="btn btn-danger"
-                                    aria-label="Left Align">
-                                C
-                            </button>
-                            <button ng-click="mainController.executeCustomActionMethod(4)" type="button"
-                                    class="btn btn-danger"
-                                    aria-label="Left Align">
-                                D
-                            </button>
-                            <button ng-click="mainController.executeCustomActionMethod(5)" type="button"
-                                    class="btn btn-danger"
-                                    aria-label="Left Align">
-                                E
-                            </button>
-                        </p>
-                    </div>
-
                 </div>
             </div>
 
-            <div>
-                <button ng-click="ev3RemoteController.run(10)" type="button" class="btn btn-info"
-                        aria-label="Left Align">
-                    Liste leeren
-                </button>
+            <!-- eigene Methoden -->
+            <div ng-controller="MainController as mainController">
+                <!-- Table -->
+                <table class="table">
+                    <tr>
+                        <th>Eigene Aktionen: </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button ng-click="mainController.executeCustomActionMethod(1)" style="width:100%;"
+                                    type="button" class="btn btn-danger"
+                                    aria-label="Left Align">
+                                FREI
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button ng-click="mainController.executeCustomActionMethod(2)" style="width:100%;"
+                                    type="button" class="btn btn-danger"
+                                    aria-label="Left Align">
+                                FREI
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button ng-click="mainController.executeCustomActionMethod(3)" style="width:100%;"
+                                    type="button" class="btn btn-danger"
+                                    aria-label="Left Align">
+                                FREI
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button ng-click="mainController.executeCustomActionMethod(4)" style="width:100%;"
+                                    type="button" class="btn btn-danger"
+                                    aria-label="Left Align">
+                                FREI
+                            </button>
+                        </td>
+                    </tr>
+
+
+                </table>
             </div>
-
-            <!-- Table -->
-            <table class="table">
-                <tr>
-                    <th>#</th>
-                    <th>Aktion</th>
-                </tr>
-                <tr ng-repeat="i in [1,2,3,4,5,6,7,8] track by $index">
-                    <td>{{$index+1}}</td>
-                    <td>laufen</td>
-                </tr>
-
-            </table>
         </div>
     </div>
 
