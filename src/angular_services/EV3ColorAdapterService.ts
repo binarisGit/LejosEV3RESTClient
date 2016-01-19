@@ -2,6 +2,8 @@ namespace BinarisEV3 {
 
     import IIntervalService = angular.IIntervalService;
     import IQService = angular.IQService;
+    import IDeferred = angular.IDeferred;
+    import IPromise = angular.IPromise;
 
     export class EV3ColorAdapterService implements IColorAdapterService {
         public static IID: string = "EV3ColorAdapterService";
@@ -33,22 +35,44 @@ namespace BinarisEV3 {
 
             //var getColorInterval = $interval(getColor, 1000, 3);
 
-            getColor(null).then(getColor).then(getColor);
+            getColor(null).then(function (promise: any) {
+                this.getColor();
 
-            function getColor(promise: any) {
-                console.log(promise);
-
-                if (promise != null) {
-                    if (promise.data.color === colorCode) {
-                        console.log("color matches!");
-                        return qService.reject('some error occured');
-                    }
-
-                } else {
+                if (promise.data.color === colorCode) {
+                    console.log("color matches!");
+                    return qService.reject('some error occured');
+                }
+                else {
                     return delayedHttpService.sendDelayedHttpRequest(url);
+                }
+            });
+
+            function checkColor(color: number) {
+                var deferred: IDeferred<any> = qService.defer();
+                var newPromise: IPromise<any> = deferred.promise;
+
+                if (color != 13) {
+                    console.log("color does not match. Sending next request...");
+                    delayedHttpService.sendDelayedHttpRequest(url);
+                    deferred.resolve(color);
+                } else {
+                    console.log("color matches. No further requests!");
+                    deferred.reject(n);
                 }
 
                 /*
+
+                 if (promise != null) {
+                 if (promise.data.color === colorCode) {
+                 console.log("color matches!");
+                 return qService.reject('some error occured');
+                 }
+
+                 } else {
+                 return delayedHttpService.sendDelayedHttpRequest(url);
+                 }
+
+                 /*
                  .then(function successCallback(response: any) {
                  console.log("getSpecificColor: " + response.data.color);
 

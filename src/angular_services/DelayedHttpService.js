@@ -11,6 +11,7 @@ var BinarisEV3;
             this.timeout = $timeout;
         }
         DelayedHttpService.prototype.sendDelayedHttpRequest = function (url) {
+            console.log(this.delay);
             this.delay = this.delay + this.DELAY_TIME;
             console.log(url + " " + this.delay);
             var http = this.http;

@@ -3,7 +3,7 @@ namespace BinarisEV3 {
     export class EV3SoundAdapterService implements ISoundAdapterService {
         public static IID: string = "EV3SoundAdapterService";
         private delayedHttpService: IDelayedHttpService;
-        private BASE_URL: string = "http://10.0.0.44:8080/sound";
+        private BASE_URL: string = "http://10.0.0.44:8080/api/sound";
 
         static $inject = ["DelayedHttpService"];
 

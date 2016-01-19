@@ -17,17 +17,27 @@ var BinarisEV3;
             var url = this.BASE_URL + '/getcolor';
             var delayedHttpService = this.delayedHttpService;
             var qService = this.qService;
-            getColor(null).then(getColor).then(getColor);
-            function getColor(promise) {
-                console.log(promise);
-                if (promise != null) {
-                    if (promise.data.color === colorCode) {
-                        console.log("color matches!");
-                        return qService.reject('some error occured');
-                    }
+            getColor(null).then(function (promise) {
+                this.getColor();
+                if (promise.data.color === colorCode) {
+                    console.log("color matches!");
+                    return qService.reject('some error occured');
                 }
                 else {
                     return delayedHttpService.sendDelayedHttpRequest(url);
+                }
+            });
+            function checkColor(color) {
+                var deferred = qService.defer();
+                var newPromise = deferred.promise;
+                if (color != 13) {
+                    console.log("color does not match. Sending next request...");
+                    delayedHttpService.sendDelayedHttpRequest(url);
+                    deferred.resolve(color);
+                }
+                else {
+                    console.log("color matches. No further requests!");
+                    deferred.reject(n);
                 }
             }
         };

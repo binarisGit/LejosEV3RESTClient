@@ -2,7 +2,7 @@ var BinarisEV3;
 (function (BinarisEV3) {
     var EV3DifferentialPilotAdapterService = (function () {
         function EV3DifferentialPilotAdapterService(DelayedHttpService) {
-            this.BASE_URL = "http://10.0.0.44:8080/differentialpilot";
+            this.BASE_URL = "http://10.0.0.44:8080/api/differentialpilot";
             this.delayedHttpService = DelayedHttpService;
         }
         EV3DifferentialPilotAdapterService.prototype.run = function (distance) {
