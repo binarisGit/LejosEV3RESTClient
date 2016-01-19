@@ -1,36 +1,16 @@
 var BinarisEV3;
 (function (BinarisEV3) {
     var MainController = (function () {
-        function MainController($scope, $http, $q, EV3DifferentialPilotAdapterService, EV3SoundAdapterService, EV3ColorAdapterService, BaseBallBewegungsArtenService, BaseBallTrainingsUebungService, DelayedHttpService) {
+        function MainController($scope, $http, $q, EV3DifferentialPilotAdapterService, EV3SoundAdapterService, EV3ColorAdapterService, BaseBallBewegungsArtenService, BaseBallTrainingsUebungService) {
             this.$scope = $scope;
             this.qService = $q;
             this.httpService = $http;
-            this.delayedHttpService = DelayedHttpService;
             this.ev3DifferentialPilotAdapterService = EV3DifferentialPilotAdapterService;
             this.ev3SoundAdapterService = EV3SoundAdapterService;
             this.ev3ColorAdapterService = EV3ColorAdapterService;
             this.baseBallBewegungsArten = BaseBallBewegungsArtenService;
             this.baseBallTrainingsUebungService = BaseBallTrainingsUebungService;
         }
-        MainController.prototype.executeCustomActionMethod = function (id) {
-            this.delayedHttpService.resetHttpSendDelay();
-            switch (id) {
-                case 1:
-                    this.a();
-                    break;
-                case 2:
-                    this.b();
-                    break;
-                case 3:
-                    this.c();
-                    break;
-                case 4:
-                    this.d();
-                    break;
-                case 5:
-                    this.e();
-            }
-        };
         MainController.prototype.a = function () {
             var http = this.httpService;
             http.get("http://10.0.0.44:8080/sound/beep").then(function () {
@@ -48,13 +28,19 @@ var BinarisEV3;
             });
         };
         MainController.prototype.b = function () {
-            this.baseBallBewegungsArten.laufen(40);
-            this.baseBallBewegungsArten.rechtsWenden();
-            this.baseBallBewegungsArten.laufen(40);
-            this.baseBallBewegungsArten.rechtsWenden();
-            this.baseBallBewegungsArten.laufen(40);
-            this.baseBallBewegungsArten.rechtsWenden();
-            this.baseBallBewegungsArten.laufen(40);
+            console.log("executing....");
+            var ev3DifferentialPilotAdapterService = this.ev3DifferentialPilotAdapterService;
+            var ev3SoundAdapterService = this.ev3SoundAdapterService;
+            var ev3ColorAdapterService = this.ev3ColorAdapterService;
+            ev3DifferentialPilotAdapterService.run(5).then(function () {
+                return ev3DifferentialPilotAdapterService.rotate(120);
+            }).then(function () {
+                return ev3SoundAdapterService.beep();
+            }).then(function () {
+                return ev3ColorAdapterService.getColor();
+            }).then(function () {
+                return ev3SoundAdapterService.buzz();
+            });
         };
         MainController.prototype.c = function () {
             this.ev3SoundAdapterService.buzz();
@@ -83,7 +69,7 @@ var BinarisEV3;
                 console.log(response.status);
             });
         };
-        MainController.$inject = ["$scope", "$http", "$q", "EV3DifferentialPilotAdapterService", "EV3SoundAdapterService", "EV3ColorAdapterService", "BaseBallBewegungsArtenService", "BaseBallTrainingsUebungService", "DelayedHttpService"];
+        MainController.$inject = ["$scope", "$http", "$q", "EV3DifferentialPilotAdapterService", "EV3SoundAdapterService", "EV3ColorAdapterService", "BaseBallBewegungsArtenService", "BaseBallTrainingsUebungService"];
         return MainController;
     })();
     BinarisEV3.MainController = MainController;

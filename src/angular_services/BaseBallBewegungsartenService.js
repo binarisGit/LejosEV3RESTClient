@@ -19,8 +19,7 @@ var BinarisEV3;
         BaseBallBewegungsArtenService.prototype.rechtsWenden = function () {
             this.ev3DifferentialPilotAdapterService.rotate(-90);
         };
-        BaseBallBewegungsArtenService.IID = "BaseBallBewegungsArtenService";
-        BaseBallBewegungsArtenService.$inject = [BinarisEV3.EV3DifferentialPilotAdapterService.IID];
+        BaseBallBewegungsArtenService.$inject = ["EV3DifferentialPilotAdapterService"];
         return BaseBallBewegungsArtenService;
     })();
     BinarisEV3.BaseBallBewegungsArtenService = BaseBallBewegungsArtenService;

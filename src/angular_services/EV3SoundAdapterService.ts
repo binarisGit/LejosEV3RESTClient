@@ -1,24 +1,23 @@
 namespace BinarisEV3 {
 
     export class EV3SoundAdapterService implements ISoundAdapterService {
-        public static IID: string = "EV3SoundAdapterService";
-        private delayedHttpService: IDelayedHttpService;
-        private BASE_URL: string = "http://10.0.0.44:8080/api/sound";
+        private httpService: ng.IHttpService;
+        private BASE_URL: string = "http://10.0.0.44:8080/sound";
 
-        static $inject = ["DelayedHttpService"];
+        static $inject = ["$http"];
 
-        constructor(DelayedHttpService: IDelayedHttpService) {
-            this.delayedHttpService = DelayedHttpService;
+        constructor($http: ng.IHttpService) {
+            this.httpService = $http;
         }
 
         public buzz() {
             var url = this.BASE_URL + '/buzz';
-            return this.delayedHttpService.sendDelayedHttpRequest(url);
+            return this.httpService.get(url);
         }
 
         public beep() {
             var url = this.BASE_URL + '/beep';
-            return this.delayedHttpService.sendDelayedHttpRequest(url);
+            return this.httpService.get(url);
         }
     }
 }

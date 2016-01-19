@@ -2,7 +2,6 @@ namespace BinarisEV3 {
     import IHttpService = angular.IHttpService;
     export class MainController {
         private $scope: ng.IScope;
-        private delayedHttpService: IDelayedHttpService;
         private ev3DifferentialPilotAdapterService: IDifferentialPilotAdapterService;
         private ev3SoundAdapterService: ISoundAdapterService;
         private ev3ColorAdapterService: IColorAdapterService;
@@ -11,41 +10,19 @@ namespace BinarisEV3 {
         private httpService: IHttpService;
         private qService: any;
 
-        static $inject = ["$scope", "$http", "$q", "EV3DifferentialPilotAdapterService", "EV3SoundAdapterService", "EV3ColorAdapterService", "BaseBallBewegungsArtenService", "BaseBallTrainingsUebungService", "DelayedHttpService"];
+        static $inject = ["$scope", "$http", "$q", "EV3DifferentialPilotAdapterService", "EV3SoundAdapterService", "EV3ColorAdapterService", "BaseBallBewegungsArtenService", "BaseBallTrainingsUebungService"];
 
         constructor($scope: ng.IScope, $http: IHttpService, $q: any, EV3DifferentialPilotAdapterService: IDifferentialPilotAdapterService,
                     EV3SoundAdapterService: ISoundAdapterService, EV3ColorAdapterService: IColorAdapterService,
-                    BaseBallBewegungsArtenService: ISportBewegungsArtenService, BaseBallTrainingsUebungService: ITrainingsUebungService, DelayedHttpService: IDelayedHttpService) {
+                    BaseBallBewegungsArtenService: ISportBewegungsArtenService, BaseBallTrainingsUebungService: ITrainingsUebungService) {
             this.$scope = $scope;
             this.qService = $q;
             this.httpService = $http;
-            this.delayedHttpService = DelayedHttpService;
             this.ev3DifferentialPilotAdapterService = EV3DifferentialPilotAdapterService;
             this.ev3SoundAdapterService = EV3SoundAdapterService;
             this.ev3ColorAdapterService = EV3ColorAdapterService;
             this.baseBallBewegungsArten = BaseBallBewegungsArtenService;
             this.baseBallTrainingsUebungService = BaseBallTrainingsUebungService;
-        }
-
-        public executeCustomActionMethod(id: number) {
-            this.delayedHttpService.resetHttpSendDelay();
-
-            switch (id) {
-                case 1:
-                    this.a();
-                    break;
-                case 2:
-                    this.b();
-                    break;
-                case 3:
-                    this.c();
-                    break;
-                case 4:
-                    this.d();
-                    break;
-                case 5:
-                    this.e();
-            }
         }
 
         /*
@@ -55,9 +32,7 @@ namespace BinarisEV3 {
          */
 
         public a() {
-
             var http = this.httpService;
-
             http.get("http://10.0.0.44:8080/sound/beep").then(function () {
                 return http.get("http://10.0.0.44:8080/differentialpilot/run/10");
             }).then(function () {
@@ -71,19 +46,24 @@ namespace BinarisEV3 {
             }).then(function () {
                 return http.get("http://10.0.0.44:8080/sound/buzz");
             });
-
-
         }
 
         // homerun
         public b() {
-            this.baseBallBewegungsArten.laufen(40);
-            this.baseBallBewegungsArten.rechtsWenden();
-            this.baseBallBewegungsArten.laufen(40);
-            this.baseBallBewegungsArten.rechtsWenden();
-            this.baseBallBewegungsArten.laufen(40);
-            this.baseBallBewegungsArten.rechtsWenden();
-            this.baseBallBewegungsArten.laufen(40);
+            console.log("executing....");
+            var ev3DifferentialPilotAdapterService = this.ev3DifferentialPilotAdapterService;
+            var ev3SoundAdapterService = this.ev3SoundAdapterService;
+            var ev3ColorAdapterService = this.ev3ColorAdapterService;
+
+            ev3DifferentialPilotAdapterService.run(5).then(function () {
+                return ev3DifferentialPilotAdapterService.rotate(120);
+            }).then(function () {
+                return ev3SoundAdapterService.beep();
+            }).then(function () {
+                return ev3ColorAdapterService.getColor();
+            }).then(function () {
+                return ev3SoundAdapterService.buzz();
+            });
 
             //this.ev3SoundAdapterService.beep();
 

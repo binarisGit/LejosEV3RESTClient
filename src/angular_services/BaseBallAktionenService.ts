@@ -8,7 +8,7 @@ namespace BinarisEV3 {
         private ev3DifferentialPilotAdapterService: IDifferentialPilotAdapterService;
         private ev3SoundAdapterService: ISoundAdapterService;
 
-        static $inject = [EV3DifferentialPilotAdapterService.IID, EV3SoundAdapterService.IID];
+        static $inject = ["EV3DifferentialPilotAdapterService", "EV3SoundAdapterService"];
 
         constructor(EV3DifferentialPilotAdapterService: IDifferentialPilotAdapterService, EV3SoundAdapterService: ISoundAdapterService) {
             this.ev3DifferentialPilotAdapterService = EV3DifferentialPilotAdapterService;

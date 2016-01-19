@@ -8,7 +8,7 @@ namespace BinarisEV3 {
         public LAUF_DISTANZ_STOP_AND_GO_SEQUENZ = 20;
         private baseBallBewegungsArtenService: ISportBewegungsArtenService;
 
-        static $inject = [BaseBallBewegungsArtenService.IID];
+        static $inject = ["BaseBallBewegungsArtenService"];
 
         constructor(BaseBallBewegungsArtenService: ISportBewegungsArtenService) {
             this.baseBallBewegungsArtenService = BaseBallBewegungsArtenService;

@@ -23,7 +23,7 @@ var BinarisEV3;
         BaseBallAktionenService.prototype.schlageBall = function () {
             return (Math.random() * (101 - 0) + 0);
         };
-        BaseBallAktionenService.$inject = [BinarisEV3.EV3DifferentialPilotAdapterService.IID, BinarisEV3.EV3SoundAdapterService.IID];
+        BaseBallAktionenService.$inject = ["EV3DifferentialPilotAdapterService", "EV3SoundAdapterService"];
         return BaseBallAktionenService;
     })();
     BinarisEV3.BaseBallAktionenService = BaseBallAktionenService;

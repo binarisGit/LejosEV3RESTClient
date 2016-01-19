@@ -5,7 +5,6 @@
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
     <script src="bower_components/angular/angular.js"></script>
-    <script src="src/angular_services/DelayedHttpService.js"></script>
     <script src="src/angular_services/EV3DifferentialPilotAdapterService.js"></script>
     <script src="src/angular_services/EV3SoundAdapterService.js"></script>
     <script src="src/angular_services/EV3ColorAdapterService.js"></script>
@@ -84,7 +83,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <button ng-click="mainController.executeCustomActionMethod(1)" style="width:100%;"
+                            <button ng-click="mainController.a()" style="width:100%;"
                                     type="button" class="btn btn-danger"
                                     aria-label="Left Align">
                                 FREI
@@ -93,7 +92,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <button ng-click="mainController.executeCustomActionMethod(2)" style="width:100%;"
+                            <button ng-click="mainController.b()" style="width:100%;"
                                     type="button" class="btn btn-danger"
                                     aria-label="Left Align">
                                 FREI
@@ -102,7 +101,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <button ng-click="mainController.executeCustomActionMethod(3)" style="width:100%;"
+                            <button ng-click="mainController.c()" style="width:100%;"
                                     type="button" class="btn btn-danger"
                                     aria-label="Left Align">
                                 FREI
@@ -111,7 +110,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <button ng-click="mainController.executeCustomActionMethod(4)" style="width:100%;"
+                            <button ng-click="mainController.d()" style="width:100%;"
                                     type="button" class="btn btn-danger"
                                     aria-label="Left Align">
                                 FREI

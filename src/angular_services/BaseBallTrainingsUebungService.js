@@ -23,7 +23,7 @@ var BinarisEV3;
             this.baseBallBewegungsArtenService.linksWenden();
             this.baseBallBewegungsArtenService.rechtsWenden();
         };
-        BaseBallTrainingsUebungService.$inject = [BinarisEV3.BaseBallBewegungsArtenService.IID];
+        BaseBallTrainingsUebungService.$inject = ["BaseBallBewegungsArtenService"];
         return BaseBallTrainingsUebungService;
     })();
     BinarisEV3.BaseBallTrainingsUebungService = BaseBallTrainingsUebungService;

@@ -16,11 +16,11 @@
  */
 describe("Integration test suite with asynchronous HTTP Requests: ", function () {
     var ev3DifferentialPilotAdapterService;
-    var delayedHttpService;
+    var http;
     beforeEach(function () {
         var $injector = angular.injector(['ng', 'binarisEV3DifferentialPilot']);
-        this.delayedHttpService = $injector.get('DelayedHttpService');
-        ev3DifferentialPilotAdapterService = new BinarisEV3.EV3DifferentialPilotAdapterService(this.delayedHttpService);
+        http = $injector.get('$http');
+        ev3DifferentialPilotAdapterService = new BinarisEV3.EV3DifferentialPilotAdapterService(http);
     });
     it("should perform a REAL http-Request to the 'run'-endpoint", function (done) {
         var promise = ev3DifferentialPilotAdapterService.run(10);
