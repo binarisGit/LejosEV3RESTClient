@@ -9,8 +9,6 @@ var BinarisEV3;
             var url = this.BASE_URL + '/getcolor';
             return this.httpService.get(url);
         };
-        EV3ColorAdapterService.prototype.getSpecificColor = function () {
-        };
         EV3ColorAdapterService.$inject = ["$http"];
         return EV3ColorAdapterService;
     })();

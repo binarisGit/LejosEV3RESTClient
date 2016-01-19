@@ -6,7 +6,7 @@ namespace BinarisEV3 {
 
         static $inject = ["$http"];
 
-        constructor($http: ng.IHttpService):ng.IPromise<any> {
+        constructor($http: ng.IHttpService) {
             this.httpService = $http;
         }
 
