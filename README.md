@@ -29,16 +29,9 @@ Falls [tsd](http://definitelytyped.org/tsd/) noch nicht global installiert, vorh
 #!javascript
 
 
-tsd install jasmine
+tsd install
 ```
 
-
-
-```
-#!javascript
-
-tsd install angular_mocks
-```
 
 
 

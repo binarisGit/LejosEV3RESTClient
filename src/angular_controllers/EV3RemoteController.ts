@@ -15,22 +15,22 @@ namespace BinarisEV3 {
             this.ev3ColorAdapterService = EV3ColorAdapterService;
         }
 
-        public run(distance: number) {
+        public run(distance: number):ng.IPromise<any> {
             console.log("controller: run");
             return this.ev3DifferentialPilotAdapterService.run(10);
         }
 
-        public rotate(degrees: number) {
+        public rotate(degrees: number):ng.IPromise<any> {
             console.log("controller: rotate");
             return this.ev3DifferentialPilotAdapterService.rotate(45);
         }
 
-        public buzz() {
+        public buzz():ng.IPromise<any> {
             console.log("controller: buzz");
             return this.ev3SoundAdapterService.buzz();
         }
 
-        getColor(): any {
+        getColor(): ng.IPromise<any> {
             console.log("controller: getColor");
 
             var promise = this.ev3ColorAdapterService.getColor().then(function successCallback(response: any) {
@@ -42,21 +42,9 @@ namespace BinarisEV3 {
             return promise;
         }
 
-        public beep() {
+        public beep():ng.IPromise<any> {
             console.log("controller: beep");
             return this.ev3SoundAdapterService.beep();
-        }
-
-        public getNumberOfActions(): number {
-            return this.actionList.length;
-        }
-
-        public addAction(action: string): void {
-            this.actionList.push(action);
-        }
-
-        public clearActionList(): void {
-            this.actionList = [];
         }
     }
 }

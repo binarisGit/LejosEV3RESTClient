@@ -1,7 +1,7 @@
 
 namespace BinarisEV3 {
     export interface IColorAdapterService {
-        getColor(): any;
-        getSpecificColor(): any;
+        getColor(): ng.IPromise<any>;
+        getSpecificColor(): ng.IPromise<any>;
     }
 }

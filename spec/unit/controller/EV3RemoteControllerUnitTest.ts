@@ -43,21 +43,5 @@ describe("EV3RemoteController Unit Test suite: ", function () {
         expect(ev3DifferentialPilotAdapterService.rotate).toHaveBeenCalledWith(45);
     });
 
-    it('action list should contain a single element after adding an action', function () {
-        ev3RemoteController.addAction('laufen');
-        expect(ev3RemoteController.getNumberOfActions()).toBe(1);
-    });
-
-    it('action list should contain two elements after adding two actions', function () {
-        ev3RemoteController.addAction('laufen');
-        ev3RemoteController.addAction('linksDrehen');
-        expect(ev3RemoteController.getNumberOfActions()).toBe(2);
-    });
-
-    it('action list with one element should contain no elements after clearing the list', function() {
-        ev3RemoteController.addAction('rotate');
-        ev3RemoteController.clearActionList();
-        expect(ev3RemoteController.getNumberOfActions()).toBe(0);
-    });
 
 });

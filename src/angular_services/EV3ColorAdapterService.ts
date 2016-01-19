@@ -10,12 +10,12 @@ namespace BinarisEV3 {
             this.httpService = $http;
         }
 
-        public getColor(): any {
+        public getColor(): ng.IPromise<any> {
             var url = this.BASE_URL + '/getcolor';
             return this.httpService.get(url);
         }
 
-        public getSpecificColor(): any {
+        public getSpecificColor() {
             /*
              var colorCode = 5;
              var url = this.BASE_URL + '/getcolor';

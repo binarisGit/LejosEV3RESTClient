@@ -1,6 +1,6 @@
 namespace BinarisEV3 {
     export interface ISoundAdapterService {
-        buzz(): any;
-        beep(): any;
+        buzz(): ng.IPromise<any>;
+        beep(): ng.IPromise<any>;
     }
 }

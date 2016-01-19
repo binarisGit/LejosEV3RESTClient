@@ -6,16 +6,16 @@ namespace BinarisEV3 {
 
         static $inject = ["$http"];
 
-        constructor($http: ng.IHttpService) {
+        constructor($http: ng.IHttpService):ng.IPromise<any> {
             this.httpService = $http;
         }
 
-        public buzz() {
+        public buzz():ng.IPromise<any> {
             var url = this.BASE_URL + '/buzz';
             return this.httpService.get(url);
         }
 
-        public beep() {
+        public beep():ng.IPromise<any> {
             var url = this.BASE_URL + '/beep';
             return this.httpService.get(url);
         }

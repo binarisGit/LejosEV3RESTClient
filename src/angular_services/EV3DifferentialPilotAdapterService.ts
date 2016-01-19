@@ -10,18 +10,18 @@ namespace BinarisEV3 {
             this.httpService = $http;
         }
 
-        public run(distance: number) {
+        public run(distance: number):ng.IPromise<any> {
             var url = this.BASE_URL + '/run/' + distance;
             console.log(url);
             return this.httpService.get(url);
         }
 
-        public rotate(degrees: number) {
+        public rotate(degrees: number):ng.IPromise<any> {
             var url = this.BASE_URL + '/rotate/' + degrees;
             return this.httpService.get(url);
         }
 
-        public stop() {
+        public stop():ng.IPromise<any> {
             var url = this.BASE_URL + '/stop';
             return this.httpService.get(url);
         }

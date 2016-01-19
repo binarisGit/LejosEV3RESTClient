@@ -1,14 +1,11 @@
 namespace BinarisEV3 {
 
     export interface IEV3RemoteController {
-        run(distance: number): any;
-        rotate(degrees: number): any;
-        beep(): any;
-        buzz(): any;
-        getColor(): any;
-        getNumberOfActions(): number;
-        addAction(action: string): void;
-        clearActionList(): void;
+        run(distance: number): ng.IPromise<any>;
+        rotate(degrees: number): ng.IPromise<any>;
+        beep(): ng.IPromise<any>;
+        buzz(): ng.IPromise<any>;
+        getColor(): ng.IPromise<any>;
     }
 
 }

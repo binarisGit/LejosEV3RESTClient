@@ -34,15 +34,6 @@ var BinarisEV3;
             console.log("controller: beep");
             return this.ev3SoundAdapterService.beep();
         };
-        EV3RemoteController.prototype.getNumberOfActions = function () {
-            return this.actionList.length;
-        };
-        EV3RemoteController.prototype.addAction = function (action) {
-            this.actionList.push(action);
-        };
-        EV3RemoteController.prototype.clearActionList = function () {
-            this.actionList = [];
-        };
         EV3RemoteController.$inject = ["$scope", "EV3DifferentialPilotAdapterService", "EV3SoundAdapterService", "EV3ColorAdapterService"];
         return EV3RemoteController;
     })();
