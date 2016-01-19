@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/AngularJsHttpIntegrationTests.iml" filepath="$PROJECT_DIR$/.idea/AngularJsHttpIntegrationTests.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/lejosev3restclient.iml" filepath="$PROJECT_DIR$/.idea/lejosev3restclient.iml" />
     </modules>
   </component>
