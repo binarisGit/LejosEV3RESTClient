@@ -2,7 +2,7 @@ namespace BinarisEV3 {
 
     export class EV3ColorAdapterService implements IColorAdapterService {
         private httpService: ng.IHttpService;
-        private BASE_URL: string = "http://10.0.0.44:8080/color";
+        private COLOR_ENDPOINT_URL: string = AppConfig.BASE_URL + "http://10.0.0.44:8080/color";
 
         static $inject = ["$http"];
 
@@ -11,7 +11,7 @@ namespace BinarisEV3 {
         }
 
         public getColor(): ng.IPromise<any> {
-            var url = this.BASE_URL + '/getcolor';
+            var url = this.COLOR_ENDPOINT_URL + '/getcolor';
             return this.httpService.get(url);
         }
 

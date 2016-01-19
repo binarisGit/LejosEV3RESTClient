@@ -2,20 +2,19 @@ var BinarisEV3;
 (function (BinarisEV3) {
     var EV3DifferentialPilotAdapterService = (function () {
         function EV3DifferentialPilotAdapterService($http) {
-            this.BASE_URL = "http://10.0.0.44:8080/differentialpilot";
+            this.PILOT_ENDPOINT_URL = BinarisEV3.AppConfig.BASE_URL + "differentialpilot";
             this.httpService = $http;
         }
         EV3DifferentialPilotAdapterService.prototype.run = function (distance) {
-            var url = this.BASE_URL + '/run/' + distance;
-            console.log(url);
+            var url = this.PILOT_ENDPOINT_URL + '/run/' + distance;
             return this.httpService.get(url);
         };
         EV3DifferentialPilotAdapterService.prototype.rotate = function (degrees) {
-            var url = this.BASE_URL + '/rotate/' + degrees;
+            var url = this.PILOT_ENDPOINT_URL + '/rotate/' + degrees;
             return this.httpService.get(url);
         };
         EV3DifferentialPilotAdapterService.prototype.stop = function () {
-            var url = this.BASE_URL + '/stop';
+            var url = this.PILOT_ENDPOINT_URL + '/stop';
             return this.httpService.get(url);
         };
         EV3DifferentialPilotAdapterService.$inject = ["$http"];

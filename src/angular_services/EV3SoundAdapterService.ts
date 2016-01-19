@@ -2,7 +2,7 @@ namespace BinarisEV3 {
 
     export class EV3SoundAdapterService implements ISoundAdapterService {
         private httpService: ng.IHttpService;
-        private BASE_URL: string = "http://10.0.0.44:8080/sound";
+        private SOUND_ENDPOINT_URL: string = AppConfig.BASE_URL + "sound";
 
         static $inject = ["$http"];
 
@@ -10,13 +10,13 @@ namespace BinarisEV3 {
             this.httpService = $http;
         }
 
-        public buzz():ng.IPromise<any> {
-            var url = this.BASE_URL + '/buzz';
+        public buzz(): ng.IPromise<any> {
+            var url = this.SOUND_ENDPOINT_URL + '/buzz';
             return this.httpService.get(url);
         }
 
-        public beep():ng.IPromise<any> {
-            var url = this.BASE_URL + '/beep';
+        public beep(): ng.IPromise<any> {
+            var url = this.SOUND_ENDPOINT_URL + '/beep';
             return this.httpService.get(url);
         }
     }
