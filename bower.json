@@ -13,7 +13,10 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "1.4.8",
-    "jquery": "1.9.1 - 2"
-  }
+    "bootstrap": "~3.3.6",
+    "angular-mocks": "~1.4.8"
+  },
+  "authors": [
+    "Cappin79 <BiNaRiS42>"
+  ]
 }
