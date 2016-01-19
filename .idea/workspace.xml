@@ -197,28 +197,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AngularJsHttpIntegrationTests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AngularJsHttpIntegrationTests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="lejosev3restclient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -226,7 +216,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="SearchEverywhereHistoryKey" value="settings&#9;ACTION&#9;WelcomeScreen.Settings&#10;termina&#9;ACTION&#9;ActivateTerminalToolWindow&#10;template&#9;ACTION&#9;InsertLiveTemplate&#10;terminal&#9;ACTION&#9;ActivateTerminalToolWindow&#10;typescr&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;termi&#9;ACTION&#9;ActivateTerminalToolWindow&#10;typescript&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;typ&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;type&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;typescri&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;typesc&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;sett&#9;ACTION&#9;WelcomeScreen.Settings&#10;termianl&#9;null&#9;null&#10;proje&#9;ACTION&#9;ActivateProjectToolWindow&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;pro&#9;ACTION&#9;ActivateProjectToolWindow&#10;ter&#9;ACTION&#9;ActivateTerminalToolWindow&#10;settings#&#9;ACTION&#9;WelcomeScreen.Settings&#10;project&#9;ACTION&#9;ActivateProjectToolWindow&#10;EV3Differ&#9;FILE&#9;file://C:/Users/user/AngularProjekt/src/controller/EV3DifferentialPilotRestClientController.ts&#10;navi&#9;ACTION&#9;ShowNavBar&#10;toggle fullsc&#9;ACTION&#9;ToggleFullScreen&#10;toggle full&#9;ACTION&#9;ToggleFullScreen&#10;setting&#9;ACTION&#9;WelcomeScreen.Settings&#10;termin&#9;ACTION&#9;ActivateTerminalToolWindow&#10;types&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.35812134" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs5\node.exe" />
     <property name="js-tslint-nodeInterpreter" value="C:\Program Files\nodejs5\node.exe" />
