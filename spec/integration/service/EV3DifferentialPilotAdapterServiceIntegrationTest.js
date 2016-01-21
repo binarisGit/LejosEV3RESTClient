@@ -21,8 +21,7 @@ describe("Integration test suite with asynchronous HTTP Requests: ", function ()
         ev3DifferentialPilotAdapterService = $injector.get("EV3DifferentialPilotAdapterService");
     });
     it("should perform a REAL http-Request to the 'run'-endpoint", function (done) {
-        var promise = ev3DifferentialPilotAdapterService.run(10);
-        promise.then(function successCallback(response) {
+        ev3DifferentialPilotAdapterService.run(10).then(function successCallback(response) {
             expect(response.status).toBe(200);
             done();
         });

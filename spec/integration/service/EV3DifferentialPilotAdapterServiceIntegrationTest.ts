@@ -27,8 +27,7 @@ describe("Integration test suite with asynchronous HTTP Requests: ", () => {
     });
 
     it("should perform a REAL http-Request to the 'run'-endpoint", (done) => {
-        var promise = ev3DifferentialPilotAdapterService.run(10);
-        promise.then(function successCallback(response: any) {
+        ev3DifferentialPilotAdapterService.run(10).then(function successCallback(response: any) {
             expect(response.status).toBe(200);
             done();
         });

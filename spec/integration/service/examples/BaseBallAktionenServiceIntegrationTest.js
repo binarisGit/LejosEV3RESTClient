@@ -1,8 +1,5 @@
 describe("BaseBallAktionen Integration test suite: ", function () {
     var baseBallAktionenService;
-    var ev3DifferentialPilotAdapterService;
-    var ev3SoundAdapterService;
-    var ev3ColorAdapterService;
     beforeEach(angular.mock.module('binarisEV3DifferentialPilot'));
     beforeEach(function () {
         var $injector = angular.injector(['ng', 'binarisEV3DifferentialPilot']);

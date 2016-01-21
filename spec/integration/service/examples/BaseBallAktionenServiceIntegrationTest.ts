@@ -4,11 +4,6 @@ describe("BaseBallAktionen Integration test suite: ", function () {
     // SUT
     var baseBallAktionenService: any;
 
-    // DOC
-    var ev3DifferentialPilotAdapterService: any;
-    var ev3SoundAdapterService: any;
-    var ev3ColorAdapterService: any;
-
     beforeEach(angular.mock.module('binarisEV3DifferentialPilot'));
 
     beforeEach(function () {
