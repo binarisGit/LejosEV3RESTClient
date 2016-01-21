@@ -42,6 +42,9 @@ tsd install
 
 # Verzeichnisstruktur #
 
+Die source-Dateien gliedern sich in Angularjs-Services, -Controller und -Direktiven. Zugehörige Interfaces liegen in den Ordnern *api* und *third_api*. Alle Tests liegen in *spec* (hier nicht abgebildet):
+
+
 ![baseball_tdd_schulung_paketstruktur.png](https://bitbucket.org/repo/4686Ep/images/2731117870-baseball_tdd_schulung_paketstruktur.png)
 
 
