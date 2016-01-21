@@ -2,7 +2,7 @@
 
 # EV3 JavaScript REST-Client #
 
-REST-Client auf Basis von TypeScript und AngularJS für den REST-Service [LejosEV3RestService](https://bitbucket.org/Cappin79/lejosev3restservice). Enthält eine Remote zum Ansteuern des EV3 sowie beispielhafte E2E/Integrations/Unit-Tests.
+REST-Client auf Basis von *TypeScript* und *AngularJS* für den REST-Service [LejosEV3RestService](https://bitbucket.org/Cappin79/lejosev3restservice). Enthält eine Remote zum Ansteuern des EV3 sowie beispielhafte *E2E/Integrations/Unit-Tests*.
 
 
 # Installation #
