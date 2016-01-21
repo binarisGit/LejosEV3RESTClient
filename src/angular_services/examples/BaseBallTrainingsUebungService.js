@@ -5,23 +5,22 @@ var BinarisEV3;
 (function (BinarisEV3) {
     var BaseBallTrainingsUebungService = (function () {
         function BaseBallTrainingsUebungService(BaseBallBewegungsArtenService) {
-            this.TIPPEL_SCHRITT_DISTANZ = 4;
-            this.LAUF_DISTANZ_STOP_AND_GO_SEQUENZ = 20;
             this.baseBallBewegungsArtenService = BaseBallBewegungsArtenService;
         }
         BaseBallTrainingsUebungService.prototype.tippeln = function () {
-            this.baseBallBewegungsArtenService.laufen(this.TIPPEL_SCHRITT_DISTANZ);
-            this.baseBallBewegungsArtenService.laufen(-this.TIPPEL_SCHRITT_DISTANZ);
-            this.baseBallBewegungsArtenService.laufen(this.TIPPEL_SCHRITT_DISTANZ);
-        };
-        BaseBallTrainingsUebungService.prototype.stopAndGo = function (anzahlSequenzen) {
-            this.tippeln();
-            this.baseBallBewegungsArtenService.laufen(this.LAUF_DISTANZ_STOP_AND_GO_SEQUENZ);
-            this.tippeln();
+            var baseBallBewegungsArtenService = this.baseBallBewegungsArtenService;
+            var TIPPEL_SCHRITT_DISTANZ = 4;
+            return this.baseBallBewegungsArtenService.laufen(TIPPEL_SCHRITT_DISTANZ).then(function () {
+                return baseBallBewegungsArtenService.laufen(-TIPPEL_SCHRITT_DISTANZ);
+            }).then(function () {
+                return baseBallBewegungsArtenService.laufen(TIPPEL_SCHRITT_DISTANZ);
+            });
         };
         BaseBallTrainingsUebungService.prototype.schlaegerSchwingen = function () {
-            this.baseBallBewegungsArtenService.linksWenden();
-            this.baseBallBewegungsArtenService.rechtsWenden();
+            var baseBallBewegungsArtenService = this.baseBallBewegungsArtenService;
+            return this.baseBallBewegungsArtenService.linksWenden().then(function () {
+                return baseBallBewegungsArtenService.rechtsWenden();
+            });
         };
         BaseBallTrainingsUebungService.$inject = ["BaseBallBewegungsArtenService"];
         return BaseBallTrainingsUebungService;

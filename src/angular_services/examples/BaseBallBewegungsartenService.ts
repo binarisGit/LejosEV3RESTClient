@@ -12,21 +12,20 @@ namespace BinarisEV3 {
             this.ev3DifferentialPilotAdapterService = EV3DifferentialPilotAdapterService;
         }
 
-        public laufen(laufstrecke: number): void {
-            this.ev3DifferentialPilotAdapterService.run(laufstrecke);
+        public laufen(laufstrecke: number): ng.IPromise<any> {
+            return this.ev3DifferentialPilotAdapterService.run(laufstrecke);
         }
 
-        public anhalten(): void {
-            this.ev3DifferentialPilotAdapterService.stop();
+        public anhalten(): ng.IPromise<any> {
+            return this.ev3DifferentialPilotAdapterService.stop();
         }
 
-        public linksWenden(): void {
-            var promise = this.ev3DifferentialPilotAdapterService.rotate(90);
-
+        public linksWenden(): ng.IPromise<any> {
+            return this.ev3DifferentialPilotAdapterService.rotate(90);
         }
 
-        public rechtsWenden(): void {
-            this.ev3DifferentialPilotAdapterService.rotate(-90);
+        public rechtsWenden(): ng.IPromise<any> {
+            return this.ev3DifferentialPilotAdapterService.rotate(-90);
         }
     }
 }

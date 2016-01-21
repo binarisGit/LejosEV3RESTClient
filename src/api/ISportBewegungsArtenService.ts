@@ -1,9 +1,9 @@
 namespace BinarisEV3 {
 
     export interface ISportBewegungsArtenService {
-        laufen(laufstrecke: number) : void;
-        anhalten() : void;
-        linksWenden() : void;
-        rechtsWenden() : void;
+        laufen(laufstrecke: number) : ng.IPromise<any>;
+        anhalten() : ng.IPromise<any>;
+        linksWenden() : ng.IPromise<any>;
+        rechtsWenden() : ng.IPromise<any>;
     }
 }

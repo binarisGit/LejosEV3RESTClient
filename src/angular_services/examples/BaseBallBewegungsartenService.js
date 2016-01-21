@@ -8,16 +8,16 @@ var BinarisEV3;
             this.ev3DifferentialPilotAdapterService = EV3DifferentialPilotAdapterService;
         }
         BaseBallBewegungsArtenService.prototype.laufen = function (laufstrecke) {
-            this.ev3DifferentialPilotAdapterService.run(laufstrecke);
+            return this.ev3DifferentialPilotAdapterService.run(laufstrecke);
         };
         BaseBallBewegungsArtenService.prototype.anhalten = function () {
-            this.ev3DifferentialPilotAdapterService.stop();
+            return this.ev3DifferentialPilotAdapterService.stop();
         };
         BaseBallBewegungsArtenService.prototype.linksWenden = function () {
-            var promise = this.ev3DifferentialPilotAdapterService.rotate(90);
+            return this.ev3DifferentialPilotAdapterService.rotate(90);
         };
         BaseBallBewegungsArtenService.prototype.rechtsWenden = function () {
-            this.ev3DifferentialPilotAdapterService.rotate(-90);
+            return this.ev3DifferentialPilotAdapterService.rotate(-90);
         };
         BaseBallBewegungsArtenService.$inject = ["EV3DifferentialPilotAdapterService"];
         return BaseBallBewegungsArtenService;
