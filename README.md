@@ -48,6 +48,6 @@ tsd install
 
 # UML-Klassendiagramm #
 
-Das Design des folgenden Klassendiagramms ist durch [TDD](https://en.wikipedia.org/wiki/Test-driven_development) entstanden. Die Sensoren des EV3-Roboters werden mittels DifferentialPilotAdapter, ColorAdapter und SoundAdapter per REST angesprochen. 
+Das Design des folgenden Klassendiagramms ist durch [TDD](https://en.wikipedia.org/wiki/Test-driven_development) entstanden. Die Sensoren des EV3-Roboters werden mittels **DifferentialPilotAdapter**, **ColorAdapter** und **SoundAdapter** per REST angesprochen. 
 
 ![baseball_tdd_schulung_konzeptr.png](https://bitbucket.org/repo/4686Ep/images/4105179146-baseball_tdd_schulung_konzeptr.png)
