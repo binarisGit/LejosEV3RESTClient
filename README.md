@@ -7,7 +7,7 @@ REST-Client auf Basis von *TypeScript* und *AngularJS* für den REST-Service [Le
 
 # Installation #
 
-Zum Ausführen der Tests muss der Test-Runner [Karma] (https://karma-runner.github.io/0.13/index.html) installiert werden:
+Zum Ausführen der Tests muss der Test-Runner [Karma](https://karma-runner.github.io/0.13/index.html) installiert werden:
 
 ```
 #!javascript
