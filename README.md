@@ -16,6 +16,7 @@ npm install -g karma
 ```
 
 
+Externe .js Dateien (wie bsp. angular.js) werden mittels [bower](http://bower.io/) installiert:
 
 ```
 #!javascript
@@ -24,7 +25,14 @@ bower install
 ```
 
 
-Falls [tsd](http://definitelytyped.org/tsd/) noch nicht global installiert, vorher "*npm install -g tsd*" eingeben. Im Anschluss alle benötigten d.ts Dateien installieren, damit TypeScript die Typen von jasmine und angular kennt. 
+Der TypeScript-Compiler benötigt die Datentypen von *AngularJS* und *Jasmine*, ansonsten wird er eine Fehlermeldung ausgeben. Die Installation der dafür notwendigen *d.ts* Dateien erfolgt mittels [tsd](http://definitelytyped.org/tsd/).
+Falls tsd noch nicht global installiert, vorher "*npm install -g tsd*" eingeben. Im Anschluss alle d.ts-Dateien installieren, die in 
+```
+#!text
+
+tsd.json
+```
+ definiert sind: 
 
 ```
 #!javascript
