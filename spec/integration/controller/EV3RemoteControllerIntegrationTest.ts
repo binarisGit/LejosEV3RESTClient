@@ -4,40 +4,33 @@ describe("EV3RemoteController Integration test suite: ", function () {
     var ev3RemoteController: any;
 
     // DOC
-    var ev3DifferentialPilotAdapterService: BinarisEV3.IDifferentialPilotAdapterService;
+    var ev3DifferentialPilotAdapterService: any;
 
     beforeEach(angular.mock.module('binarisEV3DifferentialPilot'));
 
+    beforeEach(()=> {
+        var $injector = angular.injector(['ng', 'binarisEV3DifferentialPilot']);
+        var $controller: any = $injector.get("$controller");
+        ev3DifferentialPilotAdapterService = $injector.get("EV3DifferentialPilotAdapterService");
 
-
-    beforeEach(function () {
-        angular.mock.inject(function ($controller: ng.IControllerService, $q: any, EV3DifferentialPilotAdapterService: IDifferentialPilotAdapterService) {
-            ev3DifferentialPilotAdapterService = EV3DifferentialPilotAdapterService;
-
-            ev3RemoteController = $controller('EV3RemoteController', {
-                $scope: {},
-                EV3DifferentialPilotAdapterService: EV3DifferentialPilotAdapterService
-            });
-
+        ev3RemoteController = $controller('EV3RemoteController', {
+            $scope: {},
+            EV3DifferentialPilotAdapterService: ev3DifferentialPilotAdapterService
         });
     });
 
-    it("should get a promise from run", function () {
-        spyOn(ev3DifferentialPilotAdapterService, 'run').and.callThrough();
-
-        var promise = ev3RemoteController.run(10);
-
-        expect(promise.then).toBeDefined();
-        expect(ev3DifferentialPilotAdapterService.run).toHaveBeenCalledWith(10);
-
+    it("should run 10 m", (done) => {
+        ev3DifferentialPilotAdapterService.run(10).then((response: any)=> {
+            expect(response.status).toBe(200);
+            done();
+        });
     });
-    it("should get a promise from rotate", function () {
-        spyOn(ev3DifferentialPilotAdapterService, 'rotate').and.callThrough();
 
-        var promise = ev3RemoteController.rotate(45);
-
-        expect(promise.then).toBeDefined();
-        expect(ev3DifferentialPilotAdapterService.rotate).toHaveBeenCalledWith(45);
+    it("should get a promise from rotate", (done) => {
+        ev3DifferentialPilotAdapterService.rotate(45).then((response: any)=> {
+            expect(response.status).toBe(200);
+            done();
+        });
     });
 
 });
