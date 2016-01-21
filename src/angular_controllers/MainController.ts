@@ -1,6 +1,18 @@
 namespace BinarisEV3 {
-    import IHttpService = angular.IHttpService;
+    import IHttpService = ng.IHttpService;
     export class MainController {
+
+        /*
+         ===================================================
+         Change name of red action-buttons in index.html:
+         ===================================================
+         */
+        private defaultButtonName: string = "change button name in src/MainController.js";
+        public SLOT_A_ACTION_NAME = "tippeln";
+        public SLOT_B_ACTION_NAME = "stopAndGo";
+        public SLOT_C_ACTION_NAME = this.defaultButtonName;
+        public SLOT_D_ACTION_NAME = this.defaultButtonName;
+
         private $scope: ng.IScope;
         private ev3DifferentialPilotAdapterService: IDifferentialPilotAdapterService;
         private ev3SoundAdapterService: ISoundAdapterService;
@@ -24,11 +36,10 @@ namespace BinarisEV3 {
         }
 
         /*
-         ===================================
-         Add your Code in following methods:
-         ===================================
+         ===================================================
+         Add your code for red action-buttons in index.html:
+         ===================================================
          */
-
         public a() {
 
         }

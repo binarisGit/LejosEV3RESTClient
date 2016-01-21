@@ -2,7 +2,7 @@ var BinarisEV3;
 (function (BinarisEV3) {
     var EV3ColorAdapterService = (function () {
         function EV3ColorAdapterService($http) {
-            this.COLOR_ENDPOINT_URL = BinarisEV3.AppConfig.BASE_URL + "http://10.0.0.44:8080/color";
+            this.COLOR_ENDPOINT_URL = BinarisEV3.AppConfig.BASE_URL + "color";
             this.httpService = $http;
         }
         EV3ColorAdapterService.prototype.getColor = function () {

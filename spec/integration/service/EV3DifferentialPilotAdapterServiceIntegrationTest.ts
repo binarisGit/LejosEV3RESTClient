@@ -43,5 +43,27 @@ describe("Integration test suite with asynchronous HTTP Requests: ", function ()
         });
     });
 
+    it("should perform a REAL http-Request to the 'stop'-endpoint", function (done) {
+        ev3DifferentialPilotAdapterService.stop().then(function successCallback(response: any) {
+            expect(response.status).toBe(200);
+            done();
+        });
+    });
+
+    it("should perform a REAL http-Request to the 'quickStop'-endpoint", function (done) {
+        ev3DifferentialPilotAdapterService.stop().then(function successCallback(response: any) {
+            expect(response.status).toBe(200);
+            done();
+        });
+    });
+
+    it("should perform a REAL http-Request to the 'getMovementIncrement'-endpoint", function (done) {
+        ev3DifferentialPilotAdapterService.getMovementIncrement().then(function successCallback(response: any) {
+            expect(response.data.movementincrement).toBeDefined();
+            expect(response.status).toBe(200);
+            done();
+        });
+    });
+
 });
 

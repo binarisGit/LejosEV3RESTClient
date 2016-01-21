@@ -24,5 +24,15 @@ namespace BinarisEV3 {
             var url = this.PILOT_ENDPOINT_URL + '/stop';
             return this.httpService.get(url);
         }
+
+        public quickStop(): angular.IPromise<any> {
+            var url = this.PILOT_ENDPOINT_URL + '/quickStop';
+            return this.httpService.get(url);
+        }
+
+        public getMovementIncrement(): angular.IPromise<any> {
+            var url = this.PILOT_ENDPOINT_URL + '/getmovementincrement';
+            return this.httpService.get(url);
+        }
     }
 }

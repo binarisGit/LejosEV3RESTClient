@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
-    <script src="app.conf.ts"></script>
+    <script src="app.conf.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="src/angular_services/EV3DifferentialPilotAdapterService.js"></script>
     <script src="src/angular_services/EV3SoundAdapterService.js"></script>
@@ -23,6 +23,7 @@
     <div>
         <h1>EV3 Remote</h1>
 
+
         <p>
             Benutzeroberfläche zum Steuern des EV3 LEGO Mindstorms Roboters.<br/>
         </p>
@@ -38,7 +39,9 @@
                     implementiert werden. </p>
 
                 <div>
+                    <img src="binaris_education.png">
                     <img src="ev3_robot.png" width="150px;" height="auto">
+
                 </div>
 
                 <div class="text-center" ng-controller="EV3RemoteController as ev3RemoteController">
@@ -80,14 +83,14 @@
                 <!-- Table -->
                 <table class="table">
                     <tr>
-                        <th>Eigene Aktionen: </th>
+                        <th>Eigene Aktionen:</th>
                     </tr>
                     <tr>
                         <td>
                             <button ng-click="mainController.a()" style="width:100%;"
                                     type="button" class="btn btn-danger"
                                     aria-label="Left Align">
-                                FREI
+                                {{mainController.SLOT_A_ACTION_NAME}}
                             </button>
                         </td>
                     </tr>
@@ -96,7 +99,7 @@
                             <button ng-click="mainController.b()" style="width:100%;"
                                     type="button" class="btn btn-danger"
                                     aria-label="Left Align">
-                                FREI
+                                {{mainController.SLOT_B_ACTION_NAME}}
                             </button>
                         </td>
                     </tr>
@@ -105,7 +108,7 @@
                             <button ng-click="mainController.c()" style="width:100%;"
                                     type="button" class="btn btn-danger"
                                     aria-label="Left Align">
-                                FREI
+                                {{mainController.SLOT_C_ACTION_NAME}}
                             </button>
                         </td>
                     </tr>
@@ -114,7 +117,7 @@
                             <button ng-click="mainController.d()" style="width:100%;"
                                     type="button" class="btn btn-danger"
                                     aria-label="Left Align">
-                                FREI
+                                {{mainController.SLOT_D_ACTION_NAME}}
                             </button>
                         </td>
                     </tr>

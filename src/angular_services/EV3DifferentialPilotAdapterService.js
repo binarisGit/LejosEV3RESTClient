@@ -17,6 +17,14 @@ var BinarisEV3;
             var url = this.PILOT_ENDPOINT_URL + '/stop';
             return this.httpService.get(url);
         };
+        EV3DifferentialPilotAdapterService.prototype.quickStop = function () {
+            var url = this.PILOT_ENDPOINT_URL + '/quickStop';
+            return this.httpService.get(url);
+        };
+        EV3DifferentialPilotAdapterService.prototype.getMovementIncrement = function () {
+            var url = this.PILOT_ENDPOINT_URL + '/getmovementincrement';
+            return this.httpService.get(url);
+        };
         EV3DifferentialPilotAdapterService.$inject = ["$http"];
         return EV3DifferentialPilotAdapterService;
     })();

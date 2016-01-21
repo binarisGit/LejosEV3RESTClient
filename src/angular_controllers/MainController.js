@@ -2,6 +2,11 @@ var BinarisEV3;
 (function (BinarisEV3) {
     var MainController = (function () {
         function MainController($scope, $http, EV3DifferentialPilotAdapterService, EV3SoundAdapterService, EV3ColorAdapterService, BaseBallBewegungsArtenService, BaseBallTrainingsUebungService) {
+            this.defaultButtonName = "change button name in src/MainController.js";
+            this.SLOT_A_ACTION_NAME = "tippeln";
+            this.SLOT_B_ACTION_NAME = "stopAndGo";
+            this.SLOT_C_ACTION_NAME = this.defaultButtonName;
+            this.SLOT_D_ACTION_NAME = this.defaultButtonName;
             this.$scope = $scope;
             this.httpService = $http;
             this.ev3DifferentialPilotAdapterService = EV3DifferentialPilotAdapterService;
