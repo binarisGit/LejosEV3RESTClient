@@ -22,25 +22,21 @@ var BinarisEV3;
             this.baseBallTrainingsUebungService.schlaegerSchwingen();
         };
         MainController.prototype.c = function () {
-            var ev3DifferentialPilotAdapterService = this.ev3DifferentialPilotAdapterService;
-            var ev3SoundAdapterService = this.ev3SoundAdapterService;
+            var _this = this;
             this.ev3DifferentialPilotAdapterService.run(40).then(function () {
-                console.log("recaived run...");
-            });
-            ev3DifferentialPilotAdapterService.run(40).then(function () {
-                return ev3DifferentialPilotAdapterService.rotate(90);
+                return _this.ev3DifferentialPilotAdapterService.rotate(90);
             }).then(function () {
-                return ev3DifferentialPilotAdapterService.run(40);
+                return _this.ev3DifferentialPilotAdapterService.run(40);
             }).then(function () {
-                return ev3DifferentialPilotAdapterService.rotate(90);
+                return _this.ev3DifferentialPilotAdapterService.rotate(90);
             }).then(function () {
-                return ev3DifferentialPilotAdapterService.run(40);
+                return _this.ev3DifferentialPilotAdapterService.run(40);
             }).then(function () {
-                return ev3DifferentialPilotAdapterService.rotate(90);
+                return _this.ev3DifferentialPilotAdapterService.rotate(90);
             }).then(function () {
-                return ev3DifferentialPilotAdapterService.run(40);
+                return _this.ev3DifferentialPilotAdapterService.run(40);
             }).then(function () {
-                return ev3SoundAdapterService.beep();
+                return _this.ev3SoundAdapterService.beep();
             });
         };
         MainController.prototype.d = function () {

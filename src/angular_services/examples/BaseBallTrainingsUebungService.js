@@ -8,18 +8,18 @@ var BinarisEV3;
             this.baseBallBewegungsArtenService = BaseBallBewegungsArtenService;
         }
         BaseBallTrainingsUebungService.prototype.tippeln = function () {
-            var baseBallBewegungsArtenService = this.baseBallBewegungsArtenService;
+            var _this = this;
             var TIPPEL_SCHRITT_DISTANZ = 4;
             return this.baseBallBewegungsArtenService.laufen(TIPPEL_SCHRITT_DISTANZ).then(function () {
-                return baseBallBewegungsArtenService.laufen(-TIPPEL_SCHRITT_DISTANZ);
+                return _this.baseBallBewegungsArtenService.laufen(-TIPPEL_SCHRITT_DISTANZ);
             }).then(function () {
-                return baseBallBewegungsArtenService.laufen(TIPPEL_SCHRITT_DISTANZ);
+                return _this.baseBallBewegungsArtenService.laufen(TIPPEL_SCHRITT_DISTANZ);
             });
         };
         BaseBallTrainingsUebungService.prototype.schlaegerSchwingen = function () {
-            var baseBallBewegungsArtenService = this.baseBallBewegungsArtenService;
+            var _this = this;
             return this.baseBallBewegungsArtenService.linksWenden().then(function () {
-                return baseBallBewegungsArtenService.rechtsWenden();
+                return _this.baseBallBewegungsArtenService.rechtsWenden();
             });
         };
         BaseBallTrainingsUebungService.$inject = ["BaseBallBewegungsArtenService"];

@@ -13,19 +13,17 @@ namespace BinarisEV3 {
         }
 
         public tippeln(): ng.IPromise<any> {
-            var baseBallBewegungsArtenService = this.baseBallBewegungsArtenService;
             var TIPPEL_SCHRITT_DISTANZ = 4;
-            return this.baseBallBewegungsArtenService.laufen(TIPPEL_SCHRITT_DISTANZ).then(function () {
-                return baseBallBewegungsArtenService.laufen(-TIPPEL_SCHRITT_DISTANZ);
-            }).then(function () {
-                return baseBallBewegungsArtenService.laufen(TIPPEL_SCHRITT_DISTANZ);
+            return this.baseBallBewegungsArtenService.laufen(TIPPEL_SCHRITT_DISTANZ).then(()=> {
+                return this.baseBallBewegungsArtenService.laufen(-TIPPEL_SCHRITT_DISTANZ);
+            }).then(()=> {
+                return this.baseBallBewegungsArtenService.laufen(TIPPEL_SCHRITT_DISTANZ);
             });
         }
 
         public schlaegerSchwingen(): ng.IPromise<any> {
-            var baseBallBewegungsArtenService = this.baseBallBewegungsArtenService;
-            return this.baseBallBewegungsArtenService.linksWenden().then(function () {
-                return baseBallBewegungsArtenService.rechtsWenden();
+            return this.baseBallBewegungsArtenService.linksWenden().then(()=> {
+                return this.baseBallBewegungsArtenService.rechtsWenden();
             });
         }
     }

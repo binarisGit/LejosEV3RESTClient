@@ -54,35 +54,25 @@ namespace BinarisEV3 {
 
         public c() {
             // using the EV3DifferentialAdapter directly to perform a home run
-            var ev3DifferentialPilotAdapterService = this.ev3DifferentialPilotAdapterService;
-            var ev3SoundAdapterService = this.ev3SoundAdapterService;
-
-            this.ev3DifferentialPilotAdapterService.run(40).then(()=> {
-                console.log("recaived run...");
-            });
-
-            ev3DifferentialPilotAdapterService.run(40).then(function () {
-                return ev3DifferentialPilotAdapterService.rotate(90);
-            }).then(function () {
-                return ev3DifferentialPilotAdapterService.run(40);
-            }).then(function () {
-                return ev3DifferentialPilotAdapterService.rotate(90);
-            }).then(function () {
-                return ev3DifferentialPilotAdapterService.run(40);
-            }).then(function () {
-                return ev3DifferentialPilotAdapterService.rotate(90);
-            }).then(function () {
-                return ev3DifferentialPilotAdapterService.run(40);
-            }).then(function () {
-                return ev3SoundAdapterService.beep();
+            this.ev3DifferentialPilotAdapterService.run(40).then(() => {
+                return this.ev3DifferentialPilotAdapterService.rotate(90);
+            }).then(()=> {
+                return this.ev3DifferentialPilotAdapterService.run(40);
+            }).then(() => {
+                return this.ev3DifferentialPilotAdapterService.rotate(90);
+            }).then(() => {
+                return this.ev3DifferentialPilotAdapterService.run(40);
+            }).then(() => {
+                return this.ev3DifferentialPilotAdapterService.rotate(90);
+            }).then(() => {
+                return this.ev3DifferentialPilotAdapterService.run(40);
+            }).then(() => {
+                return this.ev3SoundAdapterService.beep();
             });
         }
 
         public d() {
-     
             alert("Keine Implementierung. Füge eine Implementierung im MainController.js ein.");
         }
-
     }
-
 }
