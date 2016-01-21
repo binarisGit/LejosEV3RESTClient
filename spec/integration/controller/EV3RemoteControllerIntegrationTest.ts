@@ -8,6 +8,8 @@ describe("EV3RemoteController Integration test suite: ", function () {
 
     beforeEach(angular.mock.module('binarisEV3DifferentialPilot'));
 
+
+
     beforeEach(function () {
         angular.mock.inject(function ($controller: ng.IControllerService, $q: any, EV3DifferentialPilotAdapterService: IDifferentialPilotAdapterService) {
             ev3DifferentialPilotAdapterService = EV3DifferentialPilotAdapterService;
