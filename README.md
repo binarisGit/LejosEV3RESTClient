@@ -16,7 +16,7 @@ npm install -g karma
 ```
 
 
-Externe .js Dateien (wie bsp. angular.js) werden mittels [bower](http://bower.io/) installiert:
+Externe .js Dateien (wie z.B. angular.js) werden mittels [bower](http://bower.io/) installiert:
 
 ```
 #!javascript
