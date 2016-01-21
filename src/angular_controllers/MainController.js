@@ -24,6 +24,9 @@ var BinarisEV3;
         MainController.prototype.c = function () {
             var ev3DifferentialPilotAdapterService = this.ev3DifferentialPilotAdapterService;
             var ev3SoundAdapterService = this.ev3SoundAdapterService;
+            this.ev3DifferentialPilotAdapterService.run(40).then(function () {
+                console.log("recaived run...");
+            });
             ev3DifferentialPilotAdapterService.run(40).then(function () {
                 return ev3DifferentialPilotAdapterService.rotate(90);
             }).then(function () {
