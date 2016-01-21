@@ -15,27 +15,27 @@
 
  */
 
-describe("EV3SoundAdapterService Integration test suite with asynchronous HTTP Requests: ", function () {
+describe("EV3SoundAdapterService Integration test suite with asynchronous HTTP Requests: ", () => {
 
     // SUT
     var ev3SoundAdapterService: BinarisEV3.ISoundAdapterService;
     var http: any;
 
-    beforeEach(function () {
+    beforeEach(() => {
         // get the REAL $http-Service, not the fake one from angular-mocks.js
         var $injector = angular.injector(['ng', 'binarisEV3DifferentialPilot']);
         http = $injector.get('$http');
         ev3SoundAdapterService = new BinarisEV3.EV3SoundAdapterService(http);
     });
 
-    it("should perform a REAL http-Request to the 'buzz'-endpoint", function (done) {
+    it("should perform a REAL http-Request to the 'buzz'-endpoint", (done) => {
         ev3SoundAdapterService.buzz().then(function successCallback(response: any) {
             expect(response.status).toBe(200);
             done();
         });
     });
 
-    it("should perform a REAL http-Request to the 'beep'-endpoint", function (done) {
+    it("should perform a REAL http-Request to the 'beep'-endpoint", (done) => {
         ev3SoundAdapterService.beep().then(function successCallback(response: any) {
             expect(response.status).toBe(200);
             done();

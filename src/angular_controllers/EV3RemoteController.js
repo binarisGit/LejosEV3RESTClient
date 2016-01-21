@@ -2,7 +2,6 @@ var BinarisEV3;
 (function (BinarisEV3) {
     var EV3RemoteController = (function () {
         function EV3RemoteController($scope, EV3DifferentialPilotAdapterService, EV3SoundAdapterService, EV3ColorAdapterService) {
-            this.actionList = [];
             this.$scope = $scope;
             this.ev3DifferentialPilotAdapterService = EV3DifferentialPilotAdapterService;
             this.ev3SoundAdapterService = EV3SoundAdapterService;
@@ -22,7 +21,7 @@ var BinarisEV3;
         };
         EV3RemoteController.prototype.getColor = function () {
             console.log("controller: getColor");
-            var promise = this.ev3ColorAdapterService.getColor().then(function successCallback(response) {
+            var promise = this.ev3ColorAdapterService.getColor().then(function (response) {
                 console.log("Farbcode: " + response.data.color);
             }, function errorCallback(response) {
                 console.log("Farbe konnte nicht ermittelt werden. Status:");

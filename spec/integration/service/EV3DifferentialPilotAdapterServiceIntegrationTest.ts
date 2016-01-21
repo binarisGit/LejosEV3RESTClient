@@ -15,20 +15,20 @@
 
  */
 
-describe("Integration test suite with asynchronous HTTP Requests: ", function () {
+describe("Integration test suite with asynchronous HTTP Requests: ", () => {
 
     // SUT
     var ev3DifferentialPilotAdapterService: BinarisEV3.IDifferentialPilotAdapterService;
     var http: any;
 
-    beforeEach(function () {
+    beforeEach(() => {
         // get the REAL $http-Service, not the fake one from angular-mocks.js
         var $injector = angular.injector(['ng', 'binarisEV3DifferentialPilot']);
         http = $injector.get('$http');
         ev3DifferentialPilotAdapterService = new BinarisEV3.EV3DifferentialPilotAdapterService(http);
     });
 
-    it("should perform a REAL http-Request to the 'run'-endpoint", function (done) {
+    it("should perform a REAL http-Request to the 'run'-endpoint", (done) => {
         var promise = ev3DifferentialPilotAdapterService.run(10);
         promise.then(function successCallback(response: any) {
             expect(response.status).toBe(200);
@@ -36,28 +36,28 @@ describe("Integration test suite with asynchronous HTTP Requests: ", function ()
         });
     });
 
-    it("should perform a REAL http-Request to the 'rotation'-endpoint", function (done) {
+    it("should perform a REAL http-Request to the 'rotation'-endpoint", (done) => {
         ev3DifferentialPilotAdapterService.rotate(45).then(function successCallback(response: any) {
             expect(response.status).toBe(200);
             done();
         });
     });
 
-    it("should perform a REAL http-Request to the 'stop'-endpoint", function (done) {
+    it("should perform a REAL http-Request to the 'stop'-endpoint", (done) => {
         ev3DifferentialPilotAdapterService.stop().then(function successCallback(response: any) {
             expect(response.status).toBe(200);
             done();
         });
     });
 
-    it("should perform a REAL http-Request to the 'quickStop'-endpoint", function (done) {
+    it("should perform a REAL http-Request to the 'quickStop'-endpoint", (done) => {
         ev3DifferentialPilotAdapterService.stop().then(function successCallback(response: any) {
             expect(response.status).toBe(200);
             done();
         });
     });
 
-    it("should perform a REAL http-Request to the 'getMovementIncrement'-endpoint", function (done) {
+    it("should perform a REAL http-Request to the 'getMovementIncrement'-endpoint", (done) => {
         ev3DifferentialPilotAdapterService.run(10).then(function successCallback(response: any) {
             return ev3DifferentialPilotAdapterService.getMovementIncrement();
         }).then(function successCallback(response: any) {

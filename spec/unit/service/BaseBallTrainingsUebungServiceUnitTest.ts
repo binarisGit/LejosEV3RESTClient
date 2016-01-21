@@ -1,6 +1,6 @@
 import ITrainingsUebungService = BinarisEV3.ITrainingsUebungService;
 import ISportBewegungsArtenService = BinarisEV3.ISportBewegungsArtenService;
-describe("TrainingsUebung Unit test suite: ", function () {
+describe("TrainingsUebung Unit test suite: ", () => {
 
     // SUT
     var baseBallTrainingsUebungService: any;
@@ -10,14 +10,14 @@ describe("TrainingsUebung Unit test suite: ", function () {
 
     beforeEach(angular.mock.module('binarisEV3DifferentialPilot'));
 
-    beforeEach(function () {
+    beforeEach(() => {
         angular.mock.inject(function ($injector: any, BaseBallBewegungsArtenService: ISportBewegungsArtenService) {
             baseBallBewegungsArtenService = BaseBallBewegungsArtenService;
             baseBallTrainingsUebungService = new BinarisEV3.BaseBallTrainingsUebungService(baseBallBewegungsArtenService);
         });
     });
 
-    it("baseball spieler tippelt", function () {
+    it("baseball spieler tippelt", () => {
         spyOn(baseBallBewegungsArtenService, 'laufen');
         baseBallTrainingsUebungService.tippeln();
         expect(baseBallBewegungsArtenService.laufen).toHaveBeenCalledWith(1);
@@ -26,7 +26,7 @@ describe("TrainingsUebung Unit test suite: ", function () {
     });
 
 
-    it("baseball spieler uebt schwingen des schlaegers", function () {
+    it("baseball spieler uebt schwingen des schlaegers", () => {
         spyOn(baseBallBewegungsArtenService, 'schlaegerSchwingen');
         baseBallTrainingsUebungService.schlaegerSchwingen();
         expect(baseBallBewegungsArtenService.linksWenden).toHaveBeenCalled();

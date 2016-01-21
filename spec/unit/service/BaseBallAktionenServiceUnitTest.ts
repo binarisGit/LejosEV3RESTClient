@@ -1,5 +1,5 @@
 import IColorAdapterService = BinarisEV3.IColorAdapterService;
-describe("BaseBallAktionen Unit test suite: ", function () {
+describe("BaseBallAktionen Unit test suite: ", () => {
 
     // SUT
     var baseBallAktionenService: any;
@@ -11,7 +11,7 @@ describe("BaseBallAktionen Unit test suite: ", function () {
 
     beforeEach(angular.mock.module('binarisEV3DifferentialPilot'));
 
-    beforeEach(function () {
+    beforeEach(() => {
         angular.mock.inject(function ($injector: any, EV3DifferentialPilotAdapterService: IDifferentialPilotAdapterService, EV3SoundAdapterService: ISoundAdapterService, EV3ColorAdapterService: IColorAdapterService) {
             ev3DifferentialPilotAdapterService = EV3DifferentialPilotAdapterService;
             ev3SoundAdapterService = EV3SoundAdapterService;
@@ -20,19 +20,19 @@ describe("BaseBallAktionen Unit test suite: ", function () {
         });
     });
 
-    it("es wird ein zustimmendes handzeichen ausgeführt", function () {
+    it("es wird ein zustimmendes handzeichen ausgeführt", () => {
         spyOn(ev3SoundAdapterService, "beep").and.callThrough();
         var promise = baseBallAktionenService.gibtZustimmendesHandzeichen();
         expect(ev3SoundAdapterService.beep).toHaveBeenCalledTimes(1);
     });
 
-    it("es wird ein ablehnendes handzeichen ausgeführt", function () {
+    it("es wird ein ablehnendes handzeichen ausgeführt", () => {
         spyOn(ev3SoundAdapterService, "buzz");
         baseBallAktionenService.gibtAblehnendesHandzeichen();
         expect(ev3SoundAdapterService.buzz).toHaveBeenCalledTimes(1);
     });
 
-    it("wird die base angeschaut", function () {
+    it("wird die base angeschaut", () => {
         spyOn(ev3ColorAdapterService, "getColor");
         baseBallAktionenService.schaueBaseAn();
         expect(ev3ColorAdapterService.getColor).toHaveBeenCalledTimes(1);

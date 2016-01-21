@@ -4,7 +4,6 @@ namespace BinarisEV3 {
         private ev3DifferentialPilotAdapterService: IDifferentialPilotAdapterService;
         private ev3SoundAdapterService: ISoundAdapterService;
         private ev3ColorAdapterService: IColorAdapterService;
-        private actionList: Array<string> = [];
 
         static $inject = ["$scope", "EV3DifferentialPilotAdapterService", "EV3SoundAdapterService", "EV3ColorAdapterService"];
 
@@ -15,25 +14,25 @@ namespace BinarisEV3 {
             this.ev3ColorAdapterService = EV3ColorAdapterService;
         }
 
-        public run(distance: number):ng.IPromise<any> {
+        public run(distance: number): ng.IPromise<any> {
             console.log("controller: run");
             return this.ev3DifferentialPilotAdapterService.run(10);
         }
 
-        public rotate(degrees: number):ng.IPromise<any> {
+        public rotate(degrees: number): ng.IPromise<any> {
             console.log("controller: rotate");
             return this.ev3DifferentialPilotAdapterService.rotate(45);
         }
 
-        public buzz():ng.IPromise<any> {
+        public buzz(): ng.IPromise<any> {
             console.log("controller: buzz");
             return this.ev3SoundAdapterService.buzz();
         }
 
-        getColor(): ng.IPromise<any> {
+        public getColor(): ng.IPromise<any> {
             console.log("controller: getColor");
 
-            var promise = this.ev3ColorAdapterService.getColor().then(function successCallback(response: any) {
+            var promise = this.ev3ColorAdapterService.getColor().then((response: any)=> {
                 console.log("Farbcode: " + response.data.color);
             }, function errorCallback(response: any) {
                 console.log("Farbe konnte nicht ermittelt werden. Status:");
@@ -42,7 +41,7 @@ namespace BinarisEV3 {
             return promise;
         }
 
-        public beep():ng.IPromise<any> {
+        public beep(): ng.IPromise<any> {
             console.log("controller: beep");
             return this.ev3SoundAdapterService.beep();
         }
