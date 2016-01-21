@@ -28,11 +28,15 @@ bower install
 Der TypeScript-Compiler benötigt die Datentypen von *AngularJS* und *Jasmine*, ansonsten wird er eine Fehlermeldung ausgeben. Die Installation der dafür notwendigen *d.ts* Dateien erfolgt mittels [tsd](http://definitelytyped.org/tsd/).
 Falls tsd noch nicht global installiert, vorher "*npm install -g tsd*" eingeben. Im Anschluss alle d.ts-Dateien installieren, die in *tsd.json* definiert sind: 
 
-#!javascript
+
+
 ```
+#!text
 
 tsd install
+
 ```
+
 
 
 
