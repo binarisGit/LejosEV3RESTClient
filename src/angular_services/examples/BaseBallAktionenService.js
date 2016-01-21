@@ -16,7 +16,6 @@ var BinarisEV3;
             return this.ev3ColorAdapterService.getColor();
         };
         BaseBallAktionenService.prototype.gibtZustimmendesHandzeichen = function () {
-            console.log("gibt zustimmendes handzeichen");
             return this.ev3SoundAdapterService.beep();
         };
         BaseBallAktionenService.prototype.gibtAblehnendesHandzeichen = function () {
@@ -25,7 +24,7 @@ var BinarisEV3;
         BaseBallAktionenService.prototype.schlageBall = function () {
             return (Math.random() * (101 - 0) + 0);
         };
-        BaseBallAktionenService.$inject = ["EV3DifferentialPilotAdapterService", "EV3SoundAdapterService"];
+        BaseBallAktionenService.$inject = ["EV3DifferentialPilotAdapterService", "EV3SoundAdapterService", "EV3ColorAdapterService"];
         return BaseBallAktionenService;
     })();
     BinarisEV3.BaseBallAktionenService = BaseBallAktionenService;

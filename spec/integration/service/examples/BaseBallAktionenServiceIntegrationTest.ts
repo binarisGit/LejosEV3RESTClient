@@ -13,10 +13,7 @@ describe("BaseBallAktionen Integration test suite: ", function () {
 
     beforeEach(function () {
         var $injector = angular.injector(['ng', 'binarisEV3DifferentialPilot']);
-        ev3DifferentialPilotAdapterService = $injector.get('EV3DifferentialPilotAdapterService');
-        ev3SoundAdapterService = $injector.get("EV3SoundAdapterService");
-        ev3ColorAdapterService = $injector.get("EV3ColorAdapterService");
-        baseBallAktionenService = new BinarisEV3.BaseBallAktionenService(ev3DifferentialPilotAdapterService, ev3SoundAdapterService, ev3ColorAdapterService);
+        baseBallAktionenService = $injector.get("BaseBallAktionenService");
     });
 
     it("es wird ein zustimmendes handzeichen ausgeführt", function (done) {

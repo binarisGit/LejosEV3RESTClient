@@ -18,14 +18,12 @@
 describe("EV3SoundAdapterService Integration test suite with asynchronous HTTP Requests: ", () => {
 
     // SUT
-    var ev3SoundAdapterService: BinarisEV3.ISoundAdapterService;
-    var http: any;
+    var ev3SoundAdapterService: any;
 
     beforeEach(() => {
         // get the REAL $http-Service, not the fake one from angular-mocks.js
         var $injector = angular.injector(['ng', 'binarisEV3DifferentialPilot']);
-        http = $injector.get('$http');
-        ev3SoundAdapterService = new BinarisEV3.EV3SoundAdapterService(http);
+        ev3SoundAdapterService = $injector.get("EV3SoundAdapterService");
     });
 
     it("should perform a REAL http-Request to the 'buzz'-endpoint", (done) => {

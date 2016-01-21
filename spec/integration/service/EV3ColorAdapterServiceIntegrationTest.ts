@@ -18,14 +18,12 @@
 describe("Color Adapter Integration test suite with asynchronous HTTP Requests: ", () => {
 
     // SUT
-    var ev3ColorAdapterService: BinarisEV3.IColorAdapterService;
-    var http: any;
+    var ev3ColorAdapterService: any;
 
     beforeEach(() => {
         // get the REAL $http-Service, not the fake one from angular-mocks.js
         var $injector = angular.injector(['ng', 'binarisEV3DifferentialPilot']);
-        http = $injector.get('$http');
-        ev3ColorAdapterService = new BinarisEV3.EV3ColorAdapterService(http);
+        ev3ColorAdapterService = $injector.get("EV3ColorAdapterService");
     });
 
     it("should perform a REAL http-Request to the 'getcolor'-endpoint", function (done) {

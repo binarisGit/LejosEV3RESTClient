@@ -8,7 +8,7 @@ namespace BinarisEV3 {
         private ev3SoundAdapterService: ISoundAdapterService;
         private ev3ColorAdapterService: IColorAdapterService;
 
-        static $inject = ["EV3DifferentialPilotAdapterService", "EV3SoundAdapterService"];
+        static $inject = ["EV3DifferentialPilotAdapterService", "EV3SoundAdapterService", "EV3ColorAdapterService"];
 
         constructor(EV3DifferentialPilotAdapterService: IDifferentialPilotAdapterService, EV3SoundAdapterService: ISoundAdapterService, EV3ColorAdapterService: IColorAdapterService) {
             this.ev3DifferentialPilotAdapterService = EV3DifferentialPilotAdapterService;
@@ -25,7 +25,6 @@ namespace BinarisEV3 {
         }
 
         public gibtZustimmendesHandzeichen(): ng.IPromise<any> {
-            console.log("gibt zustimmendes handzeichen");
             return this.ev3SoundAdapterService.beep();
         }
 

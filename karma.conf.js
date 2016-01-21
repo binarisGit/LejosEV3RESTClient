@@ -58,7 +58,6 @@ module.exports = function (config) {
             "spec/unit/controller/EV3RemoteControllerUnitTest.js",
             "spec/unit/service/BaseBallAktionenServiceUnitTest.js",
             /* will only succeed if EV3 REST-Service allows CORS */
-            "spec/integration/controller/EV3RemoteControllerIntegrationTest.js",
             "spec/integration/service/EV3DifferentialPilotAdapterServiceIntegrationTest.js",
             "spec/integration/service/EV3SoundAdapterServiceIntegrationTest.js",
             "spec/integration/service/EV3ColorAdapterServiceIntegrationTest.js",
