@@ -50,6 +50,8 @@ tsd install
 
 ```
 
+Zum Schluss noch die **BASE_URL** auf die URL des EV3-Roboters in *app.conf.js* setzen.
+
 
 
 
