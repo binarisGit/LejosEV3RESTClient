@@ -10,7 +10,7 @@ REST-Client auf Basis von *TypeScript* und *AngularJS* für den REST-Service [Le
 [Node](https://nodejs.org/en/) installieren und **PATH-Variable** in den Umgebungsvariablen anpassen
 
 
-Paketmanager bower und tsd global installieren:
+Paketmanager [bower](http://bower.io/) und [tsd](http://definitelytyped.org/tsd/) global installieren:
 
 ```
 #!text
@@ -30,7 +30,7 @@ npm install -g jasmine-core
 npm install -g karma-jasmine
 ```
 
-Externe .js Dateien (wie z.B. angular.js) werden mittels [bower](http://bower.io/) installiert:
+Externe .js Dateien (wie z.B. angular.js) werden mittels bower installiert:
 
 ```
 #!javascript
@@ -38,8 +38,8 @@ Externe .js Dateien (wie z.B. angular.js) werden mittels [bower](http://bower.io
 bower install
 ```
 
-Der TypeScript-Compiler benötigt die Datentypen von *AngularJS* und *Jasmine*, ansonsten wird er eine Fehlermeldung ausgeben. Die Installation der dafür notwendigen *d.ts* Dateien erfolgt mittels [tsd](http://definitelytyped.org/tsd/).
-Falls tsd noch nicht global installiert, vorher "*npm install -g tsd*" eingeben. Im Anschluss alle d.ts-Dateien installieren, die in *tsd.json* definiert sind: 
+Der TypeScript-Compiler benötigt die Datentypen von *AngularJS* und *Jasmine*, ansonsten wird er eine Fehlermeldung ausgeben. Die Installation der dafür notwendigen *d.ts* Dateien erfolgt mittels tsd.
+Im Anschluss alle d.ts-Dateien installieren, die in *tsd.json* definiert sind: 
 
 
 
