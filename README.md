@@ -20,7 +20,7 @@ npm install -g tsd
 ```
 
 
-Zum Ausführen der Tests muss der Test-Runner [Karma](https://karma-runner.github.io/0.13/index.html) mitsamt Modulen für das [Jasmine](http://jasmine.github.io/2.0/introduction.html) Test-Framework installiert werden:
+3. Zum Ausführen der Tests muss der Test-Runner [Karma](https://karma-runner.github.io/0.13/index.html) mitsamt Modulen für das [Jasmine](http://jasmine.github.io/2.0/introduction.html) Test-Framework installiert werden:
 
 ```
 #!javascript
@@ -31,7 +31,7 @@ npm install -g karma-jasmine
 ```
 
 
-Externe .js Dateien (wie z.B. angular.js) werden mittels [bower](http://bower.io/) installiert:
+4. Externe .js Dateien (wie z.B. angular.js) werden mittels [bower](http://bower.io/) installiert:
 
 ```
 #!javascript
@@ -40,7 +40,7 @@ bower install
 ```
 
 
-Der TypeScript-Compiler benötigt die Datentypen von *AngularJS* und *Jasmine*, ansonsten wird er eine Fehlermeldung ausgeben. Die Installation der dafür notwendigen *d.ts* Dateien erfolgt mittels [tsd](http://definitelytyped.org/tsd/).
+5. Der TypeScript-Compiler benötigt die Datentypen von *AngularJS* und *Jasmine*, ansonsten wird er eine Fehlermeldung ausgeben. Die Installation der dafür notwendigen *d.ts* Dateien erfolgt mittels [tsd](http://definitelytyped.org/tsd/).
 Falls tsd noch nicht global installiert, vorher "*npm install -g tsd*" eingeben. Im Anschluss alle d.ts-Dateien installieren, die in *tsd.json* definiert sind: 
 
 
