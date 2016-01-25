@@ -7,10 +7,10 @@ REST-Client auf Basis von *TypeScript* und *AngularJS* für den REST-Service [Le
 
 # Installation #
 
-1. [Node](https://nodejs.org/en/) installieren und **PATH-Variable** in den Umgebungsvariablen anpassen
+[Node](https://nodejs.org/en/) installieren und **PATH-Variable** in den Umgebungsvariablen anpassen
 
 
-2. Paketmanager bower und tsd global installieren:
+Paketmanager bower und tsd global installieren:
 
 ```
 #!text
@@ -20,7 +20,7 @@ npm install -g tsd
 ```
 
 
-3. Zum Ausführen der Tests muss der Test-Runner [Karma](https://karma-runner.github.io/0.13/index.html) mitsamt Modulen für das [Jasmine](http://jasmine.github.io/2.0/introduction.html) Test-Framework installiert werden:
+Zum Ausführen der Tests muss der Test-Runner [Karma](https://karma-runner.github.io/0.13/index.html) mitsamt Modulen für das [Jasmine](http://jasmine.github.io/2.0/introduction.html) Test-Framework installiert werden:
 
 ```
 #!javascript
@@ -30,8 +30,7 @@ npm install -g jasmine-core
 npm install -g karma-jasmine
 ```
 
-
-4. Externe .js Dateien (wie z.B. angular.js) werden mittels [bower](http://bower.io/) installiert:
+Externe .js Dateien (wie z.B. angular.js) werden mittels [bower](http://bower.io/) installiert:
 
 ```
 #!javascript
@@ -39,8 +38,7 @@ npm install -g karma-jasmine
 bower install
 ```
 
-
-5. Der TypeScript-Compiler benötigt die Datentypen von *AngularJS* und *Jasmine*, ansonsten wird er eine Fehlermeldung ausgeben. Die Installation der dafür notwendigen *d.ts* Dateien erfolgt mittels [tsd](http://definitelytyped.org/tsd/).
+Der TypeScript-Compiler benötigt die Datentypen von *AngularJS* und *Jasmine*, ansonsten wird er eine Fehlermeldung ausgeben. Die Installation der dafür notwendigen *d.ts* Dateien erfolgt mittels [tsd](http://definitelytyped.org/tsd/).
 Falls tsd noch nicht global installiert, vorher "*npm install -g tsd*" eingeben. Im Anschluss alle d.ts-Dateien installieren, die in *tsd.json* definiert sind: 
 
 
