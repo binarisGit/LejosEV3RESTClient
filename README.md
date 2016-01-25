@@ -7,12 +7,27 @@ REST-Client auf Basis von *TypeScript* und *AngularJS* für den REST-Service [Le
 
 # Installation #
 
-Zum Ausführen der Tests muss der Test-Runner [Karma](https://karma-runner.github.io/0.13/index.html) installiert werden:
+1. [Node](https://nodejs.org/en/) installieren und **PATH-Variable** in den Umgebungsvariablen anpassen
+
+
+2. Paketmanager bower und tsd global installieren:
+
+```
+#!text
+
+npm install -g bower
+npm install -g tsd
+```
+
+
+Zum Ausführen der Tests muss der Test-Runner [Karma](https://karma-runner.github.io/0.13/index.html) mitsamt Modulen für das [Jasmine](http://jasmine.github.io/2.0/introduction.html) Test-Framework installiert werden:
 
 ```
 #!javascript
 
 npm install -g karma
+npm install -g jasmine-core
+npm install -g karma-jasmine
 ```
 
 
