@@ -1,6 +1,3 @@
-/**
- * Created by kay.odenthal on 07.01.2016.
- */
 var BinarisEV3;
 (function (BinarisEV3) {
     var BaseBallBewegungsArtenService = (function () {

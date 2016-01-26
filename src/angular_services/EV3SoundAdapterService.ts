@@ -15,8 +15,9 @@ namespace BinarisEV3 {
             return this.httpService.get(url);
         }
 
-        public beep(): ng.IPromise<any> {
+        public beep(): ng.IPromise<any>{
             var url = this.SOUND_ENDPOINT_URL + '/beep';
+            //console.log("sent beep request...: "+this.httpService);
             return this.httpService.get(url);
         }
     }

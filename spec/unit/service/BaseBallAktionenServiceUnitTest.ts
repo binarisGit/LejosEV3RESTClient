@@ -8,15 +8,21 @@ describe("BaseBallAktionen Unit test suite: ", () => {
     var ev3DifferentialPilotAdapterService: any;
     var ev3SoundAdapterService: any;
     var ev3ColorAdapterService: any;
+    var intervalService: ng.IIntervalService;
+    var qService: ng.IQService;
+    var rootScope: ng.IRootScopeService;
 
     beforeEach(angular.mock.module('binarisEV3DifferentialPilot'));
 
     beforeEach(() => {
-        angular.mock.inject(function ($injector: any, EV3DifferentialPilotAdapterService: IDifferentialPilotAdapterService, EV3SoundAdapterService: ISoundAdapterService, EV3ColorAdapterService: IColorAdapterService) {
+        angular.mock.inject(function ($injector: any, EV3DifferentialPilotAdapterService: IDifferentialPilotAdapterService, EV3SoundAdapterService: ISoundAdapterService, EV3ColorAdapterService: IColorAdapterService, $interval: ng.IIntervalService, $q: ng.IQService, $rootScope: ng.IRootScopeService) {
             ev3DifferentialPilotAdapterService = EV3DifferentialPilotAdapterService;
             ev3SoundAdapterService = EV3SoundAdapterService;
             ev3ColorAdapterService = EV3ColorAdapterService;
-            baseBallAktionenService = new BinarisEV3.BaseBallAktionenService(ev3DifferentialPilotAdapterService, ev3SoundAdapterService, ev3ColorAdapterService);
+            intervalService = $interval;
+            qService = $q;
+            rootScope = $rootScope;
+            baseBallAktionenService = new BinarisEV3.BaseBallAktionenService(ev3DifferentialPilotAdapterService, ev3SoundAdapterService, ev3ColorAdapterService, $interval, $q);
         });
     });
 
@@ -36,6 +42,22 @@ describe("BaseBallAktionen Unit test suite: ", () => {
         spyOn(ev3ColorAdapterService, "getColor");
         baseBallAktionenService.schaueBaseAn();
         expect(ev3ColorAdapterService.getColor).toHaveBeenCalledTimes(1);
+    });
+
+    it("laufe 60cm vorwärts und laufe wieder zurück", () =>{
+        var promise = qService.resolve("resolved");
+
+        spyOn(ev3DifferentialPilotAdapterService, "run").and.returnValue(promise);
+        spyOn(ev3DifferentialPilotAdapterService, "rotate").and.returnValue(promise);
+
+        baseBallAktionenService.laufeVorwaertsUndZurueck(60);
+
+        rootScope.$digest();
+
+        expect(ev3DifferentialPilotAdapterService.run).toHaveBeenCalledWith(60);
+        expect(ev3DifferentialPilotAdapterService.run).toHaveBeenCalledTimes(2);
+        expect(ev3DifferentialPilotAdapterService.rotate).toHaveBeenCalledWith(180);
+        expect(ev3DifferentialPilotAdapterService.rotate).toHaveBeenCalledTimes(2);
     });
 
 });

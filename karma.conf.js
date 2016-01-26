@@ -58,10 +58,10 @@ module.exports = function (config) {
             "spec/unit/controller/EV3RemoteControllerUnitTest.js",
             "spec/unit/service/BaseBallAktionenServiceUnitTest.js",
             /* will only succeed if EV3 REST-Service allows CORS */
-            "spec/integration/service/EV3DifferentialPilotAdapterServiceIntegrationTest.js",
-            "spec/integration/service/EV3SoundAdapterServiceIntegrationTest.js",
-            "spec/integration/service/EV3ColorAdapterServiceIntegrationTest.js",
-            "spec/integration/service/examples/BaseBallAktionenServiceIntegrationTest.js"
+            //"spec/integration/service/EV3DifferentialPilotAdapterServiceIntegrationTest.js",
+            //"spec/integration/service/EV3SoundAdapterServiceIntegrationTest.js",
+            //"spec/integration/service/EV3ColorAdapterServiceIntegrationTest.js",
+            //"spec/integration/service/examples/BaseBallAktionenServiceIntegrationTest.js"
         ],
 
 
@@ -107,6 +107,8 @@ module.exports = function (config) {
 
         // Concurrency level
         // how many browser should be started simultanous
-        concurrency: Infinity
+        concurrency: Infinity,
+
+
     })
 }

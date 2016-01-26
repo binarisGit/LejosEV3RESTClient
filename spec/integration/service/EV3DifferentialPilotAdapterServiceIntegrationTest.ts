@@ -28,28 +28,28 @@ describe("Integration test suite with asynchronous HTTP Requests: ", () => {
 
     it("should perform a REAL http-Request to the 'run'-endpoint", (done) => {
         ev3DifferentialPilotAdapterService.run(10).then(function successCallback(response: any) {
-            expect(response.status).toBe(200);
+            expect(response.status).toBe(204);
             done();
         });
     });
 
     it("should perform a REAL http-Request to the 'rotation'-endpoint", (done) => {
         ev3DifferentialPilotAdapterService.rotate(45).then(function successCallback(response: any) {
-            expect(response.status).toBe(200);
+            expect(response.status).toBe(204);
             done();
         });
     });
 
     it("should perform a REAL http-Request to the 'stop'-endpoint", (done) => {
         ev3DifferentialPilotAdapterService.stop().then(function successCallback(response: any) {
-            expect(response.status).toBe(200);
+            expect(response.status).toBe(204);
             done();
         });
     });
 
     it("should perform a REAL http-Request to the 'quickStop'-endpoint", (done) => {
         ev3DifferentialPilotAdapterService.stop().then(function successCallback(response: any) {
-            expect(response.status).toBe(200);
+            expect(response.status).toBe(204);
             done();
         });
     });
@@ -58,7 +58,7 @@ describe("Integration test suite with asynchronous HTTP Requests: ", () => {
         ev3DifferentialPilotAdapterService.run(10).then(function successCallback(response: any) {
             return ev3DifferentialPilotAdapterService.getMovementIncrement();
         }).then(function successCallback(response: any) {
-            expect(response.data.movementincrement).toBeCloseTo(10, 1.0);
+            expect(response.data).toBeCloseTo(5, 1.0);
             expect(response.status).toBe(200);
             done();
         });
