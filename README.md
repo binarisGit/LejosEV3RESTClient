@@ -18,6 +18,8 @@ Nachdem das Repository geklont wurde, ins *root*-Verzeichnis des Projekts wechse
 npm install -g grunt-cli && npm install
 ```
 
+Per [npm](https://www.npmjs.com/) werden mittels *package.json* Abhängigkeiten zu externen Modulen installiert. [grunt](http://gruntjs.com/) hingegen ist ein Build-Tool und wird im Projekt u.A. dazu verwendet die TypeScript-Dateien in JavaScript-Dateien umzuwandeln. 
+
 ### URL des REST-Services anpassen ###
 Damit der Client die HTTP-Requests an den Service schicken kann, muss die URL in der Config-Datei des Clients angepasst werden. Siehe: **BASE_URL** in *src/app.conf.ts*.
 
