@@ -48,20 +48,9 @@ module.exports = function (config) {
             // since we are performing INTEGRATIONS tests angular-mocks.js is not needed!
             "bower_components/angular/angular.js",
             "bower_components/angular-mocks/angular-mocks.js",
-            "app.conf.js",
-            "src/angular_services/EV3DifferentialPilotAdapterService.js",
-            "src/angular_services/EV3SoundAdapterService.js",
-            "src/angular_services/EV3ColorAdapterService.js",
-            "src/angular_services/examples/BaseBallAktionenService.js",
-            "src/angular_controllers/EV3RemoteController.js",
-            "src/App.js",
-            "spec/unit/controller/EV3RemoteControllerUnitTest.js",
-            "spec/unit/service/BaseBallAktionenServiceUnitTest.js",
-            /* will only succeed if EV3 REST-Service allows CORS */
-            //"spec/integration/service/EV3DifferentialPilotAdapterServiceIntegrationTest.js",
-            //"spec/integration/service/EV3SoundAdapterServiceIntegrationTest.js",
-            //"spec/integration/service/EV3ColorAdapterServiceIntegrationTest.js",
-            //"spec/integration/service/examples/BaseBallAktionenServiceIntegrationTest.js"
+            "target/angular_application.js",
+            //"target/angular_unit_tests.js",
+            "target/angular_integration_tests.js"
         ],
 
 

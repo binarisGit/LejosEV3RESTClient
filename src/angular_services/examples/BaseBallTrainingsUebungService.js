@@ -1,3 +1,6 @@
+/**
+ * Created by Christian on 08.01.2016.
+ */
 var BinarisEV3;
 (function (BinarisEV3) {
     var BaseBallTrainingsUebungService = (function () {
