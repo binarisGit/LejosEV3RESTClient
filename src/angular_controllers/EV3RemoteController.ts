@@ -12,27 +12,6 @@ namespace BinarisEV3 {
             this.ev3DifferentialPilotAdapterService = EV3DifferentialPilotAdapterService;
             this.ev3SoundAdapterService = EV3SoundAdapterService;
             this.ev3ColorAdapterService = EV3ColorAdapterService;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
 
         public run(distance: number): ng.IPromise<any> {
