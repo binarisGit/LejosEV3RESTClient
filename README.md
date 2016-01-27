@@ -10,45 +10,9 @@ REST-Client auf Basis von *TypeScript* und *AngularJS* für den REST-Service [Le
 [Node](https://nodejs.org/en/) installieren und **PATH-Variable** in den Umgebungsvariablen anpassen
 
 
-Paketmanager [bower](http://bower.io/) und [tsd](http://definitelytyped.org/tsd/) global installieren:
 
-```
-#!text
+npm install -g grunt-cli && npm install
 
-npm install -g bower
-npm install -g tsd
-```
-
-
-Zum Ausführen der Tests muss der Test-Runner [Karma](https://karma-runner.github.io/0.13/index.html) mitsamt Modulen für das [Jasmine](http://jasmine.github.io/2.0/introduction.html) Test-Framework installiert werden:
-
-```
-#!javascript
-
-npm install -g karma
-npm install -g jasmine-core
-npm install -g karma-jasmine
-```
-
-Externe .js Dateien (wie z.B. angular.js) werden mittels bower installiert:
-
-```
-#!javascript
-
-bower install
-```
-
-Der TypeScript-Compiler benötigt die Datentypen von *AngularJS* und *Jasmine*, ansonsten wird er eine Fehlermeldung ausgeben. Die Installation der dafür notwendigen *d.ts* Dateien erfolgt mittels tsd.
-Im Anschluss alle d.ts-Dateien installieren, die in *tsd.json* definiert sind: 
-
-
-
-```
-#!text
-
-tsd install
-
-```
 
 Zum Schluss noch die **BASE_URL** auf die URL des EV3-Roboters in *app.conf.js* setzen.
 
