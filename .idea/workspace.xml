@@ -2,21 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f00eb5c5-39a4-40e7-a95d-9365e55d6932" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gruntfile.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app.conf.js" afterPath="$PROJECT_DIR$/src/app.conf.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app.conf.ts" afterPath="$PROJECT_DIR$/src/app.conf.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/typescript-settings.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/integration/service/EV3ColorAdapterServiceIntegrationTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/integration/service/EV3DifferentialPilotAdapterServiceIntegrationTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/integration/service/EV3SoundAdapterServiceIntegrationTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/integration/service/examples/BaseBallAktionenServiceIntegrationTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/unit/controller/EV3RemoteControllerUnitTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/unit/service/BaseBallAktionenServiceUnitTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/unit/service/BaseBallTrainingsUebungServiceUnitTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/angular_controllers/EV3RemoteController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/angular_controllers/MainController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/angular_services/EV3ColorAdapterService.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/angular_services/EV3DifferentialPilotAdapterService.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/angular_services/EV3SoundAdapterService.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/angular_services/examples/BaseBallAktionenService.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/angular_services/examples/BaseBallBewegungsartenService.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/angular_services/examples/BaseBallTrainingsUebungService.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/api/IBallSportAktionenService.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/api/IEV3RemoteController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/api/ISportBewegungsArtenService.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/api/ITrainingsUebungService.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/third_apis/IColorAdapterService.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/third_apis/IDifferentialPilotAdapterService.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/third_apis/ISoundAdapterService.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/typescript-compiler.xml" afterPath="$PROJECT_DIR$/.idea/typescript-compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/karma.conf.js" afterPath="$PROJECT_DIR$/karma.conf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/integration/service/EV3ColorAdapterServiceIntegrationTest.js" afterPath="$PROJECT_DIR$/spec/integration/service/EV3ColorAdapterServiceIntegrationTest.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/integration/service/EV3DifferentialPilotAdapterServiceIntegrationTest.js" afterPath="$PROJECT_DIR$/spec/integration/service/EV3DifferentialPilotAdapterServiceIntegrationTest.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/integration/service/EV3SoundAdapterServiceIntegrationTest.js" afterPath="$PROJECT_DIR$/spec/integration/service/EV3SoundAdapterServiceIntegrationTest.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/unit/service/BaseBallTrainingsUebungServiceUnitTest.js" afterPath="$PROJECT_DIR$/spec/unit/service/BaseBallTrainingsUebungServiceUnitTest.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/unit/service/BaseBallTrainingsUebungServiceUnitTest.ts" afterPath="$PROJECT_DIR$/spec/unit/service/BaseBallTrainingsUebungServiceUnitTest.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/angular_services/examples/BaseBallAktionenService.js" afterPath="$PROJECT_DIR$/src/angular_services/examples/BaseBallAktionenService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/angular_services/examples/BaseBallBewegungsartenService.js" afterPath="$PROJECT_DIR$/src/angular_services/examples/BaseBallBewegungsartenService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/angular_services/examples/BaseBallTrainingsUebungService.js" afterPath="$PROJECT_DIR$/src/angular_services/examples/BaseBallTrainingsUebungService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/integration/service/EV3ColorAdapterServiceIntegrationTest.ts" afterPath="$PROJECT_DIR$/spec/integration/service/EV3ColorAdapterServiceIntegrationTest.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/angular_controllers/EV3RemoteController.ts" afterPath="$PROJECT_DIR$/src/angular_controllers/EV3RemoteController.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tsconfig.json" afterPath="$PROJECT_DIR$/tsconfig.json" />
     </list>
     <ignored path="AngularProjekt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,73 +55,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Gruntfile.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+      <file leaf-file-name="tsconfig.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tsconfig.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-              <folding>
-                <element signature="e#0#49#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="karma.conf.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/karma.conf.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="51" column="14" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
+            <state vertical-scroll-proportion="-7.1923075">
+              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="angular_integration_tests.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/target/angular_integration_tests.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.3991131">
-              <caret line="77" column="4" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseBallAktionenServiceUnitTest.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/unit/service/BaseBallAktionenServiceUnitTest.ts">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseBallTrainingsUebungServiceUnitTest.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/unit/service/BaseBallTrainingsUebungServiceUnitTest.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseBallTrainingsUebungService.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/angular_services/examples/BaseBallTrainingsUebungService.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="angular_unit_tests.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/angular_unit_tests.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+              <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -126,9 +92,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/services/BaseBallBewegungsArtenService.ts" />
-        <option value="$PROJECT_DIR$/src/services/DelayedHttpService.ts" />
-        <option value="$PROJECT_DIR$/src/services/EV3DifferentialPilotAdapterService.ts" />
         <option value="$PROJECT_DIR$/src/services/EV3SoundAdapterService.ts" />
         <option value="$PROJECT_DIR$/src/controller/MainController.ts" />
         <option value="$PROJECT_DIR$/src/main/main.js" />
@@ -156,9 +119,7 @@
         <option value="$PROJECT_DIR$/spec/unit/service/BaseBallAktionenServiceUnitTest.js" />
         <option value="$PROJECT_DIR$/spec/integration/controller/EV3RemoteControllerIntegrationTest.ts" />
         <option value="$PROJECT_DIR$/spec/unit/controller/EV3RemoteControllerUnitTest.ts" />
-        <option value="$PROJECT_DIR$/src/angular_controllers/EV3RemoteController.ts" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/spec/integration/service/EV3ColorAdapterServiceIntegrationTest.ts" />
         <option value="$PROJECT_DIR$/spec/integration/service/EV3DifferentialPilotAdapterServiceIntegrationTest.ts" />
         <option value="$PROJECT_DIR$/spec/integration/service/EV3DifferentialPilotAdapterServiceIntegrationTest.js" />
         <option value="$PROJECT_DIR$/src/angular_controllers/MainController.ts" />
@@ -173,10 +134,15 @@
         <option value="$PROJECT_DIR$/test1.js" />
         <option value="$PROJECT_DIR$/dist/built.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/spec/unit/service/BaseBallTrainingsUebungServiceUnitTest.ts" />
         <option value="$PROJECT_DIR$/target/angular_unit_tests.js" />
         <option value="$PROJECT_DIR$/karma.conf.js" />
+        <option value="$PROJECT_DIR$/spec/integration/service/EV3ColorAdapterServiceIntegrationTest.ts" />
+        <option value="$PROJECT_DIR$/spec/integration/service/EV3ColorAdapterServiceIntegrationTest.js" />
+        <option value="$PROJECT_DIR$/src/angular_controllers/EV3RemoteController.ts" />
+        <option value="$PROJECT_DIR$/Gruntfile.js" />
+        <option value="$PROJECT_DIR$/tsconfig.json" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -263,14 +229,15 @@
     <property name="last_opened_file_path" value="C:/Program Files/nodejs/node.exe" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value="term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;termi&#9;ACTION&#9;ActivateTerminalToolWindow&#10;terminal&#9;ACTION&#9;ActivateTerminalToolWindow&#10;bower install&#9;null&#9;null&#10;settings&#9;ACTION&#9;WelcomeScreen.Settings&#10;termin&#9;ACTION&#9;ActivateTerminalToolWindow&#10;termina&#9;ACTION&#9;ActivateTerminalToolWindow&#10;typesc&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;pro&#9;ACTION&#9;ActivateProjectToolWindow&#10;typescr&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;typescript compile&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;typescript&#9;ACTION&#9;NewTypeScriptFile&#10;template&#9;ACTION&#9;InsertLiveTemplate&#10;typ&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;type&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;typescri&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;sett&#9;ACTION&#9;WelcomeScreen.Settings&#10;termianl&#9;null&#9;null&#10;proje&#9;ACTION&#9;ActivateProjectToolWindow&#10;ter&#9;ACTION&#9;ActivateTerminalToolWindow&#10;settings#&#9;ACTION&#9;WelcomeScreen.Settings&#10;project&#9;ACTION&#9;ActivateProjectToolWindow&#10;EV3Differ&#9;FILE&#9;file://C:/Users/user/AngularProjekt/src/controller/EV3DifferentialPilotRestClientController.ts&#10;navi&#9;ACTION&#9;ShowNavBar&#10;toggle fullsc&#9;ACTION&#9;ToggleFullScreen&#10;toggle full&#9;ACTION&#9;ToggleFullScreen&#10;setting&#9;ACTION&#9;WelcomeScreen.Settings&#10;types&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="SearchEverywhereHistoryKey" value="termi&#9;ACTION&#9;ActivateTerminalToolWindow&#10;terminal&#9;ACTION&#9;ActivateTerminalToolWindow&#10;temrin&#9;null&#9;null&#10;settings&#9;ACTION&#9;WelcomeScreen.Settings&#10;termina&#9;ACTION&#9;ActivateTerminalToolWindow&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;bower install&#9;null&#9;null&#10;termin&#9;ACTION&#9;ActivateTerminalToolWindow&#10;typesc&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;pro&#9;ACTION&#9;ActivateProjectToolWindow&#10;typescr&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;typescript compile&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;typescript&#9;ACTION&#9;NewTypeScriptFile&#10;template&#9;ACTION&#9;InsertLiveTemplate&#10;typ&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;type&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;typescri&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow&#10;sett&#9;ACTION&#9;WelcomeScreen.Settings&#10;termianl&#9;null&#9;null&#10;proje&#9;ACTION&#9;ActivateProjectToolWindow&#10;ter&#9;ACTION&#9;ActivateTerminalToolWindow&#10;settings#&#9;ACTION&#9;WelcomeScreen.Settings&#10;project&#9;ACTION&#9;ActivateProjectToolWindow&#10;EV3Differ&#9;FILE&#9;file://C:/Users/user/AngularProjekt/src/controller/EV3DifferentialPilotRestClientController.ts&#10;navi&#9;ACTION&#9;ShowNavBar&#10;toggle fullsc&#9;ACTION&#9;ToggleFullScreen&#10;toggle full&#9;ACTION&#9;ToggleFullScreen&#10;setting&#9;ACTION&#9;WelcomeScreen.Settings&#10;types&#9;ACTION&#9;ActivateTypeScriptCompilerToolWindow" />
+    <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
     <property name="settings.editor.splitter.proportion" value="0.35812134" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs5\node.exe" />
     <property name="js-tslint-nodeInterpreter" value="C:\Program Files\nodejs5\node.exe" />
     <property name="js-tslint-package" value="C:\Users\user\AppData\Roaming\npm\node_modules\tslint" />
     <property name="javascript.karma.karma_node_package_dir" value="C:\Users\kay.odenthal\AppData\Roaming\npm\node_modules\karma" />
     <property name="javascript.karma.node_interpreter_path" value="C:\Program Files\nodejs\node.exe" />
+    <property name="typescript-compiler-editor-notification" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -405,26 +372,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285594" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18644068" sideWeight="0.6628878" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22570194" sideWeight="0.33711216" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32724902" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3754889" sideWeight="0.7525" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3754889" sideWeight="0.7525" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21382008" sideWeight="0.49625" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7366362" sideWeight="0.49625" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35492578" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18644068" sideWeight="0.6628878" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34278002" sideWeight="0.4975" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Duplicates" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928476" sideWeight="0.4975" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32724902" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -453,27 +420,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17114094">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13646789">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/angular_services/EV3ColorAdapterService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tsd.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.69455254">
@@ -485,27 +431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/angular_services/EV3SoundAdapterService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/angular_controllers/EV3RemoteController.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.3333335">
-          <caret line="5" column="61" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -575,20 +500,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/integration/service/EV3ColorAdapterServiceIntegrationTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/integration/service/EV3DifferentialPilotAdapterServiceIntegrationTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6179775">
-          <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/integration/service/EV3DifferentialPilotAdapterServiceIntegrationTest.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6048689">
@@ -633,13 +544,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/angular_services/EV3DifferentialPilotAdapterService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35202762">
-          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/angular_services/EV3DifferentialPilotAdapterService.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -648,50 +552,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/integration/service/EV3ColorAdapterServiceIntegrationTest.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/integration/service/EV3SoundAdapterServiceIntegrationTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11525424">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/unit/controller/EV3RemoteControllerUnitTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/unit/service/BaseBallAktionenServiceUnitTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/angular_services/examples/BaseBallBewegungsartenService.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/integration/service/examples/BaseBallAktionenServiceIntegrationTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
-          <folding>
-            <marker date="1453885429583" expanded="true" signature="577:622" placeholder="{...}" />
-            <marker date="1453885429583" expanded="true" signature="1594:1626" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -745,10 +610,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/angular_services/examples/BaseBallTrainingsUebungService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30385488">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/unit/service/BaseBallAktionenServiceUnitTest.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6235828">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/angular_unit_tests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3968254">
+          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/unit/service/BaseBallTrainingsUebungServiceUnitTest.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6938776">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/angular_integration_tests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.40816328">
+          <caret line="77" column="4" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.9230769">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -760,60 +665,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+    <entry file="file://$PROJECT_DIR$/spec/integration/service/EV3ColorAdapterServiceIntegrationTest.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#49#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/angular_services/examples/BaseBallTrainingsUebungService.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/unit/service/BaseBallAktionenServiceUnitTest.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/angular_unit_tests.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/unit/service/BaseBallTrainingsUebungServiceUnitTest.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.32205683">
+          <caret line="29" column="56" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/karma.conf.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-0.33423546">
           <caret line="51" column="14" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/angular_integration_tests.js">
+    <entry file="file://$PROJECT_DIR$/src/angular_controllers/EV3RemoteController.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.3991131">
-          <caret line="77" column="4" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.16102841">
+          <caret line="7" column="77" selection-start-line="7" selection-start-column="77" selection-end-line="7" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#49#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1923075">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
           <folding />
         </state>
       </provider>

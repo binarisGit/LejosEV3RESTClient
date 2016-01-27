@@ -12,6 +12,16 @@ module.exports = function (grunt) {
 
     // Project configuration.
     grunt.initConfig({
+        watch: {
+            files: ['src/**/*.ts', 'spec/**/*.ts'],
+            tasks: ['ts','concat'],
+        },
+        ts: {
+            default: {
+                // specifying tsconfig as a string will use the specified `tsconfig.json` file.
+                tsconfig: './tsconfig.json'
+            }
+        },
         concat: {
             angular_application: {
                 src: angular_application_files,
@@ -28,9 +38,13 @@ module.exports = function (grunt) {
         },
     });
 
-    // Load the plugin that provides the "uglify" task.
+    grunt.loadNpmTasks("grunt-ts");
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     // Default task(s).
-    grunt.registerTask('default', ['concat']);
+    grunt.registerTask('default', ['ts']);
+
+    //grunt.registerTask("default", ["ts"]);
+
 };

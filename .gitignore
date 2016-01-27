@@ -1,3 +1,5 @@
+.tscache/
+compiled_js/
 bower_components/
 node_modules/
 **/*.js.map

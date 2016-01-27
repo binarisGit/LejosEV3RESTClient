@@ -31,6 +31,7 @@ describe("Color Adapter Integration test suite with asynchronous HTTP Requests: 
         promise.then(function successCallback(response: any) {
             expect(response.status).toBe(200);
             done();
+
         });
     });
 
