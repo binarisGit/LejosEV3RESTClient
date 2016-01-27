@@ -8,7 +8,7 @@ REST-Client auf Basis von *TypeScript* und *AngularJS* für den REST-Service [Le
 # Installation #
 
 ### Node installieren ###
-[Node](https://nodejs.org/en/) downloaden und installieren. Anschließend den Ordner der Executable *node.exe* in der **PATH-Variable** in den Umgebungsvariablen einfügen.
+[Node](https://nodejs.org/en/) downloaden und installieren. Anschließend *node.exe* in der **PATH-Variable** in den Umgebungsvariablen einfügen, damit node von jedem Verzeichnis aus aufgerufen werden kann.
 
 ### Projekt initialisieren ###
 Nachdem das Repository geklont wurde, ins *root*-Verzeichnis des Projekts wechseln und folgenden Befehl im Terminal eingeben:
