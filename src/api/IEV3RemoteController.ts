@@ -5,4 +5,5 @@ interface IEV3RemoteController {
     buzz(): ng.IPromise<any>;
     getColor(): ng.IPromise<any>;
 }
+export = IEV3RemoteController;
 

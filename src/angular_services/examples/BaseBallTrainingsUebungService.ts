@@ -1,8 +1,8 @@
-/**
- * Created by Christian on 08.01.2016.
- */
+import ITrainingsUebungService = require("../../api/ITrainingsUebungService");
+import ISportBewegungsArtenService = require("../../api/ISportBewegungsArtenService");
 
 class BaseBallTrainingsUebungService implements ITrainingsUebungService {
+    static IID = "BaseBallTrainingsUebungService";
     private baseBallBewegungsArtenService: ISportBewegungsArtenService;
 
     static $inject = ["BaseBallBewegungsArtenService"];
@@ -26,3 +26,5 @@ class BaseBallTrainingsUebungService implements ITrainingsUebungService {
         });
     }
 }
+
+export = BaseBallTrainingsUebungService;

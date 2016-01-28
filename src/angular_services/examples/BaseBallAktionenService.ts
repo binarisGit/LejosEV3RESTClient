@@ -1,8 +1,10 @@
-/**
- * Created by Christian on 08.01.2016.
- */
+import IBallSportAktionenService = require("../../api/IBallSportAktionenService");
+import IDifferentialPilotAdapterService = require("../../third_apis/IDifferentialPilotAdapterService");
+import ISoundAdapterService = require("../../third_apis/ISoundAdapterService");
+import IColorAdapterService = require("../../third_apis/IColorAdapterService");
 
 class BaseBallAktionenService implements IBallSportAktionenService {
+    static IID = "BaseBallAktionenService";
     private ev3DifferentialPilotAdapterService: IDifferentialPilotAdapterService;
     private ev3SoundAdapterService: ISoundAdapterService;
     private ev3ColorAdapterService: IColorAdapterService;
@@ -52,3 +54,4 @@ class BaseBallAktionenService implements IBallSportAktionenService {
             });
     }
 }
+export = BaseBallAktionenService;

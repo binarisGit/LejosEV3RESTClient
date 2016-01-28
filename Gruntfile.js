@@ -30,7 +30,16 @@ module.exports = function (grunt) {
             files: ['src/**/*.ts', 'spec/**/*.ts'],
             tasks: ['build'],
         },
+        browserify: {
+            main: {
+                src: 'compiled_js/src/App.js',
+                dest: 'target/application_with_requires.js'
+            }
+        },
         ts: {
+            options: {
+                failOnTypeErrors: false
+            },
             default: {
                 // specifying tsconfig as a string will use the specified `tsconfig.json` file.
                 tsconfig: './tsconfig.json'
@@ -52,6 +61,10 @@ module.exports = function (grunt) {
         },
     });
 
+    // prevent ts from terminating on warnings
+    grunt.loadNpmTasks('grunt-force-task');
+
+    grunt.loadNpmTasks('grunt-browserify');
     grunt.loadNpmTasks("grunt-ts");
     grunt.loadNpmTasks('grunt-exec');
     grunt.loadNpmTasks('grunt-contrib-concat');
@@ -61,5 +74,6 @@ module.exports = function (grunt) {
     // Custom tasks
     grunt.registerTask('build', ['clean', 'ts', 'concat']);
     grunt.registerTask('install', ['exec', 'build']);
-    grunt.registerTask('default', ['build','watch']);
+    grunt.registerTask('default', ['build', 'watch']);
+
 };

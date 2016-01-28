@@ -1,3 +1,4 @@
+
 interface IDifferentialPilotAdapterService {
     run(distance: number): ng.IPromise<any>;
     rotate(degrees: number): ng.IPromise<any>;
@@ -5,3 +6,5 @@ interface IDifferentialPilotAdapterService {
     quickStop(): ng.IPromise<any>;
     getMovementIncrement(): ng.IPromise<any>;
 }
+
+export = IDifferentialPilotAdapterService;

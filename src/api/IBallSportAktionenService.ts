@@ -5,3 +5,4 @@ interface IBallSportAktionenService {
     gibtAblehnendesHandzeichen(): ng.IPromise<any>;
     schlageBall(): number;
 }
+export = IBallSportAktionenService;

@@ -1,4 +1,10 @@
-import IHttpService = ng.IHttpService;
+import IDifferentialPilotAdapterService = require("../third_apis/IDifferentialPilotAdapterService");
+import ISoundAdapterService = require("../third_apis/ISoundAdapterService");
+import IColorAdapterService = require("../third_apis/IColorAdapterService");
+import ISportBewegungsArtenService = require("../api/ISportBewegungsArtenService");
+import ITrainingsUebungService = require("../api/ITrainingsUebungService");
+import IHttpService = angular.IHttpService;
+
 class MainController {
 
     /*
@@ -74,3 +80,4 @@ class MainController {
         alert("Keine Implementierung. Füge eine Implementierung im MainController.js ein.");
     }
 }
+export = MainController;

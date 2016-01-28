@@ -1,11 +1,11 @@
-/**
- * Created by kay.odenthal on 07.01.2016.
- */
+import ISportBewegungsArtenService = require("../../api/ISportBewegungsArtenService");
+import IDifferentialPilotAdapterService = require("../../third_apis/IDifferentialPilotAdapterService");
+import EV3DifferentialPilotAdapterService = require("../EV3DifferentialPilotAdapterService");
 
 class BaseBallBewegungsArtenService implements ISportBewegungsArtenService {
+    static IID = "BaseBallBewegungsArtenService";
     private ev3DifferentialPilotAdapterService: IDifferentialPilotAdapterService;
-
-    static $inject = ["EV3DifferentialPilotAdapterService"];
+    static $inject = [EV3DifferentialPilotAdapterService.IID];
 
     constructor(EV3DifferentialPilotAdapterService: IDifferentialPilotAdapterService) {
         this.ev3DifferentialPilotAdapterService = EV3DifferentialPilotAdapterService;
@@ -27,3 +27,4 @@ class BaseBallBewegungsArtenService implements ISportBewegungsArtenService {
         return this.ev3DifferentialPilotAdapterService.rotate(-90);
     }
 }
+export = BaseBallBewegungsArtenService;

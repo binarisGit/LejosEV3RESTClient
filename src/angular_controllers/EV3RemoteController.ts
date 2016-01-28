@@ -1,3 +1,8 @@
+import ISoundAdapterService = require("../third_apis/ISoundAdapterService");
+import IColorAdapterService = require("../third_apis/IColorAdapterService");
+import IEV3RemoteController = require("../api/IEV3RemoteController");
+import IDifferentialPilotAdapterService = require("../third_apis/IDifferentialPilotAdapterService");
+
 class EV3RemoteController implements IEV3RemoteController {
     private $scope: ng.IScope;
     private ev3DifferentialPilotAdapterService: IDifferentialPilotAdapterService;
@@ -45,3 +50,5 @@ class EV3RemoteController implements IEV3RemoteController {
         return this.ev3SoundAdapterService.beep();
     }
 }
+
+export = EV3RemoteController;

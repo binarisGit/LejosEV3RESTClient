@@ -1,4 +1,5 @@
-
 interface IColorAdapterService {
-        getColor(): ng.IPromise<any>;
-    }
+    getColor(): ng.IPromise<any>;
+}
+
+export = IColorAdapterService;
