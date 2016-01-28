@@ -1,4 +1,9 @@
 
+import IDifferentialPilotAdapterService = require("../../../src/third_apis/IDifferentialPilotAdapterService");
+import ISoundAdapterService = require("../../../src/third_apis/ISoundAdapterService");
+import IColorAdapterService = require("../../../src/third_apis/IColorAdapterService");
+import BaseBallAktionenService = require("../../../src/angular_services/examples/BaseBallAktionenService");
+
 describe("BaseBallAktionen Unit test suite: ", () => {
 
     // SUT

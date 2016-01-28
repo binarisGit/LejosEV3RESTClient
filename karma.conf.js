@@ -48,9 +48,9 @@ module.exports = function (config) {
             // since we are performing INTEGRATIONS tests angular-mocks.js is not needed!
             "bower_components/angular/angular.js",
             "bower_components/angular-mocks/angular-mocks.js",
-            "target/angular_application.js",
-            "target/angular_unit_tests.js",
-            "target/angular_integration_tests.js"
+            "target/application_with_requires.js",
+            "target/unit_tests_with_requires.js",
+            "target/integration_tests_with_requires.js"
         ],
 
 

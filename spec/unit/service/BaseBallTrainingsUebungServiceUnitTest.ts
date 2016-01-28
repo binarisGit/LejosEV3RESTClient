@@ -1,6 +1,7 @@
+import ISportBewegungsArtenService = require("../../../src/api/ISportBewegungsArtenService");
+import BaseBallTrainingsUebungService = require("../../../src/angular_services/examples/BaseBallTrainingsUebungService");
 
 describe("TrainingsUebung Unit test suite: ", () => {
-
     // SUT
     var baseBallTrainingsUebungService: any;
 
@@ -15,8 +16,5 @@ describe("TrainingsUebung Unit test suite: ", () => {
             baseBallTrainingsUebungService = new BaseBallTrainingsUebungService(baseBallBewegungsArtenService);
         });
     });
-
-
-
 
 });

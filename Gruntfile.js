@@ -31,9 +31,17 @@ module.exports = function (grunt) {
             tasks: ['build'],
         },
         browserify: {
-            main: {
+            application: {
                 src: 'compiled_js/src/App.js',
                 dest: 'target/application_with_requires.js'
+            },
+            unit: {
+                src: 'compiled_js/spec/unit/**/*.js',
+                dest: 'target/unit_tests_with_requires.js'
+            },
+            integration: {
+                src: 'compiled_js/spec/integration/**/*.js',
+                dest: 'target/integration_tests_with_requires.js'
             }
         },
         ts: {
@@ -72,7 +80,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
 
     // Custom tasks
-    grunt.registerTask('build', ['clean', 'ts', 'concat']);
+    grunt.registerTask('build', ['clean', 'ts', 'browserify']);
     grunt.registerTask('install', ['exec', 'build']);
     grunt.registerTask('default', ['build', 'watch']);
 

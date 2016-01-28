@@ -1,4 +1,5 @@
-
+import IDifferentialPilotAdapterService = require("../../../src/third_apis/IDifferentialPilotAdapterService");
+import ISoundAdapterService = require("../../../src/third_apis/ISoundAdapterService");
 describe("EV3RemoteController Unit Test suite: ", () => {
 
     // SUT
@@ -42,6 +43,5 @@ describe("EV3RemoteController Unit Test suite: ", () => {
         ev3RemoteController.rotate(45);
         expect(ev3DifferentialPilotAdapterService.rotate).toHaveBeenCalledWith(45);
     });
-
 
 });
