@@ -4,7 +4,7 @@
   "description": "REST-Client auf Basis von TypeScript und AngularJS für den REST-Service [LejosEV3RestService](https://bitbucket.org/Cappin79/lejosev3restservice). Enthält eine Remote zum Ansteuern des EV3 sowie beispielhafte E2E/Integrations/Unit-Tests.",
   "main": "karma.conf.js",
   "scripts": {
-    "postinstall": "grunt build"
+    "postinstall": "grunt install"
   },
   "repository": {
     "type": "git",
@@ -15,6 +15,7 @@
   "homepage": "https://bitbucket.org/Cappin79/lejosev3restclient#readme",
   "devDependencies": {
     "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.7.0",
     "grunt-contrib-concat": "^0.5.1",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-exec": "^0.4.6",

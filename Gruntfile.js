@@ -25,9 +25,10 @@ module.exports = function (grunt) {
                 cmd: 'bower install && tsd install'
             }
         },
+        clean: ["target"],
         watch: {
             files: ['src/**/*.ts', 'spec/**/*.ts'],
-            tasks: ['ts', 'concat'],
+            tasks: ['build'],
         },
         ts: {
             default: {
@@ -55,9 +56,10 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-exec');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-clean');
 
-    // Default task(s).
-    grunt.registerTask('build', ['exec', 'ts', 'concat']);
-    //grunt.registerTask('default', ['exec', 'ts', 'concat']);
-
+    // Custom tasks
+    grunt.registerTask('build', ['clean', 'ts', 'concat']);
+    grunt.registerTask('install', ['exec', 'build','watch']);
+    grunt.registerTask('default', ['build','watch']);
 };
