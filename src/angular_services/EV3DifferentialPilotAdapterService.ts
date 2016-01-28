@@ -1,6 +1,6 @@
-namespace BinarisEV3 {
 
-    export class EV3DifferentialPilotAdapterService implements IDifferentialPilotAdapterService {
+
+    class EV3DifferentialPilotAdapterService implements IDifferentialPilotAdapterService {
         private httpService: ng.IHttpService;
         private PILOT_ENDPOINT_URL: string = AppConfig.BASE_URL + "differentialpilot";
 
@@ -35,4 +35,3 @@ namespace BinarisEV3 {
             return this.httpService.get(url);
         }
     }
-}

@@ -1,4 +1,4 @@
-import IColorAdapterService = BinarisEV3.IColorAdapterService;
+
 describe("BaseBallAktionen Unit test suite: ", () => {
 
     // SUT
@@ -12,6 +12,7 @@ describe("BaseBallAktionen Unit test suite: ", () => {
     var qService: ng.IQService;
     var rootScope: ng.IRootScopeService;
 
+
     beforeEach(angular.mock.module('binarisEV3DifferentialPilot'));
 
     beforeEach(() => {
@@ -22,7 +23,7 @@ describe("BaseBallAktionen Unit test suite: ", () => {
             intervalService = $interval;
             qService = $q;
             rootScope = $rootScope;
-            baseBallAktionenService = new BinarisEV3.BaseBallAktionenService(ev3DifferentialPilotAdapterService, ev3SoundAdapterService, ev3ColorAdapterService, $interval, $q);
+            baseBallAktionenService = new BaseBallAktionenService(ev3DifferentialPilotAdapterService, ev3SoundAdapterService, ev3ColorAdapterService, $interval, $q);
         });
     });
 

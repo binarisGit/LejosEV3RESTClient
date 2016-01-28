@@ -1,13 +1,12 @@
-import IDifferentialPilotAdapterService = BinarisEV3.IDifferentialPilotAdapterService;
-import ISoundAdapterService = BinarisEV3.ISoundAdapterService;
+
 describe("EV3RemoteController Unit Test suite: ", () => {
 
     // SUT
     var ev3RemoteController: any;
 
     // DOC
-    var ev3DifferentialPilotAdapterService: BinarisEV3.IDifferentialPilotAdapterService;
-    var ev3SoundAdapterService: BinarisEV3.ISoundAdapterService;
+    var ev3DifferentialPilotAdapterService: IDifferentialPilotAdapterService;
+    var ev3SoundAdapterService: ISoundAdapterService;
 
     beforeEach(angular.mock.module('binarisEV3DifferentialPilot'));
 
@@ -29,6 +28,7 @@ describe("EV3RemoteController Unit Test suite: ", () => {
         expect(ev3RemoteController.rotate).toBeDefined();
         expect(ev3RemoteController.beep).toBeDefined();
         expect(ev3RemoteController.buzz).toBeDefined();
+
     });
 
     it("robot should run 10", () => {

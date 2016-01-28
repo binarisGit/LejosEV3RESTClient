@@ -50,7 +50,7 @@ module.exports = function (config) {
             "bower_components/angular-mocks/angular-mocks.js",
             "target/angular_application.js",
             "target/angular_unit_tests.js",
-            //"target/angular_integration_tests.js"
+            "target/angular_integration_tests.js"
         ],
 
 

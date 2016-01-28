@@ -60,6 +60,6 @@ module.exports = function (grunt) {
 
     // Custom tasks
     grunt.registerTask('build', ['clean', 'ts', 'concat']);
-    grunt.registerTask('install', ['exec', 'build','watch']);
+    grunt.registerTask('install', ['exec', 'build']);
     grunt.registerTask('default', ['build','watch']);
 };
