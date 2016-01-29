@@ -1,11 +1,12 @@
 import ITrainingsUebungService = require("../../api/ITrainingsUebungService");
 import ISportBewegungsArtenService = require("../../api/ISportBewegungsArtenService");
+import BaseBallBewegungsArtenService = require("./BaseBallBewegungsartenService");
 
 class BaseBallTrainingsUebungService implements ITrainingsUebungService {
     static IID = "BaseBallTrainingsUebungService";
     private baseBallBewegungsArtenService: ISportBewegungsArtenService;
 
-    static $inject = ["BaseBallBewegungsArtenService"];
+    static $inject = [BaseBallBewegungsArtenService.IID];
 
     constructor(BaseBallBewegungsArtenService: ISportBewegungsArtenService) {
         this.baseBallBewegungsArtenService = BaseBallBewegungsArtenService;

@@ -58,7 +58,7 @@ describe("Integration test suite with asynchronous HTTP Requests: ", () => {
         ev3DifferentialPilotAdapterService.run(10).then(function successCallback(response: any) {
             return ev3DifferentialPilotAdapterService.getMovementIncrement();
         }).then(function successCallback(response: any) {
-            expect(response.data).toBeCloseTo(5, 1.0);
+            expect(response.data).toBeCloseTo(10, 1.0);
             expect(response.status).toBe(200);
             done();
         });

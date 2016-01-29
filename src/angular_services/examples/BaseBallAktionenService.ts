@@ -2,6 +2,9 @@ import IBallSportAktionenService = require("../../api/IBallSportAktionenService"
 import IDifferentialPilotAdapterService = require("../../third_apis/IDifferentialPilotAdapterService");
 import ISoundAdapterService = require("../../third_apis/ISoundAdapterService");
 import IColorAdapterService = require("../../third_apis/IColorAdapterService");
+import EV3DifferentialPilotAdapterService = require("../EV3DifferentialPilotAdapterService");
+import EV3SoundAdapterService = require("../EV3SoundAdapterService");
+import EV3ColorAdapterService = require("../EV3ColorAdapterService");
 
 class BaseBallAktionenService implements IBallSportAktionenService {
     static IID = "BaseBallAktionenService";
@@ -11,7 +14,7 @@ class BaseBallAktionenService implements IBallSportAktionenService {
     private intervalService: ng.IIntervalService;
     private qService: ng.IQService;
 
-    static $inject = ["EV3DifferentialPilotAdapterService", "EV3SoundAdapterService", "EV3ColorAdapterService", "$interval", "$q"];
+    static $inject = [EV3DifferentialPilotAdapterService.IID, EV3SoundAdapterService.IID, EV3ColorAdapterService.IID, "$interval", "$q"];
 
     constructor(EV3DifferentialPilotAdapterService: IDifferentialPilotAdapterService, EV3SoundAdapterService: ISoundAdapterService, EV3ColorAdapterService: IColorAdapterService, $interval: ng.IIntervalService, $q: ng.IQService) {
         this.ev3DifferentialPilotAdapterService = EV3DifferentialPilotAdapterService;

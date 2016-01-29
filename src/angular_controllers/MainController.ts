@@ -4,8 +4,14 @@ import IColorAdapterService = require("../third_apis/IColorAdapterService");
 import ISportBewegungsArtenService = require("../api/ISportBewegungsArtenService");
 import ITrainingsUebungService = require("../api/ITrainingsUebungService");
 import IHttpService = angular.IHttpService;
+import EV3DifferentialPilotAdapterService = require("../angular_services/EV3DifferentialPilotAdapterService");
+import EV3SoundAdapterService = require("../angular_services/EV3SoundAdapterService");
+import EV3ColorAdapterService = require("../angular_services/EV3ColorAdapterService");
+import BaseBallBewegungsArtenService = require("../angular_services/examples/BaseBallBewegungsartenService");
+import BaseBallTrainingsUebungService = require("../angular_services/examples/BaseBallTrainingsUebungService");
 
 class MainController {
+    static IID = "MainController";
 
     /*
      ===================================================
@@ -26,7 +32,7 @@ class MainController {
     private baseBallTrainingsUebungService: ITrainingsUebungService;
     private httpService: IHttpService;
 
-    static $inject = ["$scope", "$http", "EV3DifferentialPilotAdapterService", "EV3SoundAdapterService", "EV3ColorAdapterService", "BaseBallBewegungsArtenService", "BaseBallTrainingsUebungService"];
+    static $inject = ["$scope", "$http", EV3DifferentialPilotAdapterService.IID, EV3SoundAdapterService.IID, EV3ColorAdapterService.IID, BaseBallBewegungsArtenService.IID, BaseBallTrainingsUebungService.IID];
 
     constructor($scope: ng.IScope, $http: IHttpService, EV3DifferentialPilotAdapterService: IDifferentialPilotAdapterService,
                 EV3SoundAdapterService: ISoundAdapterService, EV3ColorAdapterService: IColorAdapterService,

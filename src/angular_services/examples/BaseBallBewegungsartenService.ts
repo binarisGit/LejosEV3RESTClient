@@ -5,6 +5,7 @@ import EV3DifferentialPilotAdapterService = require("../EV3DifferentialPilotAdap
 class BaseBallBewegungsArtenService implements ISportBewegungsArtenService {
     static IID = "BaseBallBewegungsArtenService";
     private ev3DifferentialPilotAdapterService: IDifferentialPilotAdapterService;
+
     static $inject = [EV3DifferentialPilotAdapterService.IID];
 
     constructor(EV3DifferentialPilotAdapterService: IDifferentialPilotAdapterService) {
