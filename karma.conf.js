@@ -1,36 +1,3 @@
-// Karma configuration
-// Generated on Fri Dec 18 2015 18:03:56 GMT+0100 (Mitteleuropäische Zeit)
-/*
-
- Falls Karma-Run folgende Fehlermeldung wirft muss anstatt localhost '127.0.0.1' angegeben werden:
-
- FEHLERMELDUNG:
- C:\WebStorm 11.0.1\plugins\js-karma\js_reporter\karma-intellij\lib\intellijRunner.js:54
- throw e;
- ^
-
- Error: getaddrinfo ENOENT localhost:9876
- at Object.exports._errnoException (util.js:856:11)
- at errnoException (dns.js:31:15)
- at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:77:26)
-
-
- FIX:
- intellijRunner.js mit hostname '127.0.0.1' anstatt localhost:
-
- function runWithConfig(config) {
- var options = {
- hostname: '127.0.0.1',
- path: config.urlRoot + 'run',
- port: config.port,
- method: 'POST',
- headers: {
- 'Content-Type': 'application/json'
- }
- };
-
- */
-
 module.exports = function (config) {
     config.set({
 
@@ -46,11 +13,10 @@ module.exports = function (config) {
         // list of files / patterns to load in the browser
         files: [
             // since we are performing INTEGRATIONS tests angular-mocks.js is not needed!
-            "bower_components/angular/angular.js",
-            "bower_components/angular-mocks/angular-mocks.js",
-            "target/application_with_requires.js",
-            "target/unit_tests_with_requires.js",
-            "target/integration_tests_with_requires.js"
+            "target/application.js",
+            "node_modules/angular-mocks/angular-mocks.js",
+            "target/unit_tests.js",
+            "target/integration_tests.js"
         ],
 
 

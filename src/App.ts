@@ -1,3 +1,4 @@
+import angular = require("angular");
 import EV3DifferentialPilotAdapterService = require("./angular_services/EV3DifferentialPilotAdapterService");
 import EV3SoundAdapterService = require("./angular_services/EV3SoundAdapterService");
 import EV3ColorAdapterService = require("./angular_services/EV3ColorAdapterService");
@@ -6,6 +7,7 @@ import BaseBallAktionenService = require("./angular_services/examples/BaseBallAk
 import BaseBallTrainingsUebungService = require("./angular_services/examples/BaseBallTrainingsUebungService");
 import MainController = require("./angular_controllers/MainController");
 import EV3RemoteController = require("./angular_controllers/EV3RemoteController");
+
 
 var ev3DifferentialPilotModule: ng.IModule = angular.module('binarisEV3DifferentialPilot', []);
 ev3DifferentialPilotModule.service('EV3DifferentialPilotAdapterService', EV3DifferentialPilotAdapterService);
