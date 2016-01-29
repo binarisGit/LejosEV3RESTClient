@@ -27,7 +27,13 @@ Damit der Client die HTTP-Requests an den Service schicken kann, muss die URL in
 
 Typescript-Dateien einmalig in JavaScript-Dateien kompilieren und per browserify bündeln (build => siehe target Ordner). Anschließend einen watcher starten, damit grunt bei Codeänderungen stets einen neuen build erstellt:
 
+
+```
+#!text
+
 grunt default
+```
+
 
 
 
