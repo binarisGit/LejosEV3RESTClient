@@ -12,7 +12,6 @@ module.exports = function (config) {
 
         // list of files / patterns to load in the browser
         files: [
-            // since we are performing INTEGRATIONS tests angular-mocks.js is not needed!
             "target/application.js",
             "node_modules/angular-mocks/angular-mocks.js",
             "target/unit_tests.js",
