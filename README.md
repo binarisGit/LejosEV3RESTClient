@@ -1,4 +1,4 @@
-![binarisInformatikHeadBanner.PNG](https://bitbucket.org/repo/4686Ep/images/4038916651-binarisInformatikHeadBanner.PNG)
+![binarisInformatikHeadBanner.PNG](https://bitbucket-assetroot.s3.amazonaws.com/repository/4686Ep/4038916651-binarisInformatikHeadBanner.PNG?Signature=VJ%2BBQWQIyjgewPrRWsEx%2BdQpmWI%3D&Expires=1454338681&AWSAccessKeyId=AKIAIWY5XSVPZPDQYRQQ)
 
 # EV3 JavaScript REST-Client #
 
