@@ -10,7 +10,6 @@ class EV3ColorAdapterService implements IColorAdapterService {
 
     constructor($http: ng.IHttpService) {
         this.httpService = $http;
-
     }
 
     public getColor(): ng.IPromise<any> {
@@ -18,4 +17,5 @@ class EV3ColorAdapterService implements IColorAdapterService {
         return this.httpService.get(url);
     }
 }
+
 export = EV3ColorAdapterService;
