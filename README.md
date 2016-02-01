@@ -44,7 +44,7 @@ grunt default
 Die source-Dateien gliedern sich in Angularjs-Services, -Controller und -Direktiven. Zugehörige Interfaces liegen in den Ordnern *api* und *third_api*. Alle Tests liegen in *spec* (hier nicht abgebildet):
 
 
-![baseball_tdd_schulung_paketstruktur.png](https://bitbucket.org/repo/4686Ep/images/2731117870-baseball_tdd_schulung_paketstruktur.png)
+![baseball_tdd_schulung_paketstruktur.png](https://bitbucket-assetroot.s3.amazonaws.com/repository/4686Ep/2731117870-baseball_tdd_schulung_paketstruktur.png?Signature=dL%2BkJ%2BALHgnVO5Ki249SPQwS1VU%3D&Expires=1454338768&AWSAccessKeyId=AKIAIWY5XSVPZPDQYRQQ)
 
 
 
@@ -53,4 +53,4 @@ Die source-Dateien gliedern sich in Angularjs-Services, -Controller und -Direkti
 Das Design des folgenden Klassendiagramms ist durch [TDD](https://en.wikipedia.org/wiki/Test-driven_development) entstanden. Die Sensoren des EV3-Roboters werden mittels **DifferentialPilotAdapter**, **ColorAdapter** und **SoundAdapter** per REST angesprochen.
 Die Baseball-Klassen befinden sich im Ordner *examples* und greifen auf die Adapter-Klassen zu.
 
-![baseball_tdd_schulung_konzeptr.png](https://bitbucket.org/repo/4686Ep/images/4105179146-baseball_tdd_schulung_konzeptr.png)
+![baseball_tdd_schulung_konzeptr.png](https://bitbucket-assetroot.s3.amazonaws.com/repository/4686Ep/4105179146-baseball_tdd_schulung_konzeptr.png?Signature=QFUMzc5NYL4Fc6zF7ckbuxQ4NBk%3D&Expires=1454338770&AWSAccessKeyId=AKIAIWY5XSVPZPDQYRQQ)
